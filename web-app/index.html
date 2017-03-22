@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/navigation.css" rel="stylesheet">
+        <link href="css/buttons.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="topnav" id="myTopnav">
+            <a><button onclick="openNav()" id = "menu">&#9776;</button></a>
+            <a><h1>Welcome Ms. (Name)</h1></a>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" id="profile"><img id ="profpic" src="images/icon.png" alt="icheck_logo"><br/>John Doe<br/>contact@example.com</a>
+            <a href="#">Profile</a>
+            <a href="#">Account Settings</a>
+            <a href="#">Sync</a>
+            <a href="#">Customize</a>
+            <a href="#">Report Problem</a>
+            <a href="#">Privacy and Terms</a>
+            <a href="#">Help</a>
+            <a href="#">Log out</a>
+        </div>
+
+        <div class="row">
+            <div class="col-3 col-m-3 menu">
+                <ul>
+                    <li id="blue">9415A</li>
+                    <li id="purple">...</li>
+                    <li id="green">...</li>
+                    <li id="red">...</li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-m-9">
+                <img id ="logo" src="images/icon.png" alt="icheck_logo">
+            </div>
+
+            <div class="col-3 col-m-12">
+                <div class="aside">
+                    <h2>Basic Information</h2>
+                    <p>...</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>Resize the browser window to see how the content respond to the resizing.</p>
+        </div>
+
+        <script src="js/navigation.js"></script>
+    </body>
+</html>
