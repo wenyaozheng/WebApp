@@ -1,10 +1,10 @@
-#menu {
+button {
     background: transparent;
     border: none;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 37px;
     color: white;
-    margin: 11.5px 16px;
+    margin: 0px 25px 0px 16px;
 }
 
 #profile {
@@ -36,11 +36,6 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover:not(:last-child) {
-    background-color: #ddd;
 }
 
 /* The side navigation menu */
