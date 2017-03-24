@@ -9,10 +9,11 @@
 
 #profile {
     background: #bce8f1;
-    border-radius: 25px;
+    border-radius: 8px;
     text-align:center;
     color:black;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    padding-top: 15%
 }
 
 #profpic {
@@ -52,7 +53,6 @@
     right: 0;
     background-color: whitesmoke;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     border-radius: 4px;
 }
@@ -69,7 +69,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: #6e6e6e;
 }
 
 /* Position and style the close button (top right corner) */
