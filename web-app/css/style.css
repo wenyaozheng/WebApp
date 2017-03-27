@@ -100,13 +100,3 @@ h1 {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 }
-#nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-ul {
-    list-style: none;
-}

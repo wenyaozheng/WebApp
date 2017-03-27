@@ -4,16 +4,16 @@ button {
     font-weight: bolder;
     font-size: 37px;
     color: white;
-    margin: 0px 25px 0px 16px;
 }
 
+/* Name and email in sidebar-nav */
 #profile {
     background: #bce8f1;
     border-radius: 8px;
     text-align:center;
     color:black;
     margin-bottom: 20px;
-    padding-top: 15%
+    padding-top: 10%;
 }
 
 #profpic {
@@ -29,7 +29,7 @@ button {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: right;
+    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -44,8 +44,8 @@ button {
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 0;
-    right: 0;
+    top: 7.5px;
+    left: 7px;
     background-color: whitesmoke;
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -54,7 +54,7 @@ button {
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 25px;
     text-decoration: none;
     font-size: 20px;
     color: black;
@@ -84,6 +84,5 @@ button {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 650px) {
-    .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
