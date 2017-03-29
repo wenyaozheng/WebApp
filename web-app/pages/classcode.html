@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/navigation.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="topnav" id="myTopnav">
+            <a><button onclick="openNav()" id = "menu">&#9776;</button></a>
+            <a><h1>(Classcode)</h1></a>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" id="profile"><img id ="profpic" src="images/icon.png" alt="icheck_logo"><br/>John Doe<br/>contact@example.com</a>
+            <a href="#"><img src="../images/icons/glyphicons-4-user.png" alt="profile-icon">&emsp;Profile</a>
+            <a href="#"><img src="../images/icons/glyphicons-137-cogwheel.png" alt="profile-icon">&emsp;Account Settings</a>
+            <a href="#"><img src="../images/icons/glyphicons-82-refresh.png" alt="profile-icon">&emsp;Sync</a>
+            <a href="#"><img src="../images/icons/glyphicons-281-settings.png" alt="profile-icon">&emsp;Customize</a>
+            <a href="#"><img src="../images/icons/glyphicons-197-exclamation-sign.png" alt="profile-icon">&emsp;Report Problem</a>
+            <a href="#"><img src="../images/icons/glyphicons-82-refresh.png" alt="profile-icon">&emsp;Privacy and Terms</a>
+            <a href="#"><img src="../images/icons/glyphicons-195-question-sign.png" alt="profile-icon">&emsp;Help</a>
+            <a href="#"><img src="../images/icons/glyphicons-388-log-out.png" alt="icheck_logo">&emsp;Log out</a>
+        </div>
+
+        <div class="row">
+            <div class="col-3 col-m-3 menu">
+                <ul>
+                    <li id="blue">9415A</li>
+                    <li id="purple">...</li>
+                    <li id="green">...</li>
+                    <li id="red">...</li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-m-9">
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+                <img id="drag1" src="img_logo.gif" draggable="true"
+                     ondragstart="drag(event)" width="336" height="69">
+            </div>
+
+            <div class="col-3 col-m-12">
+                <div class="aside">
+                    StudentList
+                    ....
+                </div>
+            </div>
+
+        </div>
+        <script src="js/navigation.js"></script>
+    </body>
+</html>

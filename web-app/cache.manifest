@@ -1,0 +1,22 @@
+CACHE MANIFEST
+# version 7
+# This is a comment
+CACHE:
+index.html
+pages/classcode.html
+
+css/style.css
+css/login.css
+css/navigation.css
+
+js/drag&drop.js
+js/jquery.min.js
+js/navigation.js
+js/script.js
+js/web_worker.js
+
+NETWORK:
+login.html
+
+FALLBACK:
+/html/ /offline.html
