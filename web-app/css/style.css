@@ -25,6 +25,7 @@ h1 {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    max-width: 250px;
 }
 .menu li {
     padding: 15px;
@@ -32,7 +33,7 @@ h1 {
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     text-align: center;
-    font-size: larger;
+    font-size: large;
 }
 .menu #blue {
     background-color: #33b1e1;
@@ -59,9 +60,17 @@ h1 {
     background-color: #c13530;
 }
 #showStudentList {
-    text-align: center;
+    table-layout:fixed;
+    border-style: dashed;
 }
-.aside {
+#showStudentList tr {
+    height: 30px;
+}
+#showStudentList td,th {
+    width:200px;
+    word-wrap:break-word;
+}
+#aside {
     background-color: #33b5e5;
     padding: 16px;
     color: #ffffff;

@@ -1,7 +1,6 @@
 function CreateTableFromJSON(data) {
-    var input = data;
-   if(input == "class_9413A") {
-      var studList = [
+    if(data == "class_9413A") {
+        var studList = [
            {
                "ID No.": "2150428",
                "Last Name": "Fama",
@@ -17,26 +16,28 @@ function CreateTableFromJSON(data) {
                "Last Name": "Zheng",
                "First Name": "Anne"
            }
-       ];
-   } else if (input == "class_9415B") {
-       var studList = [
-           {
-               "ID No.": "SAMPLE",
-               "Last Name": "...",
-               "First Name": "..."
-           },
-           {
-               "ID No.": "2150000",
-               "Last Name": "...",
-               "First Name": "..."
-           },
-           {
-               "ID No.": "...",
-               "Last Name": "...",
-               "First Name": "..."
-           }
-       ];
-   }
+        ];
+        document.getElementById("aside").style.backgroundColor = "#33b1e1";
+    } else if (data == "class_9415B") {
+        var studList = [
+            {
+                "ID No.": "SAMPLE",
+                "Last Name": "...",
+                "First Name": "..."
+            },
+            {
+                "ID No.": "2150000",
+                "Last Name": "...",
+                "First Name": "..."
+            },
+            {
+                "ID No.": "...",
+                "Last Name": "...",
+                "First Name": "..."
+            }
+        ];
+        document.getElementById("aside").style.backgroundColor = "#c35ed0";
+    }
 
     // EXTRACT VALUE FOR HTML HEADER.
     var col = [];
