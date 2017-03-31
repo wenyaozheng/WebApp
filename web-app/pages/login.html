@@ -6,6 +6,7 @@
         <title>Log-in</title>
 
         <link href="../css/login.css" rel="stylesheet">
+        <script src="../js/login.js"></script>
     </head>
     <body>
 
@@ -13,12 +14,12 @@
             <img src="../images/icon.png" alt="logo" class="logo">
         </div>
 
-        <form action="...">
+        <form id="form_id" method="post" name="myform">
             <div class="container">
-                <input type="text" placeholder="Username" name="uname" required>
-                <input type="password" placeholder="Password" name="psw" required>
+                <input type="text" placeholder="Username" name="username" id="username" required>
+                <input type="password" placeholder="Password" name="password" id="password" required>
 
-                <button type="submit">Login</button>
+                <button type="submit" value="Login" id="submit" onclick="return validate()">Login</button>
                 <input type="checkbox" checked="checked"> Remember me
             </div>
 
