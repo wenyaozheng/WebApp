@@ -37,10 +37,10 @@
         <div class="row">
             <div class="col-2 col-m-3 menu">
                 <ul>
-                    <li id="blue" onclick="CreateTableFromJSON('class_9413A')">9413A IT324 Networks <br/> 11:30-12:30 TF</li>
-                    <li id="purple" onclick="CreateTableFromJSON('class_9415B')">9415B <br/> KUNWARI</li>
-                    <li id="green">...</li>
-                    <li id="red">...</li>
+                    <li id="blue" onmouseenter="CreateTableFromJSON('class_9413A')">9413A IT322<br/>11:30 - 12:30 TF</li>
+                    <li id="purple" onmouseenter="CreateTableFromJSON('class_9413B')">9415B IT322L<br/>9:00 - 12:00 W</li>
+                    <li id="green" onmouseenter="CreateTableFromJSON('class_9414A')">9414A IT323<br/>10:30 - 11:30 TF</li>
+                    <li id="red" onmouseenter="CreateTableFromJSON('class_9414B')">9414B IT323L<br/>9:00 - 10:30 MTH</li>
                 </ul>
             </div>
 
@@ -55,6 +55,7 @@
                 <script src="../js/canvas.js"></script>
 
             <div class="col-8 col-m-9" id="scroll_seatPlan">
+                    <div id="subject_name" style="text-align: center"><h1 id="subject"></h1></div>
                     <canvas id="seatPlan"></canvas>
                     <script src="../js/studentCanvas.js"></script>
 
@@ -62,29 +63,70 @@
 
             <div class="col-2 col-m-5">
                 <!-- Trigger/Open The Modal -->
-                <button id="myBtn">Student List</button>
+                <button id="myBtn" onmouseenter="fModal('myBtn')">Student List</button><br/>
+                <button id="lateBtn" onmouseenter="fModal('lateBtn')">Late</button>
+                <button id="absentBtn" onmouseenter="fModal('absentBtn')">Absent</button>
 
-                <!-- The Modal -->
+                <!-- The Modal for Student List -->
                 <div id="myModal" class="modal">
 
-                    <!-- Modal content -->
+                    <!-- Modal content for Student List -->
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header" id="studList-modalHeader">
                             <span class="close">&times;</span>
-                            <h2>STUDENT LIST</h2>
+                            <h3>STUDENT LIST</h3>
                         </div>
                         <div class="modal-body">
                             <div id="showStudentList"></div>
                         </div>
                         <script src="../js/show_list.js"></script>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
+                        <div class="modal-footer" id="studList-modalFooter">
+                            &emsp;
+                        </div>
+                    </div>
+                    <script src="../js/modal.js"></script>
+                </div>
+
+                <!-- The Modal for Late Students -->
+                <div id="lateModal" class="modal">
+
+                    <!-- Modal content for Late Students -->
+                    <div class="modal-content">
+                        <div class="modal-header" id="late-modalHeader">
+                            <span class="close">&times;</span>
+                            <h3>LATE</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div id="showLateStudent">HAHAHAH LATE</div>
+                        </div>
+                        <script src="../js/show_list.js"></script>
+                        <div class="modal-footer" id="late-modalFooter">
+                            &emsp;
+                        </div>
+                    </div>
+                    <script src="../js/modal.js"></script>
+                </div>
+
+                <!-- The Modal for Absent Students -->
+                <div id="absentModal" class="modal">
+
+                    <!-- Modal content for Absent Students -->
+                    <div class="modal-content">
+                        <div class="modal-header" id="absent-modalHeader">
+                            <span class="close">&times;</span>
+                            <h3>ABSENT</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div id="showabsentStudent">HAHAHAH ABSENT</div>
+                        </div>
+                        <script src="../js/show_list.js"></script>
+                        <div class="modal-footer" id="absent-modalFooter">
+                            &emsp;
                         </div>
                     </div>
                     <script src="../js/modal.js"></script>
                 </div>
             </div>
-
         </div>
     </body>
 </html>
