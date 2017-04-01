@@ -40,7 +40,7 @@ function validate(){
     var password = document.getElementById("password").value;
     for(i in obj.Users) {
         if (username == obj.Users[i].username && password == obj.Users[i].password) {
-            window.location.href = '../index.html';
+            window.location.href = 'pages/home.html';
             alert("Login successfully");
             // Redirecting to other page.
             return false;

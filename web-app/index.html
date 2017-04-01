@@ -1,58 +1,33 @@
 <!DOCTYPE html>
-<html manifest="cache.manifest">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/navigation.css" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
-        <script src="js/navigation.js"></script>
-    </head>
-    <body>
-        <div class="topnav" id="myTopnav">
-            <a><button onclick="openNav()" id = "menu">&#9776;</button></a>
+    <title>Log-in</title>
 
-            <a><h1>iCheck</h1></a>
-            <a href="pages/classcode.html" style="float: right"><h1>Classcodes</h1></a>
-            <a href="index.html" style="float: right"><h1>Home</h1></a>
-        </div>
+    <link href="css/login.css" rel="stylesheet">
+    <script src="js/login.js"></script>
+</head>
+<body>
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#" id="profile"><img id ="profpic" src="images/icon.png" alt="icheck_logo"><br/>John Doe<br/>contact@example.com</a>
-            <a href="#"><img src="images/icons/glyphicons-4-user.png" alt="profile-icon">&emsp;Profile</a>
-            <a href="#"><img src="images/icons/glyphicons-137-cogwheel.png" alt="profile-icon">&emsp;Account Settings</a>
-            <a href="#"><img src="images/icons/glyphicons-82-refresh.png" alt="profile-icon">&emsp;Sync</a>
-            <a href="#"><img src="images/icons/glyphicons-281-settings.png" alt="profile-icon">&emsp;Customize</a>
-            <a href="#"><img src="images/icons/glyphicons-197-exclamation-sign.png" alt="profile-icon">&emsp;Report Problem</a>
-            <a href="#"><img src="images/icons/glyphicons-82-refresh.png" alt="profile-icon">&emsp;Privacy and Terms</a>
-            <a href="#"><img src="images/icons/glyphicons-195-question-sign.png" alt="profile-icon">&emsp;Help</a>
-            <a href="#"><img src="images/icons/glyphicons-388-log-out.png" alt="icheck_logo">&emsp;Log out</a>
-        </div>
+<div class="imgcontainer">
+    <img src="images/icon.png" alt="logo" class="logo">
+</div>
 
-        <div class="row">
-            <div class="col-3 col-m-3 menu">
-                <ul>
-                    <script src="js/classcodes.js"></script>
-                    <!--<li id="blue"></li>-->
-                    <!--<li id="purple">...</li>-->
-                    <!--<li id="green">...</li>-->
-                    <!--<li id="red">...</li>-->
-                </ul>
-            </div>
+<form id="form_id" method="post" name="myform">
+    <div class="container">
+        <input type="text" placeholder="Username" name="username" id="username" required>
+        <input type="password" placeholder="Password" name="password" id="password" required>
 
-            <div  class="col-6 col-m-9">
+        <button type="submit" value="Login" id="submit" onclick="return validate()">Login</button>
+        <input type="checkbox" checked="checked"> Remember me
+    </div>
 
-            </div>
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+</form>
 
-
-            <div class="col-3 col-m-12">
-                <div class="aside">
-                    <h2>Basic Information</h2>
-                    <p>...</p>
-                </div>
-            </div>
-
-        </div>
-
-    </body>
+</body>
 </html>
