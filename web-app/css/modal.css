@@ -62,8 +62,24 @@
     color: white;
 }
 #myBtn {
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
     background-color: #33b1e1;
+    color: white;
+    border-radius: 8px;
+    font-size: large;
+    margin-bottom: 10px;
+}
+#lateBtn {
+    padding: 20px;
+    background-color: #fbbd07;
+    color: white;
+    border-radius: 8px;
+    font-size: large;
+    margin-bottom: 10px;
+}
+#absentBtn {
+    padding: 20px;
+    background-color: #f14a5a;
     color: white;
     border-radius: 8px;
     font-size: large;
