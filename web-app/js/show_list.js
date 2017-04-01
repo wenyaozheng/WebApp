@@ -15,9 +15,117 @@ function CreateTableFromJSON(data) {
                "ID No.": "2150001",
                "Last Name": "Zheng",
                "First Name": "Anne"
-           }
+           },
+            {
+                "ID No.": "2150428",
+                "Last Name": "Fama",
+                "First Name": "Charlene"
+            },
+            {
+                "ID No.": "2150000",
+                "Last Name": "Garcia",
+                "First Name": "Jay"
+            },
+            {
+                "ID No.": "2150001",
+                "Last Name": "Zheng",
+                "First Name": "Anne"
+            },
+            {
+                "ID No.": "2150428",
+                "Last Name": "Fama",
+                "First Name": "Charlene"
+            },
+            {
+                "ID No.": "2150000",
+                "Last Name": "Garcia",
+                "First Name": "Jay"
+            },
+            {
+                "ID No.": "2150001",
+                "Last Name": "Zheng",
+                "First Name": "Anne"
+            },
+            {
+                "ID No.": "2150428",
+                "Last Name": "Fama",
+                "First Name": "Charlene"
+            },
+            {
+                "ID No.": "2150000",
+                "Last Name": "Garcia",
+                "First Name": "Jay"
+            },
+            {
+                "ID No.": "2150001",
+                "Last Name": "Zheng",
+                "First Name": "Anne"
+            },
+            {
+                "ID No.": "2150001",
+                "Last Name": "Zheng",
+                "First Name": "Anne"
+            },
+            {
+                "ID No.": "2150428",
+                "Last Name": "Fama",
+                "First Name": "Charlene"
+            },
+            {
+                "ID No.": "2150000",
+                "Last Name": "Garcia",
+                "First Name": "Jay"
+            },
+            {
+                "ID No.": "2150001",
+                "Last Name": "Zheng",
+                "First Name": "Anne"
+            },
+            {
+                "ID No.": "2150001",
+                "Last Name": "Zheng",
+                "First Name": "Anne"
+            },
+            {
+                "ID No.": "2150428",
+                "Last Name": "Fama",
+                "First Name": "Charlene"
+            },
+            {
+                "ID No.": "2150000",
+                "Last Name": "Garcia",
+                "First Name": "Jay"
+            },
+            {
+                "ID No.": "2150001",
+                "Last Name": "Zheng",
+                "First Name": "Anne"
+            },
+            {
+                "ID No.": "2150001",
+                "Last Name": "Zheng",
+                "First Name": "Anne"
+            },
+            {
+                "ID No.": "2150428",
+                "Last Name": "Fama",
+                "First Name": "Charlene"
+            },
+            {
+                "ID No.": "2150000",
+                "Last Name": "Garcia",
+                "First Name": "Jay"
+            },
+            {
+                "ID No.": "2150001",
+                "Last Name": "Zheng",
+                "First Name": "Anne"
+            }
+
+
         ];
-        document.getElementById("aside").style.backgroundColor = "#33b1e1";
+        document.getElementById("seatPlan").style.borderColor = "#33b1e1";
+        document.getElementById("myBtn").style.backgroundColor = "#33b1e1";
     } else if (data == "class_9415B") {
         var studList = [
             {
@@ -36,7 +144,8 @@ function CreateTableFromJSON(data) {
                 "First Name": "..."
             }
         ];
-        document.getElementById("aside").style.backgroundColor = "#c35ed0";
+        document.getElementById("seatPlan").style.borderColor = "#c35ed0";
+        document.getElementById("myBtn").style.backgroundColor = "#c35ed0";
     }
 
     // EXTRACT VALUE FOR HTML HEADER.

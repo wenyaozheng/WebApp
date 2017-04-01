@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html manifest="cache.manifest">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/style.css" rel="stylesheet">
         <link href="../css/navigation.css" rel="stylesheet">
-        <link href="../css/modal.css" rel="stylesheet">
 
         <script src="../js/navigation.js"></script>
-
     </head>
     <body>
-
         <div class="topnav" id="myTopnav">
             <a><button onclick="openNav()" id = "menu">&#9776;</button></a>
-            <a><h1>iCheck</h1></a>
-        </div>
 
+            <a><h1>iCheck</h1></a>
+            <a href="classcode.html" style="float: right"><h1>Classcodes</h1></a>
+            <a href="home.html" style="float: righ"><h1>Home</h1></a>
+        </div>
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -31,45 +30,27 @@
         </div>
 
         <div class="row">
-            <div class="col-2 col-m-3 menu">
+            <div class="col-3 col-m-3 menu">
                 <ul>
-                    <li id="blue" onclick="CreateTableFromJSON('class_9413A')">9413A IT324 Networks <br/> 11:30-12:30 TF</li>
-                    <li id="purple" onclick="CreateTableFromJSON('class_9415B')">9415B <br/> KUNWARI</li>
+                    <li id="blue">9415A</li>
+                    <li id="purple">...</li>
                     <li id="green">...</li>
                     <li id="red">...</li>
                 </ul>
             </div>
 
-            <div class="col-8 col-m-9" id="scroll_seatPlan">
-                    <canvas id="seatPlan"></canvas>
-                    <script src="../js/studentCanvas.js"></script>
+            <div class="col-6 col-m-9">
+                BODY
             </div>
 
-            <div class="col-2 col-m-5">
-                <!-- Trigger/Open The Modal -->
-                <button id="myBtn">Student List</button>
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <span class="close">&times;</span>
-                            <h2>STUDENT LIST</h2>
-                        </div>
-                        <div class="modal-body">
-                            <div id="showStudentList"></div>
-                        </div>
-                        <script src="../js/show_list.js"></script>
-                        <div class="modal-footer">
-                            <h3>Modal Footer</h3>
-                        </div>
-                    </div>
-                    <script src="../js/modal.js"></script>
+            <div class="col-3 col-m-12">
+                <div class="aside">
+                    <h2>Basic Information</h2>
+                    <p>...</p>
                 </div>
             </div>
 
         </div>
+
     </body>
 </html>
