@@ -12,6 +12,7 @@ DefinePaths(null);
 
 function DefinePaths(event){
 var temp=1;
+var asd;
     for (var x = 10, i = 0; i < 5; x += 25, i++) {
         for (var y = 5, j = 0; j < 5; y += 25, j++) {
             ctx.beginPath();
@@ -20,10 +21,10 @@ var temp=1;
                 if (IsInPath(event)) {
                     SelStyle();
                     set=temp;
-                    for(i in obj.class_9413A) {
+                    for(asd in obj.class_9413A) {
                         if(obj.class_9413A[i].SeatNo==temp){
-                            console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-                            console.log( obj.class_9413A[i].SeatNo);
+                            // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                            // console.log( obj.class_9413A[i].SeatNo);
                         }
                     }
                 }
@@ -47,10 +48,10 @@ var temp=1;
                 if (IsInPath(event)) {
                     SelStyle();
                     set=temp;
-                    for(i in obj.class_9413A) {
+                    for(asd in obj.class_9413A) {
                         if(obj.class_9413A[i].SeatNo==temp){
-                            console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-                            console.log( obj.class_9413A[i].SeatNo);
+                             console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                             console.log( obj.class_9413A[i].SeatNo);
                         }
                     }
                 }
