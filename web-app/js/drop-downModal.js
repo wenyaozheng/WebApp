@@ -7,122 +7,146 @@ student_Obj = {
         {
             "IDNo": "2150428",
             "LastName": "Fama",
-            "FirstName": "Charlene"
+            "FirstName": "Charlene",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150000",
             "LastName": "Garcia",
-            "FirstName": "Jay"
+            "FirstName": "Jay",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150001",
             "LastName": "Zheng",
-            "FirstName": "Anne"
+            "FirstName": "Anne",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150428",
             "LastName": "Fama",
-            "FirstName": "Charlene"
+            "FirstName": "Charlene",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150000",
             "LastName": "Garcia",
-            "FirstName": "Jay"
+            "FirstName": "Jay",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150001",
             "LastName": "Zheng",
-            "FirstName": "Anne"
+            "FirstName": "Anne",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150428",
             "LastName": "Fama",
-            "FirstName": "Charlene"
+            "FirstName": "Charlene",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150000",
             "LastName": "Garcia",
-            "FirstName": "Jay"
+            "FirstName": "Jay",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150001",
             "LastName": "Zheng",
-            "FirstName": "Anne"
+            "FirstName": "Anne",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150428",
             "LastName": "Fama",
-            "FirstName": "Charlene"
+            "FirstName": "Charlene",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150000",
             "LastName": "Garcia",
-            "FirstName": "Jay"
+            "FirstName": "Jay",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150001",
             "LastName": "Zheng",
-            "FirstName": "Anne"
+            "FirstName": "Anne",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150001",
             "LastName": "Zheng",
-            "FirstName": "Anne"
+            "FirstName": "Anne",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150428",
             "LastName": "Fama",
-            "FirstName": "Charlene"
+            "FirstName": "Charlene",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150000",
             "LastName": "Garcia",
-            "FirstName": "Jay"
+            "FirstName": "Jay",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150001",
             "LastName": "Zheng",
             "FirstName": "Anne"
+            ,"SeatNo": ""
         },
         {
             "IDNo": "2150001",
             "LastName": "Zheng",
-            "FirstName": "Anne"
+            "FirstName": "Anne",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150428",
             "LastName": "Fama",
-            "FirstName": "Charlene"
+            "FirstName": "Charlene",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150000",
             "LastName": "Garcia",
-            "FirstName": "Jay"
+            "FirstName": "Jay",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150001",
             "LastName": "Zheng",
-            "FirstName": "Anne"
+            "FirstName": "Anne",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150001",
             "LastName": "Zheng",
-            "FirstName": "Anne"
+            "FirstName": "Anne",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150428",
             "LastName": "Fama",
-            "FirstName": "Charlene"
+            "FirstName": "Charlene",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150000",
             "LastName": "Garcia",
-            "FirstName": "Jay"
+            "FirstName": "Jay",
+            "SeatNo": ""
         },
         {
             "IDNo": "2150001",
             "LastName": "Zheng",
-            "FirstName": "Anne"
+            "FirstName": "Anne",
+            "SeatNo": ""
         }
     ]
 };
@@ -133,7 +157,7 @@ text = localStorage.getItem("listJSON");
 obj = JSON.parse(text);
 for(i in obj.class_9413A) {
     output = obj.class_9413A[i].LastName + " " + obj.class_9413A[i].FirstName;
-    document.write( '<option>'+output+'</option>');
+    document.write( '<option value="'+obj.class_9413A[i].IDNo+'">'+output+'</option>');
 }
 // console.log(output);
 //document.getElementById("blue").innerHTML = output;

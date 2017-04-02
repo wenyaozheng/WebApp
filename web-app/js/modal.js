@@ -1,3 +1,5 @@
+text = localStorage.getItem("listJSON");
+obj = JSON.parse(text);
 function fModal(click) {
     if (click == "myBtn") {
         // Get the modal
