@@ -7,6 +7,7 @@ obj = JSON.parse(text);
 var cnv = document.getElementById("seatPlan");
 var ctx =cnv.getContext("2d");
 var deg = Math.PI/180;
+console.log(obj);
 DefinePaths(null);
 
 function DefinePaths(event){
@@ -19,6 +20,12 @@ var temp=1;
                 if (IsInPath(event)) {
                     SelStyle();
                     set=temp;
+                    for(i in obj.class_9413A) {
+                        if(obj.class_9413A[i].SeatNo==temp){
+                            console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                            console.log( obj.class_9413A[i].SeatNo);
+                        }
+                    }
                 }
                 else
                     DifStyle();
@@ -26,7 +33,7 @@ var temp=1;
                 DifStyle();
             ctx.closePath();
             ctx.fill();
-            ctx.strokeText(""+temp,x+8,y+13);
+            ctx.strokeText(""+temp,x+6,y+13);
             ctx.stroke();
             temp=temp+1;
         }
@@ -39,6 +46,13 @@ var temp=1;
             if (event!=null){
                 if (IsInPath(event)) {
                     SelStyle();
+                    set=temp;
+                    for(i in obj.class_9413A) {
+                        if(obj.class_9413A[i].SeatNo==temp){
+                            console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                            console.log( obj.class_9413A[i].SeatNo);
+                        }
+                    }
                 }
                 else
                     DifStyle();
@@ -47,7 +61,7 @@ var temp=1;
             // b=i+a+1;
             ctx.closePath();
             ctx.fill();
-            ctx.strokeText(temp+"",x+8,y+13);
+            ctx.strokeText(temp+"",x+6,y+13);
             ctx.stroke();
             temp=temp+1;
         }
@@ -80,6 +94,7 @@ function SelStyle(){
         }
     };
 }
+
 function DifStyle(){
     ctx.lineWidth= 2;
     ctx.fillStyle= "gray";
@@ -92,8 +107,10 @@ function setName(){
     for(i in obj.class_9413A) {
         if(obj.class_9413A[i].IDNo==strUser){
              obj.class_9413A[i].SeatNo=set+'';
-            console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-             console.log( obj.class_9413A[i].SeatNo);
+            myJSON = JSON.stringify(obj);
+            localStorage.setItem("listJSON", myJSON);;
+            // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+            //  console.log( obj.class_9413A[i].SeatNo);
         }
     }
     // return strUser;
