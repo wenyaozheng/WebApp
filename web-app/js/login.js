@@ -236,7 +236,8 @@ function initData() {
             {
                 "classcode":"9426",
                 "subject":"Integrative Programming Lab",
-                "course_no":"IT323L"
+                "course_no":"IT323L",
+                "schedule":"9:00-10:30 MTH"
             }
         ]
     };

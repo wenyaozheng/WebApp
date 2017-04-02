@@ -4,5 +4,6 @@
 function temp_classcode(input){
     window.localStorage.removeItem("classcode");
     localStorage.setItem("classcode", input);
+    console.log(input);
     CreateTableFromJSON(input);
 }
