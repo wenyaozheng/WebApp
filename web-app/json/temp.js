@@ -7,5 +7,5 @@ function temp_classcode(input){
     console.log(input);
     CreateTableFromJSON(input);
     dropDown(input);
-    printStudentList(input)
+    printStudentList(input);
 }

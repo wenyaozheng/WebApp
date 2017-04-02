@@ -11,8 +11,8 @@ console.log(obj);
 DefinePaths(null);
 
 function DefinePaths(event){
-var temp=1;
-var asd;
+    var temp=1;
+    var asd;
     for (var x = 10, i = 0; i < 5; x += 25, i++) {
         for (var y = 5, j = 0; j < 5; y += 25, j++) {
             ctx.beginPath();
@@ -23,8 +23,8 @@ var asd;
                     set=temp;
                     for(asd in obj.class_9413A) {
                         if(obj.class_9413A[i].SeatNo==temp){
-                            // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-                            // console.log( obj.class_9413A[i].SeatNo);
+                            console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                            console.log( obj.class_9413A[i].SeatNo);
                         }
                     }
                 }
@@ -99,43 +99,50 @@ function DifStyle(){
     ctx.strokeStyle= "darkblue";
 }
 
-function setName(input){
+function setName(){
+    var input = localStorage.getItem('classcode');
     var i;
     var e = document.getElementById("selector");
     var strUser = e.options[e.selectedIndex].value;
-
-    if (input == "class_9413A") {
-        for(i in obj.class_9413A) {
-            if(obj.class_9413A[i].IDNo==strUser){
-                obj.class_9413A[i].SeatNo=set+'';
-                console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-                console.log( obj.class_9413A[i].SeatNo);
+    switch(input) {
+        case "class_9413A":
+            for(i in obj.class_9413A) {
+                if(obj.class_9413A[i].IDNo==strUser){
+                    obj.class_9413A[i].SeatNo=set+'';
+                    console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                    console.log( obj.class_9413A[i].SeatNo);
+                }
             }
-        }
-    } else if (input == "class_9413B") {
-        for(i in obj.class_9413B) {
-            if(obj.class_9413B[i].IDNo==strUser){
-                obj.class_9413B[i].SeatNo=set+'';
-                console.log(obj.class_9413B[i].LastName+ " " + obj.class_9413B[i].FirstName);
-                console.log( obj.class_9413B[i].SeatNo);
+            break;
+        case "class_9413B":
+            for(i in obj.class_9413B) {
+                if(obj.class_9413B[i].IDNo==strUser){
+                    obj.class_9413B[i].SeatNo=set+'';
+                    console.log(obj.class_9413B[i].LastName+ " " + obj.class_9413B[i].FirstName);
+                    console.log( obj.class_9413B[i].SeatNo);
+                }
             }
-        }
-    } else if (input == "class_9414A") {
-        for(i in obj.class_9414A) {
-            if(obj.class_9414A[i].IDNo==strUser){
-                obj.class_9414A[i].SeatNo=set+'';
-                console.log(obj.class_9414A[i].LastName+ " " + obj.class_9414A[i].FirstName);
-                console.log( obj.class_9414A[i].SeatNo);
+            break;
+        case "class_9414A":
+            for(i in obj.class_9414A) {
+                if(obj.class_9414A[i].IDNo==strUser){
+                    obj.class_9414A[i].SeatNo=set+'';
+                    console.log(obj.class_9414A[i].LastName+ " " + obj.class_9414A[i].FirstName);
+                    console.log( obj.class_9414A[i].SeatNo);
+                }
             }
-        }
-    } else if (input == "class_9414B") {
-        for(i in obj.class_9414B) {
-            if(obj.class_9414B[i].IDNo==strUser){
-                obj.class_9414B[i].SeatNo=set+'';
-                console.log(obj.class_9414B[i].LastName+ " " + obj.class_9414B[i].FirstName);
-                console.log( obj.class_9414B[i].SeatNo);
+            break;
+        case "class_9414B":
+            for(i in obj.class_9414B) {
+                if(obj.class_9414B[i].IDNo==strUser){
+                    obj.class_9414B[i].SeatNo=set+'';
+                    console.log(obj.class_9414B[i].LastName+ " " + obj.class_9414B[i].FirstName);
+                    console.log( obj.class_9414B[i].SeatNo);
+                }
             }
-        }
+            break;
+        default:
+            console.log("error");
     }
 }
 function printStudentList(input){
