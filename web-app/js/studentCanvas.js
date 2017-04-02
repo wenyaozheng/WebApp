@@ -10,10 +10,8 @@ function DefinePaths(event){
             ctx.beginPath();
             ctx.rect(x, y, 20, 20);
             if (event!=null){
-                if (IsInPath(event)) {
-                    alert("Rectangle"+i+" "+j);
+                if (IsInPath(event))
                     SelStyle();
-                }
                 else
                     DifStyle();
             }else
@@ -60,8 +58,6 @@ function DifStyle(){
     ctx.fillStyle= "gray";
     ctx.strokeStyle= "darkblue";
 }
-
-
 
 
 
