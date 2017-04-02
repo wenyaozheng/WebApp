@@ -35,28 +35,28 @@ h1 {
     text-align: center;
     font-size: large;
 }
-.menu #blue {
+.menu #color1 {
     background-color: #33b1e1;
 }
-.menu #purple {
+.menu #color2 {
     background-color: #c35ed0;
 }
-.menu #green {
+.menu #color3 {
     background-color: #11b82b;
 }
-.menu #red {
+.menu #color4 {
     background-color: #e54337;
 }
-.menu #blue:hover {
+.menu #color1:hover {
     background-color: #2f9fcb;
 }
-.menu #green:hover {
+.menu #color3:hover {
     background-color: #11a82a;
 }
-.menu #purple:hover {
+.menu #color2:hover {
     background-color: #ac56b8;
 }
-.menu #red:hover {
+.menu #color4:hover {
     background-color: #c13530;
 }
 #showStudentList {
