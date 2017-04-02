@@ -20,132 +20,6 @@ student_Obj = {
             "LastName": "Zheng",
             "FirstName": "Anne",
             "SeatNo": ""
-        },
-        {
-            "IDNo": "2150428",
-            "LastName": "Fama",
-            "FirstName": "Charlene",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150000",
-            "LastName": "Garcia",
-            "FirstName": "Jay",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150001",
-            "LastName": "Zheng",
-            "FirstName": "Anne",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150428",
-            "LastName": "Fama",
-            "FirstName": "Charlene",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150000",
-            "LastName": "Garcia",
-            "FirstName": "Jay",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150001",
-            "LastName": "Zheng",
-            "FirstName": "Anne",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150428",
-            "LastName": "Fama",
-            "FirstName": "Charlene",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150000",
-            "LastName": "Garcia",
-            "FirstName": "Jay",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150001",
-            "LastName": "Zheng",
-            "FirstName": "Anne",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150001",
-            "LastName": "Zheng",
-            "FirstName": "Anne",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150428",
-            "LastName": "Fama",
-            "FirstName": "Charlene",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150000",
-            "LastName": "Garcia",
-            "FirstName": "Jay",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150001",
-            "LastName": "Zheng",
-            "FirstName": "Anne"
-            ,"SeatNo": ""
-        },
-        {
-            "IDNo": "2150001",
-            "LastName": "Zheng",
-            "FirstName": "Anne",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150428",
-            "LastName": "Fama",
-            "FirstName": "Charlene",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150000",
-            "LastName": "Garcia",
-            "FirstName": "Jay",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150001",
-            "LastName": "Zheng",
-            "FirstName": "Anne",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150001",
-            "LastName": "Zheng",
-            "FirstName": "Anne",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150428",
-            "LastName": "Fama",
-            "FirstName": "Charlene",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150000",
-            "LastName": "Garcia",
-            "FirstName": "Jay",
-            "SeatNo": ""
-        },
-        {
-            "IDNo": "2150001",
-            "LastName": "Zheng",
-            "FirstName": "Anne",
-            "SeatNo": ""
         }
     ],
     "class_9413B": [
@@ -180,6 +54,11 @@ student_Obj = {
             "IDNo": "...",
             "LastName": "...",
             "FirstName": "..."
+        },
+        {
+            "IDNo": "...",
+            "LastName": "...",
+            "FirstName": "..."
         }
     ],
     "class_9414B": [
@@ -190,6 +69,16 @@ student_Obj = {
         },
         {
             "IDNo": "2150000",
+            "LastName": "...",
+            "FirstName": "..."
+        },
+        {
+            "IDNo": "...",
+            "LastName": "...",
+            "FirstName": "..."
+        },
+        {
+            "IDNo": "...",
             "LastName": "...",
             "FirstName": "..."
         },
