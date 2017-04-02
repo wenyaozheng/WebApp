@@ -69,7 +69,7 @@ function SelStyle(){
     ctx.fillStyle= "cyan";
 
     var modal = document.getElementById("box");
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("close")[3];
     modal.style.display = "block";
     span.onclick = function () {
         modal.style.display = "none";

@@ -84,6 +84,20 @@
     border-radius: 8px;
     font-size: large;
 }
+.modal-button {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+#modal-late {
+    background-color: #fbbd07;
+    color: white;
+}
+#modal-absent {
+    background-color: #f14a5a;
+    color: white;
+}
 
 @media only screen and (min-width: 568px) {
     .modal-content {
@@ -124,17 +138,6 @@ label.dropdown select:-moz-focusring {
 }
 label.dropdown select::-ms-expand {
     display: none;
-}
-label.dropdown:before {
-    content: '';
-    right: 5px;
-    top: -7px;
-    width: 30px;
-    height: 33px;
-    background: #f8f8f8;
-    position: absolute;
-    pointer-events: none;
-    display: block;
 }
 label.dropdown { position: relative; }
 label.dropdown:after {
