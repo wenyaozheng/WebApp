@@ -139,30 +139,51 @@ function setName(input){
     }
 }
 function printStudentList(input){
-    var i;
+    console.log(input);
+    var i, ul, li, myNode;
+    myNode = document.getElementById("generateList");
+    while (myNode.firstChild) {
+        myNode.removeChild(myNode.firstChild);
+    }
+    li = document.createElement("li");
+    li.text = "";
+    var select = document.getElementById("generateList");
+    select.appendChild(li);
     switch(input) {
         case "class_9413A":
             for (i in obj.class_9413A) {
-                output = obj.class_9413A[i].SeatNo + '&emsp;' + obj.class_9413A[i].LastName + '&emsp;' + obj.class_9413A[i].FirstName;
-                document.write( '<li>'+ output +'</li>');
+                ul = document.getElementById("generateList");
+                li = document.createElement("li");
+                output = obj.class_9413A[i].SeatNo + ' ' + obj.class_9413A[i].LastName + ' ' + obj.class_9413A[i].FirstName;
+                li.appendChild(document.createTextNode(output));
+                ul.appendChild(li);
             }
             break;
         case "class_9413B":
             for (i in obj.class_9413B) {
-                output = obj.class_9413B[i].SeatNo + '&emsp;' + obj.class_9413B[i].LastName + '&emsp;' + obj.class_9413B[i].FirstName;
-                document.write( '<li>'+ output +'</li>');
+                ul = document.getElementById("generateList");
+                li = document.createElement("li");
+                output = obj.class_9413B[i].SeatNo + ' ' + obj.class_9413B[i].LastName + ' ' + obj.class_9413B[i].FirstName;
+                li.appendChild(document.createTextNode(output));
+                ul.appendChild(li);
             }
             break;
         case "class_9414A":
             for (i in obj.class_9414A) {
-                output = obj.class_9414A[i].SeatNo + '&emsp;' + obj.class_9414A[i].LastName + '&emsp;' + obj.class_9414A[i].FirstName;
-                document.write( '<li>'+ output +'</li>');
+                ul = document.getElementById("generateList");
+                li = document.createElement("li");
+                output = obj.class_9414A[i].SeatNo + ' ' + obj.class_9414A[i].LastName + ' ' + obj.class_9414A[i].FirstName;
+                li.appendChild(document.createTextNode(output));
+                ul.appendChild(li);
             }
             break;
         case "class_9414B":
             for (i in obj.class_9414B) {
-                output = obj.class_9414B[i].SeatNo + '&emsp;' + obj.class_9414B[i].LastName + '&emsp;' + obj.class_9414B[i].FirstName;
-                document.write( '<li>'+ output +'</li>');
+                ul = document.getElementById("generateList");
+                li = document.createElement("li");
+                output = obj.class_9414B[i].SeatNo + ' ' + obj.class_9414B[i].LastName + ' ' + obj.class_9414B[i].FirstName;
+                li.appendChild(document.createTextNode(output));
+                ul.appendChild(li);
             }
             break;
         default:
