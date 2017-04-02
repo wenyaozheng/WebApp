@@ -5,11 +5,7 @@
         <link href="../css/style.css" rel="stylesheet">
         <link href="../css/navigation.css" rel="stylesheet">
 
-        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-
         <link href="../css/modal.css" rel="stylesheet">
-
-
         <script src="../js/navigation.js"></script>
 
     </head>
@@ -44,22 +40,34 @@
                 </ul>
             </div>
 
-
-            <!--<div class="col-6 col-m-9">-->
-                <!--<form name="valform" action="" method="POST">-->
-                    <!--columns: <input type="number" id="columns" value="value" /></form>-->
-                    <!--rows: <input type="number" id="rows" value="value" /></form>-->
-                <!--<input type="button" name="submit" value="Submit" onclick="clearTable();createTable(document.getElementById('columns').value,document.getElementById('rows').value);" />-->
-                <!--<canvas id="myCanvas" width="800" height="500" style="border:1px solid #000000;">-->
-                <!--</canvas>-->
-                <!--<script src="../js/canvas.js"></script>-->
-            <!--</div>-->
-
             <div class="col-8 col-m-9" id="scroll_seatPlan">
-                    <div id="subject_name" style="text-align: center"><h1 id="subject"></h1></div>
-                    <canvas id="seatPlan" onclick="DefinePaths(event)"></canvas>
-                    <script src="../js/studentCanvas.js"></script>
+                <div id="subject_name" style="text-align: center"><h1 id="subject"></h1></div>
+                <canvas id="seatPlan" onmousedown="DefinePaths(event)"></canvas>
+                <script src="../js/studentCanvas.js"></script>
 
+                <!-- The Modal for each box -->
+                <div id="box" class="modal">
+
+                    <!-- Modal content for each box -->
+                    <div class="modal-content">
+                        <div class="modal-header" id="box-Header">
+                            <span class="close">&times;</span>
+                            <h3>Seat Plan</h3>
+                        </div>
+                        <div class="modal-body">
+                            <label class="dropdown">
+                                <select id="selector">
+                                    <option></option>
+                                    <script src="../js/drop-downModal.js"></script>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="modal-footer" id="box-Footer">
+                            &emsp;
+                        </div>
+                    </div>
+                    <script src="../js/modal.js"></script>
+                </div>
             </div>
 
             <div class="col-2 col-m-5">

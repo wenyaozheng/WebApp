@@ -32,7 +32,7 @@ localStorage.setItem("testJSON", myJSON);
 text = localStorage.getItem("testJSON");
 obj = JSON.parse(text);
  for(i in obj.Classrooms) {
-    output = obj.Classrooms[i].classcode;
+    output = obj.Classrooms[i].classcode + " " + obj.Classrooms[i].subject;
      document.write( '<li id="blue">'+output+'</li>');
  }
 // console.log(output);
