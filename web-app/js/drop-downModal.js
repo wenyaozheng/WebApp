@@ -203,7 +203,6 @@ student_Obj = {
 };
 student_JSON = JSON.stringify(student_Obj);
 localStorage.setItem("listJSON", student_JSON);
-
 text = localStorage.getItem("listJSON");
 obj = JSON.parse(text);
 
