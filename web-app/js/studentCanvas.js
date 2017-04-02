@@ -58,7 +58,6 @@ var temp=1;
                     DifStyle();
             }else
                 DifStyle();
-            // b=i+a+1;
             ctx.closePath();
             ctx.fill();
             ctx.strokeText(temp+"",x+6,y+13);
@@ -94,13 +93,13 @@ function SelStyle(){
         }
     };
 }
-
 function DifStyle(){
     ctx.lineWidth= 2;
     ctx.fillStyle= "gray";
     ctx.strokeStyle= "darkblue";
 }
-function setName(input){
+function setName(){
+    var input = localStorage.getItem("classcode");
     var i;
     var e = document.getElementById("selector");
     var strUser = e.options[e.selectedIndex].value;
@@ -139,14 +138,36 @@ function setName(input){
         }
     }
 }
-
-function printStudentList(input){
+var input = localStorage.getItem("classcode");
+function printStudentList(){
     var i;
-    if(input == 'class_9413A') {
-        for (i in obj.class_9413A) {
-            output = obj.class_9413A[i].SeatNo + '&emsp;' + obj.class_9413A[i].LastName + '&emsp;' + obj.class_9413A[i].FirstName;
-            document.write( '<li>'+ output +'</li>');
-        }
+    switch(input) {
+        case "class_9413A":
+            for (i in obj.class_9413A) {
+                output = obj.class_9413A[i].SeatNo + '&emsp;' + obj.class_9413A[i].LastName + '&emsp;' + obj.class_9413A[i].FirstName;
+                document.write( '<li>'+ output +'</li>');
+            }
+            break;
+        case "class_9413B":
+            for (i in obj.class_9413B) {
+                output = obj.class_9413B[i].SeatNo + '&emsp;' + obj.class_9413B[i].LastName + '&emsp;' + obj.class_9413B[i].FirstName;
+                document.write( '<li>'+ output +'</li>');
+            }
+            break;
+        case "class_9414A":
+            for (i in obj.class_9414A) {
+                output = obj.class_9414A[i].SeatNo + '&emsp;' + obj.class_9414A[i].LastName + '&emsp;' + obj.class_9414A[i].FirstName;
+                document.write( '<li>'+ output +'</li>');
+            }
+            break;
+        case "class_9414B":
+            for (i in obj.class_9414B) {
+                output = obj.class_9414B[i].SeatNo + '&emsp;' + obj.class_9414B[i].LastName + '&emsp;' + obj.class_9414B[i].FirstName;
+                document.write( '<li>'+ output +'</li>');
+            }
+            break;
+        default:
+            console.log("error");
     }
 }
 
