@@ -85,25 +85,56 @@ function DifStyle(){
     ctx.fillStyle= "gray";
     ctx.strokeStyle= "darkblue";
 }
-function setName(){
+function setName(input){
     var i;
     var e = document.getElementById("selector");
     var strUser = e.options[e.selectedIndex].value;
-    for(i in obj.class_9413A) {
-        if(obj.class_9413A[i].IDNo==strUser){
-             obj.class_9413A[i].SeatNo=set+'';
-            console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-             console.log( obj.class_9413A[i].SeatNo);
+
+    if (input == "class_9413A") {
+        for(i in obj.class_9413A) {
+            if(obj.class_9413A[i].IDNo==strUser){
+                obj.class_9413A[i].SeatNo=set+'';
+                console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                console.log( obj.class_9413A[i].SeatNo);
+            }
+        }
+    } else if (input == "class_9413B") {
+        for(i in obj.class_9413B) {
+            if(obj.class_9413B[i].IDNo==strUser){
+                obj.class_9413B[i].SeatNo=set+'';
+                console.log(obj.class_9413B[i].LastName+ " " + obj.class_9413B[i].FirstName);
+                console.log( obj.class_9413B[i].SeatNo);
+            }
+        }
+    } else if (input == "class_9414A") {
+        for(i in obj.class_9414A) {
+            if(obj.class_9414A[i].IDNo==strUser){
+                obj.class_9414A[i].SeatNo=set+'';
+                console.log(obj.class_9414A[i].LastName+ " " + obj.class_9414A[i].FirstName);
+                console.log( obj.class_9414A[i].SeatNo);
+            }
+        }
+    } else if (input == "class_9414B") {
+        for(i in obj.class_9414B) {
+            if(obj.class_9414B[i].IDNo==strUser){
+                obj.class_9414B[i].SeatNo=set+'';
+                console.log(obj.class_9414B[i].LastName+ " " + obj.class_9414B[i].FirstName);
+                console.log( obj.class_9414B[i].SeatNo);
+            }
         }
     }
-    // return strUser;
+    printStudentList(input);
 }
 
-function printStudentList(){
+function printStudentList(input){
+
     var i;
-    for(i in obj.class_9413A) {
-        output = obj.class_9413A[i].SeatNo + " "+obj.class_9413A[i].LastName + " " + obj.class_9413A[i].FirstName;
-        document.writeln(output);
+
+    if(input == 'class_9413A') {
+        for (i in obj.class_9413A) {
+            output = obj.class_9413A[i].SeatNo + '&emsp;' + obj.class_9413A[i].LastName + '&emsp;' + obj.class_9413A[i].FirstName;
+            document.write( '<li>'+ output +'</li>');
+        }
     }
 }
 
