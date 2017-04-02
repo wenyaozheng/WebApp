@@ -5,10 +5,11 @@ var text, obj, i;
 
 text = localStorage.getItem("listJSON");
 obj = JSON.parse(text);
+var input = "";
+input = localStorage.getItem("classcode");
 
 function dropDown() {
-    var input = ""
-    input = localStorage.getItem("classcode");
+
     switch(input) {
         case "class_9413A":
             for(i in obj.class_9413A) {

@@ -76,7 +76,6 @@ function IsInPath(event) {
 
     return ctx.isPointInPath(x,y);
 }
-
 function SelStyle(){
     ctx.lineWidth= 2;
     ctx.strokeStyle= "brown";
@@ -99,8 +98,8 @@ function DifStyle(){
     ctx.fillStyle= "gray";
     ctx.strokeStyle= "darkblue";
 }
-function setName(){
-    var input = localStorage.getItem("classcode");
+
+function setName(input){
     var i;
     var e = document.getElementById("selector");
     var strUser = e.options[e.selectedIndex].value;
@@ -139,8 +138,7 @@ function setName(){
         }
     }
 }
-var input = localStorage.getItem("classcode");
-function printStudentList(){
+function printStudentList(input){
     var i;
     switch(input) {
         case "class_9413A":
