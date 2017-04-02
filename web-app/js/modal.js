@@ -7,7 +7,7 @@ function fModal(click) {
         var btn = document.getElementById("myBtn");
 
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[1];
+        var span = document.getElementsByClassName("close")[0];
     } else if (click == "lateBtn") {
         // Get the modal
         var modal = document.getElementById("lateModal");
