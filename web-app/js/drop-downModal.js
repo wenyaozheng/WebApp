@@ -3,7 +3,7 @@
  */
 var text, obj, i;
 
-text = localStorage.getItem("listJSON");
+text = localStorage.getItem("classListJSON");
 obj = JSON.parse(text);
 var input = "";
 var write = "";

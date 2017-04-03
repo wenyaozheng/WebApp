@@ -1,0 +1,26 @@
+CACHE MANIFEST
+# version 7
+# This is a comment
+CACHE:
+index.html
+
+css/style.css
+css/login.css
+css/navigation.css
+css/modal.css
+
+js/classcodes.js
+js/drop-downModal.js
+js/login.js
+js/modal.js
+js/navigation.js
+js/show_list.js
+js/studentCanvas.js
+
+json/Class_List.js
+json/Classroom_List.js
+json/Users_List.js
+json/temp.js
+
+NETWORK:
+*

@@ -5,7 +5,13 @@ function temp_classcode(input){
     window.localStorage.removeItem("classcode");
     localStorage.setItem("classcode", input);
     console.log(input);
-    CreateTableFromJSON(input);
+    colorScheme(input);
     dropDown(input);
     printStudentList(input);
+}
+
+function storeData(){
+    usersListData();
+    classroomsListData();
+    studentListData();
 }

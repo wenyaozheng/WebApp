@@ -1,4 +1,4 @@
-function CreateTableFromJSON(input) {
+function colorScheme(input) {
     var blue = "#33b1e1";
     var purple = "#c35ed0";
     var green = "#11b82b";
