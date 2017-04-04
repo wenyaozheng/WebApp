@@ -81,7 +81,15 @@ function SelStyle(){
     ctx.strokeStyle= "brown";
     ctx.fillStyle= "cyan";
 
-    var modal = document.getElementById("box");
+    modal('box');
+}
+function DifStyle(){
+    ctx.lineWidth= 2;
+    ctx.fillStyle= "gray";
+    ctx.strokeStyle= "darkblue";
+}
+function  modal(input) {
+    var modal = document.getElementById(input);
     var span = document.getElementsByClassName("close")[0];
     modal.style.display = "block";
     span.onclick = function () {
@@ -93,12 +101,6 @@ function SelStyle(){
         }
     };
 }
-function DifStyle(){
-    ctx.lineWidth= 2;
-    ctx.fillStyle= "gray";
-    ctx.strokeStyle= "darkblue";
-}
-
 function setName(){
     var input = localStorage.getItem('classcode');
     var i;
@@ -114,6 +116,7 @@ function setName(){
                     localStorage.removeItem("classListJSON");
 
                     localStorage.setItem("classListJSON",JSON.stringify(obj));
+
                 }
             }
             break;
@@ -170,7 +173,7 @@ function printStudentList(input){
             for (i in obj.class_9413A) {
                 ul = document.getElementById("generateList");
                 li = document.createElement("li");
-                output = obj.class_9413A[i].SeatNo + ' ' + obj.class_9413A[i].LastName + ' ' + obj.class_9413A[i].FirstName;
+                output = obj.class_9413A[i].SeatNo + ' ' + obj.class_9413A[i].LastName + ', ' + obj.class_9413A[i].FirstName;
                 li.appendChild(document.createTextNode(output));
                 ul.appendChild(li);
             }
@@ -179,7 +182,7 @@ function printStudentList(input){
             for (i in obj.class_9413B) {
                 ul = document.getElementById("generateList");
                 li = document.createElement("li");
-                output = obj.class_9413B[i].SeatNo + ' ' + obj.class_9413B[i].LastName + ' ' + obj.class_9413B[i].FirstName;
+                output = obj.class_9413B[i].SeatNo + ' ' + obj.class_9413B[i].LastName + ', ' + obj.class_9413B[i].FirstName;
                 li.appendChild(document.createTextNode(output));
                 ul.appendChild(li);
             }
@@ -188,7 +191,7 @@ function printStudentList(input){
             for (i in obj.class_9414A) {
                 ul = document.getElementById("generateList");
                 li = document.createElement("li");
-                output = obj.class_9414A[i].SeatNo + ' ' + obj.class_9414A[i].LastName + ' ' + obj.class_9414A[i].FirstName;
+                output = obj.class_9414A[i].SeatNo + ' ' + obj.class_9414A[i].LastName + ', ' + obj.class_9414A[i].FirstName;
                 li.appendChild(document.createTextNode(output));
                 ul.appendChild(li);
             }
@@ -197,7 +200,7 @@ function printStudentList(input){
             for (i in obj.class_9414B) {
                 ul = document.getElementById("generateList");
                 li = document.createElement("li");
-                output = obj.class_9414B[i].SeatNo + ' ' + obj.class_9414B[i].LastName + ' ' + obj.class_9414B[i].FirstName;
+                output = obj.class_9414B[i].SeatNo + ' ' + obj.class_9414B[i].LastName + ', ' + obj.class_9414B[i].FirstName;
                 li.appendChild(document.createTextNode(output));
                 ul.appendChild(li);
             }
@@ -206,6 +209,8 @@ function printStudentList(input){
             console.log("error");
     }
 }
+
+
 
 
 

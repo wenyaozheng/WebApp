@@ -24,7 +24,7 @@ function dropDown(input) {
     switch(input) {
         case "class_9413A":
             for(i in obj.class_9413A) {
-                output = obj.class_9413A[i].LastName + " " + obj.class_9413A[i].FirstName;
+                output = obj.class_9413A[i].LastName + ", " + obj.class_9413A[i].FirstName;
                 option = document.createElement("option");
                 option.text = output;
                 option.value = ""+obj.class_9413A[i].IDNo;
@@ -34,7 +34,7 @@ function dropDown(input) {
             break;
         case "class_9413B":
             for(i in obj.class_9413B) {
-                output = obj.class_9413B[i].LastName + " " + obj.class_9413B[i].FirstName;
+                output = obj.class_9413B[i].LastName + ", " + obj.class_9413B[i].FirstName;
                 option = document.createElement("option");
                 option.text = output;
                 option.value = ""+obj.class_9413B[i].IDNo;
@@ -44,7 +44,7 @@ function dropDown(input) {
             break;
         case "class_9414A":
             for(i in obj.class_9414A) {
-                output = obj.class_9414A[i].LastName + " " + obj.class_9414A[i].FirstName;
+                output = obj.class_9414A[i].LastName + ", " + obj.class_9414A[i].FirstName;
                option = document.createElement("option");
                 option.text = output;
                 option.value = ""+obj.class_9414A[i].IDNo;
@@ -54,7 +54,7 @@ function dropDown(input) {
             break;
         case "class_9414B":
             for(i in obj.class_9414B) {
-                output = obj.class_9414B[i].LastName + " " + obj.class_9414B[i].FirstName;
+                output = obj.class_9414B[i].LastName + ", " + obj.class_9414B[i].FirstName;
                 option = document.createElement("option");
                 option.text = output;
                 option.value = ""+obj.class_9414B[i].IDNo;
