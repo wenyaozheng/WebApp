@@ -111,6 +111,10 @@ function setName(){
                     obj.class_9413A[i].SeatNo=set+'';
                     console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
                     console.log( obj.class_9413A[i].SeatNo);
+
+                    var asd = localStorage.getItem("listJSON");
+                    var object = JSON.parse(asd);
+                    localStorage.setItem("classListJSON",object);
                 }
             }
             break;
@@ -120,6 +124,10 @@ function setName(){
                     obj.class_9413B[i].SeatNo=set+'';
                     console.log(obj.class_9413B[i].LastName+ " " + obj.class_9413B[i].FirstName);
                     console.log( obj.class_9413B[i].SeatNo);
+
+                    var asd = localStorage.getItem("listJSON");
+                    var object = JSON.parse(asd);
+                    localStorage.setItem("classListJSON",object);
                 }
             }
             break;
@@ -129,6 +137,10 @@ function setName(){
                     obj.class_9414A[i].SeatNo=set+'';
                     console.log(obj.class_9414A[i].LastName+ " " + obj.class_9414A[i].FirstName);
                     console.log( obj.class_9414A[i].SeatNo);
+
+                    var asd = localStorage.getItem("listJSON");
+                    var object = JSON.parse(asd);
+                    localStorage.setItem("classListJSON",object);
                 }
             }
             break;
@@ -138,6 +150,10 @@ function setName(){
                     obj.class_9414B[i].SeatNo=set+'';
                     console.log(obj.class_9414B[i].LastName+ " " + obj.class_9414B[i].FirstName);
                     console.log( obj.class_9414B[i].SeatNo);
+
+                    var asd = localStorage.getItem("listJSON");
+                    var object = JSON.parse(asd);
+                    localStorage.setItem("classListJSON",object);
                 }
             }
             break;

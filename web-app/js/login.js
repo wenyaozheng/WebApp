@@ -18,7 +18,9 @@ function validate(){
     for(i in obj.Users) {
         if (username == obj.Users[i].username && password == obj.Users[i].password) {
             window.location.href = 'pages/home.html';
+            // getData();
             alert("Login successfully");
+
             // Redirecting to other page.
             return false;
         }
@@ -37,3 +39,18 @@ function validate(){
     alert("Invalid username or password;");
     return false;
 }
+
+// function getData(){
+//     var xmlhttp = new XMLHttpRequest();
+//     var url = "Classroom.json";
+//     xmlhttp.open("GET", url, true);
+//     xmlhttp.onreadystatechange = function() {
+//         if (this.readyState == 4 && this.status == 200) {
+//             var myArr = JSON.parse(this.responseText);
+//             console.log(myArr);
+//         }
+//     };
+//
+//
+//     xmlhttp.send();
+// }

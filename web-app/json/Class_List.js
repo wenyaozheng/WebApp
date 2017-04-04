@@ -27,66 +27,78 @@ function studentListData() {
             {
                 "IDNo": "SAMPLE",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             },
             {
                 "IDNo": "2150000",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             },
             {
                 "IDNo": "...",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             }
         ],
         "class_9414A": [
             {
                 "IDNo": "SAMPLE",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             },
             {
                 "IDNo": "2150000",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             },
             {
                 "IDNo": "...",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             },
             {
                 "IDNo": "...",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             }
         ],
         "class_9414B": [
             {
                 "IDNo": "SAMPLE",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             },
             {
                 "IDNo": "2150000",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             },
             {
                 "IDNo": "...",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             },
             {
                 "IDNo": "...",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             },
             {
                 "IDNo": "...",
                 "LastName": "...",
-                "FirstName": "..."
+                "FirstName": "...",
+                "SeatNo": ""
             }
         ]
     };
