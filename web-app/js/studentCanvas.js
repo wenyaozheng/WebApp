@@ -108,36 +108,45 @@ function setName(){
         case "class_9413A":
             for(i in obj.class_9413A) {
                 if(obj.class_9413A[i].IDNo==strUser){
-                    obj.class_9413A[i].SeatNo=set+'';
+                    obj.class_9413A[i].SeatNo=set;
                     console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
                     console.log( obj.class_9413A[i].SeatNo);
+                    localStorage.removeItem("classListJSON");
+
+                    localStorage.setItem("classListJSON",JSON.stringify(obj));
                 }
             }
             break;
         case "class_9413B":
             for(i in obj.class_9413B) {
                 if(obj.class_9413B[i].IDNo==strUser){
-                    obj.class_9413B[i].SeatNo=set+'';
+                    obj.class_9413B[i].SeatNo=set;
                     console.log(obj.class_9413B[i].LastName+ " " + obj.class_9413B[i].FirstName);
                     console.log( obj.class_9413B[i].SeatNo);
+                    localStorage.removeItem("classListJSON");
+                    localStorage.setItem("classListJSON",JSON.stringify(obj));
                 }
             }
             break;
         case "class_9414A":
             for(i in obj.class_9414A) {
                 if(obj.class_9414A[i].IDNo==strUser){
-                    obj.class_9414A[i].SeatNo=set+'';
+                    obj.class_9414A[i].SeatNo=set;
                     console.log(obj.class_9414A[i].LastName+ " " + obj.class_9414A[i].FirstName);
                     console.log( obj.class_9414A[i].SeatNo);
+                    localStorage.removeItem("classListJSON");
+                    localStorage.setItem("classListJSON",JSON.stringify(obj));
                 }
             }
             break;
         case "class_9414B":
             for(i in obj.class_9414B) {
                 if(obj.class_9414B[i].IDNo==strUser){
-                    obj.class_9414B[i].SeatNo=set+'';
+                    obj.class_9414B[i].SeatNo=set;
                     console.log(obj.class_9414B[i].LastName+ " " + obj.class_9414B[i].FirstName);
                     console.log( obj.class_9414B[i].SeatNo);
+                    localStorage.removeItem("classListJSON");
+                    localStorage.setItem("classListJSON",JSON.stringify(obj));
                 }
             }
             break;
