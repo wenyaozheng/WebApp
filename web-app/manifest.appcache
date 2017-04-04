@@ -4,6 +4,9 @@ CACHE MANIFEST
 CACHE:
 index.html
 
+pages/home.html
+pages/classcode.html
+
 css/style.css
 css/login.css
 css/navigation.css
@@ -22,5 +25,13 @@ json/Classroom_List.js
 json/Users_List.js
 json/temp.js
 
-NETWORK:
-*
+images/icon.png
+images/icons/glyphicons-4-user.png
+images/icons/glyphicons-137-cogwheel.png
+images/icons/glyphicons-82-refresh.png
+images/icons/glyphicons-281-settings.png
+images/icons/glyphicons-197-exclamation-sign.png
+images/icons/glyphicons-82-refresh.png
+images/icons/glyphicons-195-question-sign.png
+images/icons/glyphicons-388-log-out.png
+

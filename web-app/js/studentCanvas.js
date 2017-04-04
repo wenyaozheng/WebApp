@@ -81,7 +81,15 @@ function SelStyle(){
     ctx.strokeStyle= "brown";
     ctx.fillStyle= "cyan";
 
-    var modal = document.getElementById("box");
+    modal('box');
+}
+function DifStyle(){
+    ctx.lineWidth= 2;
+    ctx.fillStyle= "gray";
+    ctx.strokeStyle= "darkblue";
+}
+function  modal(input) {
+    var modal = document.getElementById(input);
     var span = document.getElementsByClassName("close")[0];
     modal.style.display = "block";
     span.onclick = function () {
@@ -93,12 +101,6 @@ function SelStyle(){
         }
     };
 }
-function DifStyle(){
-    ctx.lineWidth= 2;
-    ctx.fillStyle= "gray";
-    ctx.strokeStyle= "darkblue";
-}
-
 function setName(){
     var input = localStorage.getItem('classcode');
     var i;
@@ -213,6 +215,8 @@ function printStudentList(input){
             console.log("error");
     }
 }
+fucntion
+
 
 
 
