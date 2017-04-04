@@ -111,7 +111,7 @@ function setName(){
             for(i in obj.class_9413A) {
                 if(obj.class_9413A[i].IDNo==strUser){
                     obj.class_9413A[i].SeatNo=set+'';
-                    console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                    console.log(obj.class_9413A[i].LastName+ ", " + obj.class_9413A[i].FirstName);
                     console.log( obj.class_9413A[i].SeatNo);
 
                     var asd = localStorage.getItem("listJSON");
@@ -124,7 +124,7 @@ function setName(){
             for(i in obj.class_9413B) {
                 if(obj.class_9413B[i].IDNo==strUser){
                     obj.class_9413B[i].SeatNo=set+'';
-                    console.log(obj.class_9413B[i].LastName+ " " + obj.class_9413B[i].FirstName);
+                    console.log(obj.class_9413B[i].LastName+ ", " + obj.class_9413B[i].FirstName);
                     console.log( obj.class_9413B[i].SeatNo);
 
                     var asd = localStorage.getItem("listJSON");
@@ -137,7 +137,7 @@ function setName(){
             for(i in obj.class_9414A) {
                 if(obj.class_9414A[i].IDNo==strUser){
                     obj.class_9414A[i].SeatNo=set+'';
-                    console.log(obj.class_9414A[i].LastName+ " " + obj.class_9414A[i].FirstName);
+                    console.log(obj.class_9414A[i].LastName+ ", " + obj.class_9414A[i].FirstName);
                     console.log( obj.class_9414A[i].SeatNo);
 
                     var asd = localStorage.getItem("listJSON");
@@ -150,7 +150,7 @@ function setName(){
             for(i in obj.class_9414B) {
                 if(obj.class_9414B[i].IDNo==strUser){
                     obj.class_9414B[i].SeatNo=set+'';
-                    console.log(obj.class_9414B[i].LastName+ " " + obj.class_9414B[i].FirstName);
+                    console.log(obj.class_9414B[i].LastName+ ", " + obj.class_9414B[i].FirstName);
                     console.log( obj.class_9414B[i].SeatNo);
 
                     var asd = localStorage.getItem("listJSON");
@@ -179,7 +179,7 @@ function printStudentList(input){
             for (i in obj.class_9413A) {
                 ul = document.getElementById("generateList");
                 li = document.createElement("li");
-                output = obj.class_9413A[i].SeatNo + ' ' + obj.class_9413A[i].LastName + ' ' + obj.class_9413A[i].FirstName;
+                output = obj.class_9413A[i].SeatNo + ' ' + obj.class_9413A[i].LastName + ', ' + obj.class_9413A[i].FirstName;
                 li.appendChild(document.createTextNode(output));
                 ul.appendChild(li);
             }
@@ -188,7 +188,7 @@ function printStudentList(input){
             for (i in obj.class_9413B) {
                 ul = document.getElementById("generateList");
                 li = document.createElement("li");
-                output = obj.class_9413B[i].SeatNo + ' ' + obj.class_9413B[i].LastName + ' ' + obj.class_9413B[i].FirstName;
+                output = obj.class_9413B[i].SeatNo + ' ' + obj.class_9413B[i].LastName + ', ' + obj.class_9413B[i].FirstName;
                 li.appendChild(document.createTextNode(output));
                 ul.appendChild(li);
             }
@@ -197,7 +197,7 @@ function printStudentList(input){
             for (i in obj.class_9414A) {
                 ul = document.getElementById("generateList");
                 li = document.createElement("li");
-                output = obj.class_9414A[i].SeatNo + ' ' + obj.class_9414A[i].LastName + ' ' + obj.class_9414A[i].FirstName;
+                output = obj.class_9414A[i].SeatNo + ' ' + obj.class_9414A[i].LastName + ', ' + obj.class_9414A[i].FirstName;
                 li.appendChild(document.createTextNode(output));
                 ul.appendChild(li);
             }
@@ -206,7 +206,7 @@ function printStudentList(input){
             for (i in obj.class_9414B) {
                 ul = document.getElementById("generateList");
                 li = document.createElement("li");
-                output = obj.class_9414B[i].SeatNo + ' ' + obj.class_9414B[i].LastName + ' ' + obj.class_9414B[i].FirstName;
+                output = obj.class_9414B[i].SeatNo + ' ' + obj.class_9414B[i].LastName + ', ' + obj.class_9414B[i].FirstName;
                 li.appendChild(document.createTextNode(output));
                 ul.appendChild(li);
             }
