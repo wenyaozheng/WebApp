@@ -8,199 +8,529 @@ function studentListData() {
                "IDNo": "2153240",
                "LastName": "Alcaide",
                "FirstName": "Arvince",
-			   "SeatNo": ""
+			   "SeatNo": "",
+               "Late": [
+                   {
+                       "Date":""
+                   }
+               ],
+               "Absent": [
+                   {
+                       "Date":""
+                   }
+               ]
            },
             {
                "IDNo": "2151666",
                "LastName": "Andawi",
                "FirstName": "Mark",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152201",
                "LastName": "Bayote",
                "FirstName": "Russel",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2154396",
                "LastName": "Benitez",
                "FirstName": "Jinci",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2156179",
                "LastName": "Bobadilla",
                "FirstName": "Karl",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2116832",
                "LastName": "Cooper",
                "FirstName": "Colvin",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153578",
                "LastName": "Cruz",
                "FirstName": "Dwight",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152598",
                "LastName": "Culbengan",
                "FirstName": "Denver",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153797",
                "LastName": "De Guzman",
                "FirstName": "Ryan",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152430",
                "LastName": "Dela Rosa",
                "FirstName": "Mon",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2156749",
                "LastName": "Diaz",
                "FirstName": "Stephen",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152195",
                "LastName": "Gagelonia",
                "FirstName": "Jenmar",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2151796",
                "LastName": "Garcia",
                "FirstName": "Jay",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2143111",
                "LastName": "Garcia",
                "FirstName": "Mark",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150218",
                "LastName": "Genove",
                "FirstName": "Sean",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150506",
                "LastName": "Laban",
                "FirstName": "Joshua",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153777",
                "LastName": "Luna",
                "FirstName": "Jaryd",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2103929",
                "LastName": "Madayag",
                "FirstName": "Raoul",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152818",
                "LastName": "Manaois",
                "FirstName": "Von",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153124",
                "LastName": "Pimentel",
                "FirstName": "Jeremiah",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2135211",
                "LastName": "Sam",
                "FirstName": "Paul",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2157015",
                "LastName": "Sanchez",
                "FirstName": "Daiben",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2158213",
                "LastName": "Siiten",
                "FirstName": "Francis",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153948",
                "LastName": "Suarez",
                "FirstName": "Benedict",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153357",
                "LastName": "Valdez",
                "FirstName": "Raphael",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "213455",
                "LastName": "Zipagan",
                "FirstName": "Jerome",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2154290",
                "LastName": "Calmerin",
                "FirstName": "Kathleen",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2155739",
                "LastName": "Castro",
                "FirstName": "Glyza",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152834",
                "LastName": "Centino",
                "FirstName": "Sarah",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150428",
                "LastName": "Fama",
                "FirstName": "Charlene",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153674",
                "LastName": "Leonen",
                "FirstName": "Aerhielle",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2156133",
                "LastName": "Macario",
                "FirstName": "Maricris",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2154439",
                "LastName": "Marinas",
                "FirstName": "Phebe",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2155912",
@@ -212,13 +542,33 @@ function studentListData() {
                "IDNo": "2155690",
                "LastName": "Sanidad",
                "FirstName": "Stephanie",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150065",
                "LastName": "Zheng",
                "FirstName": "Anne",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150084",
@@ -233,163 +583,433 @@ function studentListData() {
                "IDNo": "2154396",
                "LastName": "Benitez",
                "FirstName": "Jinci",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2156179",
                "LastName": "Bobadilla",
                "FirstName": "Karl",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2116832",
                "LastName": "Cooper",
                "FirstName": "Colvin",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153578",
                "LastName": "Cruz",
                "FirstName": "Dwight",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152598",
                "LastName": "Culbengan",
                "FirstName": "Denver",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153797",
                "LastName": "De Guzman",
                "FirstName": "Ryan",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152430",
                "LastName": "Dela Rosa",
                "FirstName": "Mon",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2143111",
                "LastName": "Garcia",
                "FirstName": "Mark",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150218",
                "LastName": "Genove",
                "FirstName": "Sean",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150506",
                "LastName": "Laban",
                "FirstName": "Joshua",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153777",
                "LastName": "Luna",
                "FirstName": "Jaryd",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2103929",
                "LastName": "Madayag",
                "FirstName": "Raoul",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152818",
                "LastName": "Manaois",
                "FirstName": "Von",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153124",
                "LastName": "Pimentel",
                "FirstName": "Jeremiah",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2135211",
                "LastName": "Sam",
                "FirstName": "Paul",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2157015",
                "LastName": "Sanchez",
                "FirstName": "Daiben",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2158213",
                "LastName": "Siiten",
                "FirstName": "Francis",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153948",
                "LastName": "Suarez",
                "FirstName": "Benedict",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153357",
                "LastName": "Valdez",
                "FirstName": "Raphael",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "213455",
                "LastName": "Zipagan",
                "FirstName": "Jerome",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2154290",
                "LastName": "Calmerin",
                "FirstName": "Kathleen",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2155739",
                "LastName": "Castro",
                "FirstName": "Glyza",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152834",
                "LastName": "Centino",
                "FirstName": "Sarah",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150428",
                "LastName": "Fama",
                "FirstName": "Charlene",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2155912",
                "LastName": "Ragay",
                "FirstName": "claudine",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2155690",
                "LastName": "Sanidad",
                "FirstName": "Stephanie",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150065",
                "LastName": "Zheng",
                "FirstName": "Anne",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            }
         ],
         "class_9414A": [
@@ -397,163 +1017,433 @@ function studentListData() {
                "IDNo": "2152201",
                "LastName": "Bayote",
                "FirstName": "Russel",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2154396",
                "LastName": "Benitez",
                "FirstName": "Jinci",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2156179",
                "LastName": "Bobadilla",
                "FirstName": "Karl",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2116832",
                "LastName": "Cooper",
                "FirstName": "Colvin",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153578",
                "LastName": "Cruz",
                "FirstName": "Dwight",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152598",
                "LastName": "Culbengan",
                "FirstName": "Denver",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153797",
                "LastName": "De Guzman",
                "FirstName": "Ryan",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152430",
                "LastName": "Dela Rosa",
                "FirstName": "Mon",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2156749",
                "LastName": "Diaz",
                "FirstName": "Stephen",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152195",
                "LastName": "Gagelonia",
                "FirstName": "Jenmar",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2151796",
                "LastName": "Garcia",
                "FirstName": "Jay",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152818",
                "LastName": "Manaois",
                "FirstName": "Von",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153124",
                "LastName": "Pimentel",
                "FirstName": "Jeremiah",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2135211",
                "LastName": "Sam",
                "FirstName": "Paul",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2157015",
                "LastName": "Sanchez",
                "FirstName": "Daiben",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2158213",
                "LastName": "Siiten",
                "FirstName": "Francis",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153948",
                "LastName": "Suarez",
                "FirstName": "Benedict",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153357",
                "LastName": "Valdez",
                "FirstName": "Raphael",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "213455",
                "LastName": "Zipagan",
                "FirstName": "Jerome",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2154290",
                "LastName": "Calmerin",
                "FirstName": "Kathleen",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2155739",
                "LastName": "Castro",
                "FirstName": "Glyza",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152834",
                "LastName": "Centino",
                "FirstName": "Sarah",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150428",
                "LastName": "Fama",
                "FirstName": "Charlene",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153674",
                "LastName": "Leonen",
                "FirstName": "Aerhielle",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2155690",
                "LastName": "Sanidad",
                "FirstName": "Stephanie",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150065",
                "LastName": "Zheng",
                "FirstName": "Anne",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150084",
                "LastName": "Zheng",
                "FirstName": "Jane",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            }
         ],
         "class_9414B": [
@@ -561,187 +1451,497 @@ function studentListData() {
                "IDNo": "2151666",
                "LastName": "Andawi",
                "FirstName": "Mark",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152201",
                "LastName": "Bayote",
                "FirstName": "Russel",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2154396",
                "LastName": "Benitez",
                "FirstName": "Jinci",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2156179",
                "LastName": "Bobadilla",
                "FirstName": "Karl",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2116832",
                "LastName": "Cooper",
                "FirstName": "Colvin",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153578",
                "LastName": "Cruz",
                "FirstName": "Dwight",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152598",
                "LastName": "Culbengan",
                "FirstName": "Denver",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153797",
                "LastName": "De Guzman",
                "FirstName": "Ryan",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152430",
                "LastName": "Dela Rosa",
                "FirstName": "Mon",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2156749",
                "LastName": "Diaz",
                "FirstName": "Stephen",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152195",
                "LastName": "Gagelonia",
                "FirstName": "Jenmar",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2151796",
                "LastName": "Garcia",
                "FirstName": "Jay",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2143111",
                "LastName": "Garcia",
                "FirstName": "Mark",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150218",
                "LastName": "Genove",
                "FirstName": "Sean",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150506",
                "LastName": "Laban",
                "FirstName": "Joshua",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153777",
                "LastName": "Luna",
                "FirstName": "Jaryd",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2103929",
                "LastName": "Madayag",
                "FirstName": "Raoul",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152818",
                "LastName": "Manaois",
                "FirstName": "Von",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153124",
                "LastName": "Pimentel",
                "FirstName": "Jeremiah",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2135211",
                "LastName": "Sam",
                "FirstName": "Paul",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2157015",
                "LastName": "Sanchez",
                "FirstName": "Daiben",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "213455",
                "LastName": "Zipagan",
                "FirstName": "Jerome",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2154290",
                "LastName": "Calmerin",
                "FirstName": "Kathleen",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2155739",
                "LastName": "Castro",
                "FirstName": "Glyza",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2152834",
                "LastName": "Centino",
                "FirstName": "Sarah",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150428",
                "LastName": "Fama",
                "FirstName": "Charlene",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2153674",
                "LastName": "Leonen",
                "FirstName": "Aerhielle",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2156133",
                "LastName": "Macario",
                "FirstName": "Maricris",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2154439",
                "LastName": "Marinas",
                "FirstName": "Phebe",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2155912",
                "LastName": "Ragay",
                "FirstName": "claudine",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            },
             {
                "IDNo": "2150084",
                "LastName": "Zheng",
                "FirstName": "Jane",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    {
+                        "Date":""
+                    }
+                ],
+                "Absent": [
+                    {
+                        "Date":""
+                    }
+                ]
            }
         ]
     };
