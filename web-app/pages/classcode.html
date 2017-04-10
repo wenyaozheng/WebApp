@@ -47,9 +47,12 @@
             </div>
 
             <div class="col-8 col-m-9" id="scroll_seatPlan">
+
+                <script src="../js/modal.js"></script>
+
                 <div id="subject_name" style="text-align: center"><h1 id="subject"></h1></div>
                 <canvas id="seatPlan" onmousedown="DefinePaths(event)"></canvas>
-                <script src="../js/studentCanvas.js"></script>
+                <!--<canvas id="seatPlan_lab" onmousedown="DefinePaths(event)"></canvas>-->
 
                 <!-- The Modal for each box -->
                 <div id="box" class="modal">
@@ -86,6 +89,7 @@
                             <h3>Seat Plan</h3>
                         </div>
                         <div class="modal-body">
+
                             <button class="modal-button" id="modal-late">Late</button>
                             <button class="modal-button" id="modal-absent">Absent</button>
                         </div>
@@ -115,17 +119,16 @@
                         <div class="modal-body">
                             <div id="showStudentList">
                                 <ul id="generateList" style="list-style: none; color: black; text-align: left; font-size: larger">
+                                    <script src="../js/studentCanvas.js"></script>
                                     <script>printStudentList();</script>
                                 </ul>
-
                             </div>
                         </div>
-                        <script src="../js/show_list.js"></script>
+                        <script src="../js/color_scheme.js"></script>
                         <div class="modal-footer" id="studList-modalFooter">
                             &emsp;
                         </div>
                     </div>
-                    <script src="../js/modal.js"></script>
                 </div>
 
                 <!-- The Modal for Late Students -->
@@ -140,12 +143,11 @@
                         <div class="modal-body">
                             <div id="showLateStudent">HAHAHAH LATE</div>
                         </div>
-                        <script src="../js/show_list.js"></script>
+                        <script src="../js/color_scheme.js"></script>
                         <div class="modal-footer" id="late-modalFooter">
                             &emsp;
                         </div>
                     </div>
-                    <script src="../js/modal.js"></script>
                 </div>
 
                 <!-- The Modal for Absent Students -->
@@ -160,12 +162,12 @@
                         <div class="modal-body">
                             <div id="showabsentStudent">HAHAHAH ABSENT</div>
                         </div>
-                        <script src="../js/show_list.js"></script>
+                        <script src="../js/color_scheme.js"></script>
                         <div class="modal-footer" id="absent-modalFooter">
                             &emsp;
                         </div>
                     </div>
-                    <script src="../js/modal.js"></script>
+
                 </div>
             </div>
         </div>
