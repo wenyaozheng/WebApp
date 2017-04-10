@@ -7,10 +7,11 @@ obj = JSON.parse(text);
 var cnv = document.getElementById("seatPlan");
 var ctx =cnv.getContext("2d");
 var deg = Math.PI/180;
-console.log(obj);
+// console.log(obj);
 DefinePaths(null);
-
+var boxcolor=[];
 function DefinePaths(event){
+
     var temp=1;
     var asd;
     for (var x = 10, i = 0; i < 5; x += 25, i++) {
@@ -19,19 +20,37 @@ function DefinePaths(event){
             ctx.rect(x, y, 20, 20);
             if (event!=null){
                 if (IsInPath(event)) {
-                    SelStyle();
                     set=temp;
                     for(asd in obj.class_9413A) {
-                        if(obj.class_9413A[i].SeatNo==temp){
-                            console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-                            console.log( obj.class_9413A[i].SeatNo);
+                        if(obj.class_9413A[asd].SeatNo==temp){
+                            SelStyle2();
+                            // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
+                            // console.log( obj.class_9413A[asd].SeatNo);
+                        }
+                        else{
+                            SelStyle();
                         }
                     }
                 }
-                else
+                else {
                     DifStyle();
-            }else
+                }
+            }else {
                 DifStyle();
+            }
+            for(asd in obj.class_9413A) {
+                if(obj.class_9413A[asd].SeatNo==temp){
+                    // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                    // console.log( obj.class_9413A[i].SeatNo);
+                    boxcolor.push(temp);
+                }
+            }
+            for(asd in boxcolor){
+                if(boxcolor[asd]==temp){
+                    console.log(boxcolor[asd]);
+                    SelStyle1();
+                }
+            }
             ctx.closePath();
             ctx.fill();
             ctx.strokeText(""+temp,x+6,y+13);
@@ -46,12 +65,13 @@ function DefinePaths(event){
             ctx.rect(x, y, 20, 20);
             if (event!=null){
                 if (IsInPath(event)) {
-                    SelStyle();
                     set=temp;
                     for(asd in obj.class_9413A) {
                         if(obj.class_9413A[i].SeatNo==temp){
-                             console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-                             console.log( obj.class_9413A[i].SeatNo);
+                            SelStyle2();
+                        }
+                        else{
+                            SelStyle();
                         }
                     }
                 }
@@ -59,6 +79,19 @@ function DefinePaths(event){
                     DifStyle();
             }else
                 DifStyle();
+            for(asd in obj.class_9413A) {
+                if(obj.class_9413A[asd].SeatNo==temp){
+                    // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                    // console.log( obj.class_9413A[i].SeatNo);
+                    boxcolor.push(temp);
+                }
+            }
+            for(asd in boxcolor){
+                if(boxcolor[asd]==temp){
+                    console.log(boxcolor[asd]);
+                    SelStyle1();
+                }
+            }
             ctx.closePath();
             ctx.fill();
             ctx.strokeText(temp+"",x+6,y+13);
@@ -82,6 +115,19 @@ function SelStyle(){
     ctx.fillStyle= "cyan";
 
     modal('box');
+}
+function SelStyle1(){
+    ctx.lineWidth= 2;
+    ctx.strokeStyle= "brown";
+    ctx.fillStyle= "cyan";
+
+}
+function SelStyle2(){
+    ctx.lineWidth= 2;
+    ctx.strokeStyle= "brown";
+    ctx.fillStyle= "cyan";
+
+    modal('lateAbsent');
 }
 function DifStyle(){
     ctx.lineWidth= 2;
@@ -158,7 +204,7 @@ function setName(){
     }
 }
 function printStudentList(input){
-    console.log(input);
+    // console.log(input);
     var i, ul, li, myNode;
     myNode = document.getElementById("generateList");
     while (myNode.firstChild) {
@@ -206,7 +252,7 @@ function printStudentList(input){
             }
             break;
         default:
-            console.log("error");
+            // console.log("error");
     }
 }
 
