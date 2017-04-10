@@ -2,13 +2,13 @@
  * Created by Ling on 4/1/2017.
  */
 var set;
-text = localStorage.getItem("listJSON");
+text = localStorage.getItem("classListJSON");
 obj = JSON.parse(text);
 var cnv = document.getElementById("seatPlan");
 var ctx =cnv.getContext("2d");
 var deg = Math.PI/180;
 // console.log(obj);
-DefinePaths(null);
+// DefinePaths(null);
 var boxcolor=[];
 function DefinePaths(event){
 
@@ -135,12 +135,21 @@ function DifStyle(){
     ctx.strokeStyle= "darkblue";
 }
 function  modal(input) {
-    var modal = document.getElementById(input);
-    var span = document.getElementsByClassName("close")[0];
-    modal.style.display = "block";
-    span.onclick = function () {
-        modal.style.display = "none";
-    };
+    if (input == "box") {
+        var modal = document.getElementById('box');
+        var span = document.getElementsByClassName("close")[0];
+        modal.style.display = "block";
+        span.onclick = function () {
+            modal.style.display = "none";
+        };
+    } else if (input == "lateAbsent") {
+        var modal = document.getElementById('lateAbsent');
+        var span = document.getElementsByClassName("close")[1];
+        modal.style.display = "block";
+        span.onclick = function () {
+            modal.style.display = "none";
+        };
+    }
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
