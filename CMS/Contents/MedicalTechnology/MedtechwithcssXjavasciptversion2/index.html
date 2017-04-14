@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Med Tech Laboratories </title>
+<style>
+
+.title .SLU1{
+  width: 100px;
+    height: 120px;
+    overflow: hidden;
+    float:right;
+
+}
+.title .SLU2{
+   width: 100px;
+    height: 120px;
+    overflow: hidden;
+    float: left;
+}
+.title .med{
+   width: 120;
+    height: 120px;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  }
+.bod h3{
+   font-size: 2em;
+    text-align: center;
+    color:black;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 0.09em;
+}
+.bod p{
+    font-size: 1.5em;
+    text-align: center;
+    color:black;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 0.09em;
+}
+ img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="./aboutus.html">About School of Natural Sciences</a>
+  <a href="./faculty.html">Faculty and time scheds (Med Tech)</a>
+  <a href="./subject.html">Subjects and Curriculum(Med Tech)</a>
+  <a href="./career.html">Carreer Opportunities(Med Tech) </a>
+  <a href="./index.html">MAIN MENU</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU MEDICAL TECHNOLOGY SNS (click here for more)</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class = "title">
+<img class = "SLU1" src = "./resources/SLU.png">
+<img class = "SLU2" src ="./resources/SLU.png">
+<img class = "med" src = "./resources/medical.png">
+
+<h1> Medical Technology Saint Louis University</h1>
+</div>
+<div class = "bod" >
+<div class = "content">
+<p><br>
+A graduate may become a Medical Technologist in hospital-based or non-hospital based clinical laboratories, medical technician, phlebotomist, teacher, cardiovascular technician, perfusionist, researcher, cytotechnologist, and a medical representative. They may also work in specialty laboratories like forensic and medico-legal, nuclear and molecular biology laboratory, and drug testing laboratories. Med Tech is the best preparatory course for Medicine.<br>
+&nbsp;<br>
+&nbsp;</p>
+
+<h3>Bachelor of Science in Medical Technology&nbsp;</h3>
+<img src = "./resources/medtech.jpg">
+<p>A four year program consisting of general education and professional courses such as Chemistry, Biological Sciences and Mathematics. The program also includes internship training in tertiary level hospital-based clinical laboratory recognized by CHED for such purpose in its fourth year. The internship training includes rotational duties in different sections of the laboratory such as Clinical Chemistry, Hematology, Microbiology, Immunohematology, Immunology , Serology, Urinalysis and Other Body Fluids, Histopathologic and Cytopathologic techniques and other emergent technologies.</p>
+</div>
+
+
+<footer>
+<div class="footer-content"> <p class="credit">&copy; Saint Louis University<br>
+A. Bonifacio Street<br>
+Baguio City, Philippines 2600<br>
+444-6750/(63+)9759201251</p>
+
+</footer>
+
+
+</body>
+</html>

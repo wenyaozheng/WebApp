@@ -10,14 +10,10 @@ function studentListData() {
                "FirstName": "Arvince",
 			   "SeatNo": "",
                "Late": [
-                   {
-                       "Date":""
-                   }
+                       ""
                ],
                "Absent": [
-                   {
-                       "Date":""
-                   }
+                       ""
                ]
            },
             {
@@ -26,14 +22,10 @@ function studentListData() {
                "FirstName": "Mark",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -42,14 +34,10 @@ function studentListData() {
                "FirstName": "Russel",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -58,14 +46,10 @@ function studentListData() {
                "FirstName": "Jinci",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -74,14 +58,10 @@ function studentListData() {
                "FirstName": "Karl",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -90,14 +70,10 @@ function studentListData() {
                "FirstName": "Colvin",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -106,14 +82,10 @@ function studentListData() {
                "FirstName": "Dwight",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -122,14 +94,10 @@ function studentListData() {
                "FirstName": "Denver",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -138,14 +106,10 @@ function studentListData() {
                "FirstName": "Ryan",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -154,14 +118,10 @@ function studentListData() {
                "FirstName": "Mon",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -170,14 +130,10 @@ function studentListData() {
                "FirstName": "Stephen",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -186,14 +142,10 @@ function studentListData() {
                "FirstName": "Jenmar",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -202,14 +154,10 @@ function studentListData() {
                "FirstName": "Jay",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -218,14 +166,10 @@ function studentListData() {
                "FirstName": "Mark",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -234,14 +178,10 @@ function studentListData() {
                "FirstName": "Sean",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -250,14 +190,10 @@ function studentListData() {
                "FirstName": "Joshua",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -266,14 +202,10 @@ function studentListData() {
                "FirstName": "Jaryd",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -282,14 +214,10 @@ function studentListData() {
                "FirstName": "Raoul",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -298,14 +226,10 @@ function studentListData() {
                "FirstName": "Von",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -314,14 +238,10 @@ function studentListData() {
                "FirstName": "Jeremiah",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -330,14 +250,10 @@ function studentListData() {
                "FirstName": "Paul",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -346,14 +262,10 @@ function studentListData() {
                "FirstName": "Daiben",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -362,14 +274,10 @@ function studentListData() {
                "FirstName": "Francis",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -378,14 +286,10 @@ function studentListData() {
                "FirstName": "Benedict",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -394,14 +298,10 @@ function studentListData() {
                "FirstName": "Raphael",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -410,14 +310,10 @@ function studentListData() {
                "FirstName": "Jerome",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -426,14 +322,10 @@ function studentListData() {
                "FirstName": "Kathleen",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -442,14 +334,10 @@ function studentListData() {
                "FirstName": "Glyza",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -458,14 +346,10 @@ function studentListData() {
                "FirstName": "Sarah",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -474,14 +358,10 @@ function studentListData() {
                "FirstName": "Charlene",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -490,14 +370,10 @@ function studentListData() {
                "FirstName": "Aerhielle",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -506,14 +382,10 @@ function studentListData() {
                "FirstName": "Maricris",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -522,21 +394,23 @@ function studentListData() {
                "FirstName": "Phebe",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
                "IDNo": "2155912",
                "LastName": "Ragay",
                "FirstName": "claudine",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    ""
+                ],
+                "Absent": [
+                    ""
+                ]
            },
             {
                "IDNo": "2155690",
@@ -544,14 +418,10 @@ function studentListData() {
                "FirstName": "Stephanie",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -560,21 +430,23 @@ function studentListData() {
                "FirstName": "Anne",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
                "IDNo": "2150084",
                "LastName": "Zheng",
                "FirstName": "Jane",
-			   "SeatNo": ""
+			   "SeatNo": "",
+                "Late": [
+                    ""
+                ],
+                "Absent": [
+                    ""
+                ]
            }
         ],
         "class_9413B": [
@@ -585,14 +457,10 @@ function studentListData() {
                "FirstName": "Jinci",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -601,14 +469,10 @@ function studentListData() {
                "FirstName": "Karl",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -617,14 +481,10 @@ function studentListData() {
                "FirstName": "Colvin",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -633,14 +493,10 @@ function studentListData() {
                "FirstName": "Dwight",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -649,14 +505,10 @@ function studentListData() {
                "FirstName": "Denver",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -665,14 +517,10 @@ function studentListData() {
                "FirstName": "Ryan",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -681,14 +529,10 @@ function studentListData() {
                "FirstName": "Mon",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -697,14 +541,10 @@ function studentListData() {
                "FirstName": "Mark",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -713,14 +553,10 @@ function studentListData() {
                "FirstName": "Sean",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -729,14 +565,10 @@ function studentListData() {
                "FirstName": "Joshua",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -745,14 +577,10 @@ function studentListData() {
                "FirstName": "Jaryd",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -761,14 +589,10 @@ function studentListData() {
                "FirstName": "Raoul",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -777,14 +601,10 @@ function studentListData() {
                "FirstName": "Von",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -793,14 +613,10 @@ function studentListData() {
                "FirstName": "Jeremiah",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -809,14 +625,10 @@ function studentListData() {
                "FirstName": "Paul",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -825,14 +637,10 @@ function studentListData() {
                "FirstName": "Daiben",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -841,14 +649,10 @@ function studentListData() {
                "FirstName": "Francis",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -857,14 +661,10 @@ function studentListData() {
                "FirstName": "Benedict",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -873,14 +673,10 @@ function studentListData() {
                "FirstName": "Raphael",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -889,14 +685,10 @@ function studentListData() {
                "FirstName": "Jerome",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -905,14 +697,10 @@ function studentListData() {
                "FirstName": "Kathleen",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -921,14 +709,10 @@ function studentListData() {
                "FirstName": "Glyza",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -937,14 +721,10 @@ function studentListData() {
                "FirstName": "Sarah",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -953,14 +733,10 @@ function studentListData() {
                "FirstName": "Charlene",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -969,14 +745,10 @@ function studentListData() {
                "FirstName": "claudine",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -985,14 +757,10 @@ function studentListData() {
                "FirstName": "Stephanie",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1001,14 +769,10 @@ function studentListData() {
                "FirstName": "Anne",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            }
         ],
@@ -1019,14 +783,10 @@ function studentListData() {
                "FirstName": "Russel",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1035,14 +795,10 @@ function studentListData() {
                "FirstName": "Jinci",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1051,14 +807,10 @@ function studentListData() {
                "FirstName": "Karl",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1067,14 +819,10 @@ function studentListData() {
                "FirstName": "Colvin",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1083,14 +831,10 @@ function studentListData() {
                "FirstName": "Dwight",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1099,14 +843,10 @@ function studentListData() {
                "FirstName": "Denver",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1115,14 +855,10 @@ function studentListData() {
                "FirstName": "Ryan",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1131,14 +867,10 @@ function studentListData() {
                "FirstName": "Mon",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1147,14 +879,10 @@ function studentListData() {
                "FirstName": "Stephen",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1163,14 +891,10 @@ function studentListData() {
                "FirstName": "Jenmar",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1179,14 +903,10 @@ function studentListData() {
                "FirstName": "Jay",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1195,14 +915,10 @@ function studentListData() {
                "FirstName": "Von",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1211,14 +927,10 @@ function studentListData() {
                "FirstName": "Jeremiah",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1227,14 +939,10 @@ function studentListData() {
                "FirstName": "Paul",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1243,14 +951,10 @@ function studentListData() {
                "FirstName": "Daiben",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1259,14 +963,10 @@ function studentListData() {
                "FirstName": "Francis",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1275,14 +975,10 @@ function studentListData() {
                "FirstName": "Benedict",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1291,14 +987,10 @@ function studentListData() {
                "FirstName": "Raphael",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1307,14 +999,10 @@ function studentListData() {
                "FirstName": "Jerome",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1323,14 +1011,10 @@ function studentListData() {
                "FirstName": "Kathleen",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1339,14 +1023,10 @@ function studentListData() {
                "FirstName": "Glyza",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1355,14 +1035,10 @@ function studentListData() {
                "FirstName": "Sarah",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1371,14 +1047,10 @@ function studentListData() {
                "FirstName": "Charlene",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1387,14 +1059,10 @@ function studentListData() {
                "FirstName": "Aerhielle",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1403,14 +1071,10 @@ function studentListData() {
                "FirstName": "Stephanie",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1419,14 +1083,10 @@ function studentListData() {
                "FirstName": "Anne",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1435,14 +1095,10 @@ function studentListData() {
                "FirstName": "Jane",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            }
         ],
@@ -1453,14 +1109,10 @@ function studentListData() {
                "FirstName": "Mark",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1469,14 +1121,10 @@ function studentListData() {
                "FirstName": "Russel",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1485,14 +1133,10 @@ function studentListData() {
                "FirstName": "Jinci",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1501,14 +1145,10 @@ function studentListData() {
                "FirstName": "Karl",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1517,14 +1157,10 @@ function studentListData() {
                "FirstName": "Colvin",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1533,14 +1169,10 @@ function studentListData() {
                "FirstName": "Dwight",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1549,14 +1181,10 @@ function studentListData() {
                "FirstName": "Denver",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1565,14 +1193,10 @@ function studentListData() {
                "FirstName": "Ryan",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1581,14 +1205,10 @@ function studentListData() {
                "FirstName": "Mon",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1597,14 +1217,10 @@ function studentListData() {
                "FirstName": "Stephen",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1613,14 +1229,10 @@ function studentListData() {
                "FirstName": "Jenmar",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1629,14 +1241,10 @@ function studentListData() {
                "FirstName": "Jay",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1645,14 +1253,10 @@ function studentListData() {
                "FirstName": "Mark",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1661,14 +1265,10 @@ function studentListData() {
                "FirstName": "Sean",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1677,14 +1277,10 @@ function studentListData() {
                "FirstName": "Joshua",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1693,14 +1289,10 @@ function studentListData() {
                "FirstName": "Jaryd",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1709,14 +1301,10 @@ function studentListData() {
                "FirstName": "Raoul",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1725,14 +1313,10 @@ function studentListData() {
                "FirstName": "Von",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1741,14 +1325,10 @@ function studentListData() {
                "FirstName": "Jeremiah",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1757,14 +1337,10 @@ function studentListData() {
                "FirstName": "Paul",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1773,14 +1349,10 @@ function studentListData() {
                "FirstName": "Daiben",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1789,14 +1361,10 @@ function studentListData() {
                "FirstName": "Jerome",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1805,14 +1373,10 @@ function studentListData() {
                "FirstName": "Kathleen",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1821,14 +1385,10 @@ function studentListData() {
                "FirstName": "Glyza",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1837,14 +1397,10 @@ function studentListData() {
                "FirstName": "Sarah",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1853,14 +1409,10 @@ function studentListData() {
                "FirstName": "Charlene",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1869,14 +1421,10 @@ function studentListData() {
                "FirstName": "Aerhielle",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1885,14 +1433,10 @@ function studentListData() {
                "FirstName": "Maricris",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1901,14 +1445,10 @@ function studentListData() {
                "FirstName": "Phebe",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1917,14 +1457,10 @@ function studentListData() {
                "FirstName": "claudine",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            },
             {
@@ -1933,14 +1469,10 @@ function studentListData() {
                "FirstName": "Jane",
 			   "SeatNo": "",
                 "Late": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ],
                 "Absent": [
-                    {
-                        "Date":""
-                    }
+                    ""
                 ]
            }
         ]

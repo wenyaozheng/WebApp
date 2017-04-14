@@ -13,14 +13,18 @@ function dropDown(input) {
     var myNode, option, select = "";
     console.log(input);
     myNode = document.getElementById("selector");
-    while (myNode.firstChild) {
-        myNode.removeChild(myNode.firstChild);
-    }
+    if(myNode != null){
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+
     option = document.createElement("option");
     option.text = "";
     option.value = "";
     select = document.getElementById("selector");
     select.appendChild(option);
+    } else
+        console.log('ehehehe');
     switch(input) {
         case "class_9413A":
             for(i in obj.class_9413A) {

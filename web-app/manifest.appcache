@@ -7,17 +7,21 @@ index.html
 pages/home.html
 pages/classcode.html
 
-css/style.css
+css/calendar.css
+css/datepicker.css
 css/login.css
-css/navigation.css
 css/modal.css
+css/navigation.css
+css/style.css
 
+js/calendar.js
 js/classcodes.js
+js/color_scheme.js
+js/datepicker.js
 js/drop-downModal.js
 js/login.js
 js/modal.js
 js/navigation.js
-js/show_list.js
 js/studentCanvas.js
 
 json/Class_List.js
@@ -34,4 +38,8 @@ images/icons/glyphicons-197-exclamation-sign.png
 images/icons/glyphicons-82-refresh.png
 images/icons/glyphicons-195-question-sign.png
 images/icons/glyphicons-388-log-out.png
+images/calendar/calendar.png
+images/calendar/img1.png
+images/calendar/img2.png
+images/calendar/img3.png
 

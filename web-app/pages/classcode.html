@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="../css/style.css" rel="stylesheet">
-        <link href="../css/navigation.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="../css/style.css">
+        <link type="text/css" rel="stylesheet" href="../css/navigation.css">
+        <link type="text/css" rel="stylesheet" href="../css/modal.css">
+        <link type="text/css" rel="stylesheet" href="../css/datepicker.css">
 
-        <link href="../css/modal.css" rel="stylesheet">
-        <script src="../js/navigation.js"></script>
-        <script src="../json/Class_List.js"></script>
-        <script src="../json/temp.js"></script>
+        <script type="text/javascript" src="../js/color_scheme.js"></script>
+        <script type="text/javascript" src="../js/studentCanvas.js"></script>
+        <script type="text/javascript" src="../json/temp.js"></script>
+        <script src="../js/drop-downModal.js"></script>
 
     </head>
     <body>
@@ -18,6 +20,9 @@
         <div class="topnav" id="myTopnav">
             <a><button onclick="openNav()" id = "menu">&#9776;</button></a>
             <a><h1>iCheck</h1></a>
+            <a href="classcode.html" style="float: right"><h1>Classcodes</h1></a>
+            <a href="javascript:void(0);" style="font-size:x-large; float: right" class="icon" onclick="topNav()">&#8942;</a>
+            <a href="home.html" style="float: right"><h1>Dashboard</h1></a>
         </div>
 
 
@@ -36,23 +41,26 @@
 
         <div class="row">
             <div class="col-2 col-m-3 menu">
-                <ul>
-                    <!--<script src="../js/classcodes.js"></script>-->
-                    <!--<li id="blue" onclick="temp_classcode('class_9413A');">9413A IT322<br/>11:30 - 12:30 TF</li>-->
-                    <li id="blue" onclick="temp_classcode('class_9413A');">9413A IT322<br/>11:30 - 12:30 TF</li>
-                    <li id="purple" onclick="temp_classcode('class_9413B');">9415B IT322L<br/>9:00 - 12:00 W</li>
-                    <li id="green" onclick="temp_classcode('class_9414A');">9414A IT323<br/>10:30 - 11:30 TF</li>
-                    <li id="red" onclick="temp_classcode('class_9414B');">9414B IT323L<br/>9:00 - 10:30 MTH</li>
+                <ul id="classList">
+                    <li id="add-class" onclick="">ADD CLASS</li>
+                    <!--<script type="text/javascript" src="../js/classcodes.js"></script>-->
+
+                    <li id="blue" onclick="temp_classcode('class_9413A');DefinePaths(event);">9413A IT322<br/>11:30 - 12:30 TF</li>
+                    <li id="purple" onclick="temp_classcode('class_9413B');DefinePaths(event);">9415B IT322L<br/>9:00 - 12:00 W</li>
+                    <li id="green" onclick="temp_classcode('class_9414A');DefinePaths(event);">9414A IT323<br/>10:30 - 11:30 TF</li>
+                    <li id="red" onclick="temp_classcode('class_9414B');DefinePaths(event);">9414B IT323L<br/>9:00 - 10:30 MTH</li>
+
                 </ul>
             </div>
 
             <div class="col-8 col-m-9" id="scroll_seatPlan">
-
-                <script src="../js/modal.js"></script>
-
                 <div id="subject_name" style="text-align: center"><h1 id="subject"></h1></div>
-                <canvas id="seatPlan" onmousedown="DefinePaths(event)"></canvas>
-                <!--<canvas id="seatPlan_lab" onmousedown="DefinePaths(event)"></canvas>-->
+
+                <div class="tooltip">
+                    <canvas id="seatPlan" onmousedown="DefinePaths(event)" onmouseover="hover()"></canvas>
+                </div>
+
+                <script src="../js/studentCanvas.js"></script>
 
                 <!-- The Modal for each box -->
                 <div id="box" class="modal">
@@ -70,7 +78,7 @@
                                     <script src="../js/drop-downModal.js"></script>
                                 </select>
                             </label>
-                            <button class="modal-button" id="ok-Btn" onclick="setName(localStorage.getItem('classcode'));">Ok</button>
+                            <button class="modal-button" id="ok-Btn" onclick="setName(localStorage.getItem('classcode'))">Ok</button>
                         </div>
                         <div class="modal-footer" id="box-Footer">
                             &emsp;
@@ -89,9 +97,12 @@
                             <h3>Seat Plan</h3>
                         </div>
                         <div class="modal-body">
+                                <input id="studentName"  disabled="disabled" placeholder="STUDENT NAME"/>
+                                <input id="start_dt" class='datepicker' size="11" title='D-MMM-YYYY' placeholder="date today"/>
+                                <script type="text/javascript" src="../js/datepicker.js"></script><br/>
 
-                            <button class="modal-button" id="modal-late">Late</button>
-                            <button class="modal-button" id="modal-absent">Absent</button>
+                                <button class="modal-button" id="modal-late" onclick="markLate();">Late</button>
+                                <button class="modal-button" id="modal-absent" onclick="markAbsent();">Absent</button>
                         </div>
                         <div class="modal-footer" id="lateAbsent-Footer">
                             &emsp;
@@ -103,9 +114,9 @@
 
             <div class="col-2 col-m-5">
                 <!-- Trigger/Open The Modal -->
-                <button id="myBtn" onmouseenter="fModal('myBtn')">Student List</button><br/>
-                <button id="lateBtn" onmouseenter="fModal('lateBtn')">Late</button>
-                <button id="absentBtn" onmouseenter="fModal('absentBtn')">Absent</button>
+                <button id="myBtn" onmousedown="fModal('myBtn');printStudentList(localStorage.getItem('classcode'));">Student List</button><br/>
+                <button id="lateBtn" onmousedown="fModal('lateBtn');">Late</button>
+                <button id="absentBtn" onmousedown="fModal('absentBtn');">Absent</button>
 
                 <!-- The Modal for Student List -->
                 <div id="myModal" class="modal">
@@ -119,9 +130,9 @@
                         <div class="modal-body">
                             <div id="showStudentList">
                                 <ul id="generateList" style="list-style: none; color: black; text-align: left; font-size: larger">
-                                    <script src="../js/studentCanvas.js"></script>
                                     <script>printStudentList();</script>
                                 </ul>
+
                             </div>
                         </div>
                         <script src="../js/color_scheme.js"></script>
@@ -129,6 +140,7 @@
                             &emsp;
                         </div>
                     </div>
+                    <script src="../js/modal.js"></script>
                 </div>
 
                 <!-- The Modal for Late Students -->
@@ -141,13 +153,18 @@
                             <h3>LATE</h3>
                         </div>
                         <div class="modal-body">
-                            <div id="showLateStudent">HAHAHAH LATE</div>
+                            <div id="showLateStudent">
+                                <ul id="lateList" style="list-style: none; color: black; text-align: left; font-size: larger">
+
+                                </ul>
+                            </div>
                         </div>
                         <script src="../js/color_scheme.js"></script>
                         <div class="modal-footer" id="late-modalFooter">
                             &emsp;
                         </div>
                     </div>
+                    <script src="../js/modal.js"></script>
                 </div>
 
                 <!-- The Modal for Absent Students -->
@@ -160,14 +177,18 @@
                             <h3>ABSENT</h3>
                         </div>
                         <div class="modal-body">
-                            <div id="showabsentStudent">HAHAHAH ABSENT</div>
+                            <div id="showabsentStudent">
+                                <ul id="absentList" style="list-style: none; color: black; text-align: left; font-size: larger">
+
+                                </ul>
+                            </div>
                         </div>
                         <script src="../js/color_scheme.js"></script>
                         <div class="modal-footer" id="absent-modalFooter">
                             &emsp;
                         </div>
                     </div>
-
+                    <script src="../js/modal.js"></script>
                 </div>
             </div>
         </div>

@@ -18,9 +18,14 @@ function classroomsListData() {
                 "course_no": "IT322L",
                 "schedule": "9:00-12:00 W"
             },
-
             {
-                "classcode": "9426",
+                "classcode": "9414A",
+                "subject": "Integrative Programming Lec",
+                "course_no": "IT323L",
+                "schedule": "10:30-11:30 MTH"
+            },
+            {
+                "classcode": "9414B",
                 "subject": "Integrative Programming Lab",
                 "course_no": "IT323L",
                 "schedule": "9:00-10:30 MTH"
