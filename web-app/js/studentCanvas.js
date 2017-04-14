@@ -118,9 +118,6 @@ function IsInPath(event) {
 
     return ctx.isPointInPath(x,y);
 }
-function hover(){
-    
-}
 function SelStyle(){
     ctx.lineWidth= 2;
     ctx.strokeStyle= "brown";

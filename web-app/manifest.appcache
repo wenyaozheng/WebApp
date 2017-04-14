@@ -12,6 +12,7 @@ css/datepicker.css
 css/login.css
 css/modal.css
 css/navigation.css
+css/studentListTable.css
 css/style.css
 
 js/calendar.js
@@ -22,6 +23,8 @@ js/drop-downModal.js
 js/login.js
 js/modal.js
 js/navigation.js
+js/sort-table.js
+js/student-table.js
 js/studentCanvas.js
 
 json/Class_List.js
