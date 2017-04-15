@@ -328,13 +328,14 @@ function printStudentList(input){
 
 function markAbsent() {
     var i,ul,li;
-    for(i in obj.class_9413A){
-        if(obj.class_9413A[i].SeatNo==set) {
-            obj.class_9413A[i].Absent.push(document.getElementById("date").value);
-            console.log(obj.class_9413A[i].FirstName+"absent");
+    var input = localStorage.getItem('classcode');
+    for(i in obj[input+""]){
+        if(obj[input+""][i].SeatNo==set) {
+            obj[input+""][i].Absent.push(document.getElementById("date").value);
+            console.log(obj[input+""][i].FirstName+"absent");
             ul = document.getElementById("absentList");
             li = document.createElement("li");
-            output = obj.class_9413A[i].SeatNo + ' ' + obj.class_9413A[i].LastName + ', ' + obj.class_9413A[i].FirstName;
+            output = obj[input+""][i].SeatNo + ' ' + obj[input+""][i].LastName + ', ' + obj[input+""][i].FirstName;
             li.appendChild(document.createTextNode(output));
             ul.appendChild(li);
             localStorage.removeItem("classListJSON");
@@ -346,13 +347,14 @@ function markAbsent() {
 
 function markLate() {
     var i,ul,li;
-    for(i in obj.class_9413A){
-        if(obj.class_9413A[i].SeatNo==set) {
-            obj.class_9413A[i].Late.push(document.getElementById("date").value);
-            console.log(obj.class_9413A[i].FirstName+"late");
+    var input = localStorage.getItem('classcode');
+    for(i in obj[input+""]){
+        if(obj[input+""][i].SeatNo==set) {
+            obj[input+""][i].Late.push(document.getElementById("date").value);
+            console.log(obj[input+""][i].FirstName+"late");
             ul = document.getElementById("lateList");
             li = document.createElement("li");
-            output = obj.class_9413A[i].SeatNo + ' ' + obj.class_9413A[i].LastName + ', ' + obj.class_9413A[i].FirstName;
+            output = obj[input+""][i].SeatNo + ' ' + obj[input+""][i].LastName + ', ' + obj[input+""][i].FirstName;
             li.appendChild(document.createTextNode(output));
             ul.appendChild(li);
             localStorage.removeItem("classListJSON");
