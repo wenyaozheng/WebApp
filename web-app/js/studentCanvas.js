@@ -25,6 +25,7 @@ function DefinePaths(event){
 
                     for(asd in obj.class_9413A) {
                         if(obj.class_9413A[asd].SeatNo==temp){
+
                             SelStyle2();
                             zxc=1;
                             // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
@@ -34,6 +35,7 @@ function DefinePaths(event){
                     if(zxc!=1){
                         SelStyle();
                     }
+
                     zxc=0;
                 }
                 else {
@@ -46,17 +48,30 @@ function DefinePaths(event){
 
 
                 for (asd in obj.class_9413A) {
-                    if (obj.class_9413A[asd].SeatNo == temp) {
-                        // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-                        // console.log( obj.class_9413A[i].SeatNo);
-                        boxcolor.push(temp);
+                    if(obj.class_9413A[asd].SeatNo == "") {
+                        if (obj.class_9413A[asd].SeatNo == temp) {
+                            // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                            // console.log( obj.class_9413A[i].SeatNo);
+
+                            boxcolor.push(temp);
+                        }
+                    }else{
+                        if (obj.class_9413A[asd].SeatNo == temp) {
+                            var index = boxcolor.indexOf(obj.class_9413A[asd].SeatNo);
+                            if (index > -1) {
+
+                                 boxcolor.splice(index, 1);
+                            }
+                             boxcolor.push(temp);
+                        }
                     }
                 }
             }
             for (asd in boxcolor) {
                 if (boxcolor[asd] == temp) {
-                    console.log(boxcolor[asd]);
                     SelStyle1();
+                }else{
+                    DifStyle();
                 }
             }
             ctx.closePath();
@@ -87,12 +102,26 @@ function DefinePaths(event){
                     DifStyle();
             }else
                 DifStyle();
-            if (event!=null) {
+            if(event!=null) {
+
+
                 for (asd in obj.class_9413A) {
-                    if (obj.class_9413A[asd].SeatNo == temp) {
-                        // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-                        // console.log( obj.class_9413A[i].SeatNo);
-                        boxcolor.push(temp);
+                    if(obj.class_9413A[asd].SeatNo == "") {
+                        if (obj.class_9413A[asd].SeatNo == temp) {
+                            // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                            // console.log( obj.class_9413A[i].SeatNo);
+
+                            boxcolor.push(temp);
+                        }
+                    }else{
+                        if (obj.class_9413A[asd].SeatNo == temp) {
+                            var index = boxcolor.indexOf(obj.class_9413A[asd].SeatNo);
+                            if (index > -1) {
+
+                                boxcolor.splice(index, 1);
+                            }
+                            boxcolor.push(temp);
+                        }
                     }
                 }
             }
@@ -100,6 +129,8 @@ function DefinePaths(event){
                 if (boxcolor[asd] == temp) {
                     console.log(boxcolor[asd]);
                     SelStyle1();
+                }else{
+                    DifStyle();
                 }
             }
             ctx.closePath();
@@ -109,6 +140,7 @@ function DefinePaths(event){
             temp=temp+1;
         }
     }
+
 }
 function IsInPath(event) {
     var bb, x, y;
