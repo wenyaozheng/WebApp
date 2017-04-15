@@ -20,9 +20,7 @@
         <div class="topnav" id="myTopnav">
             <a><button onclick="openNav()" id = "menu">&#9776;</button></a>
             <a><h1>iCheck</h1></a>
-            <a href="classcode.html" style="float: right"><h1>Classcodes</h1></a>
-            <a href="javascript:void(0);" style="font-size:x-large; float: right" class="icon" onclick="topNav()">&#8942;</a>
-            <a href="home.html" style="float: right"><h1>Dashboard</h1></a>
+            <!--<a href="javascript:void(0);" style="font-size:x-large; float: right" class="icon" onclick="topNav()">&#8942;</a>-->
         </div>
 
 
@@ -42,7 +40,7 @@
         <div class="row">
             <div class="col-2 col-m-3 menu">
                 <ul id="classList">
-                    <li id="add-class" onclick="">ADD CLASS</li>
+                    <li id="add-class" onclick="">DOWNLOAD CLASS</li>
                     <!--<script type="text/javascript" src="../js/classcodes.js"></script>-->
 
                     <li id="blue" onclick="temp_classcode('class_9413A');DefinePaths(event);">9413A IT322<br/>11:30 - 12:30 TF</li>
@@ -55,6 +53,10 @@
 
             <div class="col-8 col-m-9" id="scroll_seatPlan">
                 <div id="subject_name" style="text-align: center"><h1 id="subject"></h1></div>
+                <!--<div id="date-container">-->
+                    <!--<input id="date" title="date" type="date"/><br/>-->
+                    <!--<script type="text/javascript" src="../js/date-today.js"></script>-->
+                <!--</div>-->
 
                 <div class="tooltip">
                     <canvas id="seatPlan" onmousedown="DefinePaths(event)"></canvas>
@@ -97,10 +99,7 @@
                             <h3>Seat Plan</h3>
                         </div>
                         <div class="modal-body">
-                            <input id="studentName" disabled="disabled" placeholder="STUDENT NAME" type="text"/>
-                            <input id="date" title="date" type="date"/><br/>
-                            <script type="text/javascript" src="../js/date-today.js"></script>
-
+                            <input id="studentName" disabled="disabled" placeholder="STUDENT NAME" type="text"/> <br/>
                             <button class="modal-button" id="modal-late" onclick="markLate();">Late</button>
                             <button class="modal-button" id="modal-absent" onclick="markAbsent();">Absent</button>
                         </div>
@@ -113,6 +112,12 @@
             </div>
 
             <div class="col-2 col-m-5">
+
+                <div id="date-container">
+                <input id="date" title="date" type="date"/><br/>
+                <script type="text/javascript" src="../js/date-today.js"></script>
+                </div>
+
                 <!-- Trigger/Open The Modal -->
                 <button id="myBtn" onmousedown="fModal('myBtn');printStudentList(localStorage.getItem('classcode'));">Student List</button><br/>
                 <button id="lateBtn" onmousedown="fModal('lateBtn');">Late</button>

@@ -2,9 +2,6 @@ CACHE MANIFEST
 # version 7
 # This is a comment
 CACHE:
-index.html
-
-pages/home.html
 pages/classcode.html
 
 css/calendar.css
@@ -44,4 +41,7 @@ images/calendar/calendar.png
 images/calendar/img1.png
 images/calendar/img2.png
 images/calendar/img3.png
+
+NETWORK:
+index.html
 
