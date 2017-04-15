@@ -1,15 +1,33 @@
-.student-table {
-    border-collapse: collapse;
-    border: none;
-}
-th.student-table, td.student-table {
-    border: 1px solid black;
-    padding: 4px 16px;
-    font-family: Times New Roman;
-    font-size: 24px;
+table, td, th {
+    border: 1px solid #ddd;
     text-align: left;
 }
-th.student-table {
-    background-color: #C8C8C8;
-    cursor: pointer;
+th {
+    background-color: #f5f5f5
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+tr:hover {
+    background-color: #f5f5f5
+}
+#myInput {
+    background-image: url('../images/search.png');
+    background-size: 25px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 250px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 3px solid #1c819a;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-size: larger;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+        <link type="text/css" rel="stylesheet" href="../css/studentListTable.css">
+        <!--<script type="text/javascript" src="../js/sort-table.js"></script>-->
+
+
+        <script type="text/javascript" src="../js/navigation.js"></script>
+        <script type="text/javascript" src="../js/student-table.js"></script>
+    </head>
+    <body>
+
+        <!--Top Navigation-->
+        <div class="topnav" id="myTopnav">
+            <a><button onclick="openNav()" id = "menu">&#9776;</button></a>
+            <a><h1>iCheck</h1></a>
+            <a href="classcode.html" style="float: right"><h1>Classcodes</h1></a>
+            <a href="javascript:void(0);" style="font-size:x-large; float: right" class="icon" onclick="topNav()">&#8942;</a>
+            <a href="home.html" style="float: right"><h1>Dashboard</h1></a>
+        </div>
+
+        <!--Side-Menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" id="profile"><img id ="profpic" src="../images/icon.png" alt="icheck_logo"><br/>John Doe<br/>contact@example.com</a>
+            <a href="#"><img src="../images/icons/glyphicons-4-user.png" alt="profile-icon">&emsp;Profile</a>
+            <a href="#"><img src="../images/icons/glyphicons-137-cogwheel.png" alt="profile-icon">&emsp;Account Settings</a>
+            <a href="#"><img src="../images/icons/glyphicons-82-refresh.png" alt="profile-icon">&emsp;Sync</a>
+            <a href="#"><img src="../images/icons/glyphicons-281-settings.png" alt="profile-icon">&emsp;Customize</a>
+            <a href="#"><img src="../images/icons/glyphicons-197-exclamation-sign.png" alt="profile-icon">&emsp;Report Problem</a>
+            <a href="#"><img src="../images/icons/glyphicons-82-refresh.png" alt="profile-icon">&emsp;Privacy and Terms</a>
+            <a href="#"><img src="../images/icons/glyphicons-195-question-sign.png" alt="profile-icon">&emsp;Help</a>
+            <a href="#"><img src="../images/icons/glyphicons-388-log-out.png" alt="icheck_logo">&emsp;Log out</a>
+         </div>
+
+        <div class="col-3"></div>
+
+        <div class="col-6">
+            <div class="row">
+                <input id="date" title="date" type="date" style="width: 200px"/>
+                <script type="text/javascript" src="../js/date-today.js"></script>
+                <input type="text" id="myInput" onkeyup="search()" placeholder="Search.." title="Type in a name">
+            </div>
+
+            <div id="showData" style="overflow-x:auto;"></div>
+            <script type="text/javascript">CreateTableFromJSON()</script>
+        </div>
+
+        <div class="col-3"></div>
+
+        <script src='../js/sortAndSearch.js'></script>
+    </body>
+</html>

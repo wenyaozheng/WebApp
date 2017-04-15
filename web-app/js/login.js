@@ -17,7 +17,7 @@ function validate(){
     var password = document.getElementById("password").value;
     for(i in obj.Users) {
         if (username == obj.Users[i].username && password == obj.Users[i].password) {
-            window.location.href = 'pages/classcode.html';
+            window.location.href = 'pages/home.html';
             // getData();
             alert("Login successfully");
 

@@ -3,7 +3,7 @@
  */
 
 function CreateTableFromJSON() {
-    var myBooks = [
+    var studList = [
         {
             "Book ID": "1",
             "Book Name": "Computer Architecture",
@@ -27,8 +27,8 @@ function CreateTableFromJSON() {
     // EXTRACT VALUE FOR HTML HEADER.
     // ('Book ID', 'Book Name', 'Category' and 'Price')
     var col = [];
-    for (var i = 0; i < myBooks.length; i++) {
-        for (var key in myBooks[i]) {
+    for (var i = 0; i < studList.length; i++) {
+        for (var key in studList[i]) {
             if (col.indexOf(key) === -1) {
                 col.push(key);
             }
@@ -37,50 +37,38 @@ function CreateTableFromJSON() {
 
     // CREATE DYNAMIC TABLE.
     var table = document.createElement("table");
-    table.setAttribute("class", "student-table");
+    table.setAttribute("id","studentTable");
 
     // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
 
-    var tbody = document.createElement('tbody');
-    tbody.setAttribute("id", "people");
-    table.appendChild(tbody);
+    // var thead = document.createElement('thead');
+    // table.appendChild(thead);
+
+    // var tbody = document.createElement('tbody');
+    // table.appendChild(tbody);
 
     var tr = table.insertRow(-1);                   // TABLE ROW.
+    // var row = document.createElement('tr');
 
     for (var i = 0; i < col.length; i++) {
         var th = document.createElement("th");      // TABLE HEADER.
-        th.innerHTML = col[i];
         var att = document.createAttribute("onclick");
-
-        switch(i) {
-            case 0:
-                att.value = "sort_table(people, 0, asc1); asc1 *= -1; asc2 = 1; asc3 = 1; asc4 = 1;";
-                break;
-            case 1:
-                att.value = "sort_table(people, 1, asc2); asc2 *= -1; asc3 = 1; asc4 = 1; asc1 = 1";
-                break;
-            case 2:
-                att.value = "sort_table(people, 2, asc3); asc3 *= -1; asc4 = 1; asc1 = 1; asc2 = 1;";
-                break;
-            case 3:
-                att.value = "sort_table(people, 3, asc4); asc4 *= -1; asc1 = 1; asc2 = 1; asc3 = 1;";
-                break;
-            default:
-                console.log('error')
-        }
-
+        att.value = "sortTable("+i+")";
         th.setAttributeNode(att);
+        th.innerHTML = col[i];
         tr.appendChild(th);
+        // row.appendChild(th);
+        // thead.appendChild(row);
     }
 
     // ADD JSON DATA TO THE TABLE AS ROWS.
-    for (var i = 0; i < myBooks.length; i++) {
+    for (var i = 0; i < studList.length; i++) {
 
         tr = table.insertRow(-1);
 
         for (var j = 0; j < col.length; j++) {
             var tabCell = tr.insertCell(-1);
-            tabCell.innerHTML = myBooks[i][col[j]];
+            tabCell.innerHTML = studList[i][col[j]];
         }
     }
 
@@ -88,5 +76,8 @@ function CreateTableFromJSON() {
     var divContainer = document.getElementById("showData");
     divContainer.innerHTML = "";
     divContainer.appendChild(table);
+
 }
+
+
 
