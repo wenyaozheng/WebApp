@@ -37,6 +37,7 @@ function CreateTableFromJSON() {
 
     // CREATE DYNAMIC TABLE.
     var table = document.createElement("table");
+    table.setAttribute("class", "student-table");
 
     // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
 

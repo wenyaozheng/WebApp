@@ -7,12 +7,12 @@
         <link type="text/css" rel="stylesheet" href="../css/style.css">
         <link type="text/css" rel="stylesheet" href="../css/navigation.css">
         <link type="text/css" rel="stylesheet" href="../css/modal.css">
-        <link type="text/css" rel="stylesheet" href="../css/datepicker.css">
 
         <script type="text/javascript" src="../js/color_scheme.js"></script>
+        <script type="text/javascript" src="../js/drop-downModal.js"></script>
+        <script type="text/javascript" src="../js/navigation.js"></script>
         <script type="text/javascript" src="../js/studentCanvas.js"></script>
         <script type="text/javascript" src="../json/temp.js"></script>
-        <script src="../js/drop-downModal.js"></script>
 
     </head>
     <body>
@@ -97,12 +97,12 @@
                             <h3>Seat Plan</h3>
                         </div>
                         <div class="modal-body">
-                                <input id="studentName"  disabled="disabled" placeholder="STUDENT NAME"/>
-                                <input id="start_dt" class='datepicker' size="11" title='D-MMM-YYYY' placeholder="date today"/>
-                                <script type="text/javascript" src="../js/datepicker.js"></script><br/>
+                            <input id="studentName" disabled="disabled" placeholder="STUDENT NAME" type="text"/>
+                            <input id="date" title="date" type="date"/><br/>
+                            <script type="text/javascript" src="../js/date-today.js"></script>
 
-                                <button class="modal-button" id="modal-late" onclick="markLate();">Late</button>
-                                <button class="modal-button" id="modal-absent" onclick="markAbsent();">Absent</button>
+                            <button class="modal-button" id="modal-late" onclick="markLate();">Late</button>
+                            <button class="modal-button" id="modal-absent" onclick="markAbsent();">Absent</button>
                         </div>
                         <div class="modal-footer" id="lateAbsent-Footer">
                             &emsp;

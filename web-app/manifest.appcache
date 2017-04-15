@@ -8,7 +8,6 @@ pages/home.html
 pages/classcode.html
 
 css/calendar.css
-css/datepicker.css
 css/login.css
 css/modal.css
 css/navigation.css
@@ -18,7 +17,7 @@ css/style.css
 js/calendar.js
 js/classcodes.js
 js/color_scheme.js
-js/datepicker.js
+js/date-today.js
 js/drop-downModal.js
 js/login.js
 js/modal.js
