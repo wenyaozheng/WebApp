@@ -43,10 +43,10 @@
                     <li id="add-class" onclick="">DOWNLOAD CLASS</li>
                     <!--<script type="text/javascript" src="../js/classcodes.js"></script>-->
 
-                    <li id="blue" onclick="temp_classcode('class_9413A');DefinePaths(event);">9413A IT322<br/>11:30 - 12:30 TF</li>
-                    <li id="purple" onclick="temp_classcode('class_9413B');DefinePaths(event);">9415B IT322L<br/>9:00 - 12:00 W</li>
-                    <li id="green" onclick="temp_classcode('class_9414A');DefinePaths(event);">9414A IT323<br/>10:30 - 11:30 TF</li>
-                    <li id="red" onclick="temp_classcode('class_9414B');DefinePaths(event);">9414B IT323L<br/>9:00 - 10:30 MTH</li>
+                    <li id="blue" onclick="temp_classcode('class_9413A');clearBox();DefinePaths(event);">9413A IT322<br/>11:30 - 12:30 TF</li>
+                    <li id="purple" onclick="temp_classcode('class_9413B');clearBox();DefinePaths(event);">9415B IT322L<br/>9:00 - 12:00 W</li>
+                    <li id="green" onclick="temp_classcode('class_9414A');clearBox();DefinePaths(event);">9414A IT323<br/>10:30 - 11:30 TF</li>
+                    <li id="red" onclick="temp_classcode('class_9414B');clearBox();DefinePaths(event);">9414B IT323L<br/>9:00 - 10:30 MTH</li>
 
                 </ul>
             </div>
@@ -59,7 +59,7 @@
                 <!--</div>-->
 
                 <div class="tooltip">
-                    <canvas id="seatPlan" onmousedown="DefinePaths(event)"></canvas>
+                    <canvas id="seatPlan" onmousedown="DefinePaths(event,localStorage.getItem('classcode'))"></canvas>
                 </div>
 
                 <script src="../js/studentCanvas.js"></script>
