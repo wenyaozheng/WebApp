@@ -7,7 +7,7 @@ obj = JSON.parse(text);
 var j = 0;
 for(i in obj.Classrooms) {
 
-    output = obj.Classrooms[i].classcode + " " + obj.Classrooms[i].subject+" "+obj.Classrooms[i].schedule;
+    output = obj.Classrooms[i].classcode + " " + obj.Classrooms[i].subject+" "+obj.Classrooms[i].schedule + " - " + obj.Classrooms[i].room;
     if(counter<=4) {
         counter = counter + 1;
     }
@@ -23,7 +23,7 @@ for(i in obj.Classrooms) {
         li.setAttribute("id", "color"+counter);
         classcode = obj.Classrooms[i].classcode;
         var att = document.createAttribute("onclick");
-        att.value = "temp_classcode('class_" + classcode + "'); " + + "printStudentList('class_" +classcode+"');" + "clearBox(); " + "DefinePaths(event);";
+        att.value = "temp_classcode('class_" + classcode + "'); " + "clearBox(); " + "DefinePaths(event);" + "printStudentList('class_" +classcode+"'); ";
         li.setAttributeNode(att);
 
         ul.appendChild(li);
