@@ -197,8 +197,8 @@ function  modal(input) {
             modal.style.display = "none";
         };
     } else if (input == "lateAbsent") {
-        var modal = document.getElementById('lateAbsent');
-        var span = document.getElementsByClassName("close")[1];
+        modal = document.getElementById('lateAbsent');
+        span = document.getElementsByClassName("close")[1];
         modal.style.display = "block";
         span.onclick = function () {
             modal.style.display = "none";
