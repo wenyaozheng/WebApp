@@ -96,13 +96,14 @@ h1 {
     background-color: #c13530;
 }
 #date {
-    width: 30%;
+    width: 150px;
     padding: 12px 10px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: larger;
 }
 #showStudentList {
     border: dashed;
@@ -173,6 +174,10 @@ h1 {
     .datepicker {
         margin: auto;
     }
+
+    #date {
+        width: 200px;
+    }
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -188,4 +193,8 @@ h1 {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+
+    #date {
+        width: 200px;
+    }
 }
