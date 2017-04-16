@@ -31,12 +31,6 @@ function CreateTableFromJSON() {
 
     // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
 
-    // var thead = document.createElement('thead');
-    // table.appendChild(thead);
-
-    // var tbody = document.createElement('tbody');
-    // table.appendChild(tbody);
-
     var tr = table.insertRow(-1);                   // TABLE ROW.
     // var row = document.createElement('tr');
 
