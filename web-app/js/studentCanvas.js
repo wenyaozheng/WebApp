@@ -48,12 +48,11 @@ function DefinePaths(event) {
     var qwe;
     var count = 1;
 
-    document.getElementById("Lec").onclick = lecture();
+    document.getElementById("Lec").onclick = lecture;
     function lecture() {
         var canvas = document.getElementById('seatPlan');
         canvas.setAttribute('width', '400');
         canvas.setAttribute('height', '200');
-
         for (var y = 5, j = 0; j < 5; y += 35, j++) {
 
             for (var x = 10, i = 0; i < 5; x += 35, i++) {
@@ -215,15 +214,14 @@ function DefinePaths(event) {
             temp = 46 - (5 * count) - (5 * count);
             console.log(temp);
         }
-        var x = document.getElementsByName('seatPlan');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
+        if (canvas.style.display === 'none') {
+            canvas.style.display = 'block';
             document.getElementById("Lec").style.display = "none";
             document.getElementById("Lab").style.display = "none";
         }
     }
 
-    document.getElementById("Lab").onclick = laboratory();
+    document.getElementById("Lab").onclick = laboratory;
     function laboratory() {
         count = 0;
         temp = 14;
@@ -304,9 +302,8 @@ function DefinePaths(event) {
             temp = 14 + (14 * count);
             console.log(temp);
         }
-        var x = document.getElementsByName('seatPlan');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
+        if (canvas.style.display === 'none') {
+            canvas.style.display = 'block';
             document.getElementById("Lec").style.display = "none";
             document.getElementById("Lab").style.display = "none";
         }

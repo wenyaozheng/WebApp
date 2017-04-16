@@ -14,29 +14,8 @@ function CreateTableFromJSON() {
         count=count+1;
     }
 
-    //     [
-    //     {
-    //         "Book ID": "1",
-    //         "Book Name": "Computer Architecture",
-    //         "Category": "Computers",
-    //         "Price": "125.60"
-    //     },
-    //     {
-    //         "Book ID": "2",
-    //         "Book Name": "Asp.Net 4 Blue Book",
-    //         "Category": "Programming",
-    //         "Price": "56.00"
-    //     },
-    //     {
-    //         "Book ID": "3",
-    //         "Book Name": "Popular Science",
-    //         "Category": "Science",
-    //         "Price": "210.40"
-    //     }
-    // ];
-
     // EXTRACT VALUE FOR HTML HEADER.
-    // ('Book ID', 'Book Name', 'Category' and 'Price')
+
     var col = [];
     for (var i = 0; i < studList.length; i++) {
         for (var key in studList[i]) {
