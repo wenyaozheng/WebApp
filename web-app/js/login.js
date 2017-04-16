@@ -18,6 +18,7 @@ function validate(){
     for(i in obj.Users) {
         if (username == obj.Users[i].username && password == obj.Users[i].password) {
             window.location.href = 'pages/home.html';
+            localStorage.setItem("userLoggedIn",obj.Users[i].idno);
             // getData();
             alert("Login successfully");
 

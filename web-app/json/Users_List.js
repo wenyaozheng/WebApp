@@ -8,19 +8,23 @@ function usersListData(){
             {
                 "username":"user1",
                 "password":"1",
-                "name":"user1"
+                "name":"user1",
+                "idno":"123"
             },
 
             {
                 "username":"user2",
                 "password":"2",
-                "name":"user2"
+                "name":"user2",
+                "idno":"456"
+
             },
 
             {
                 "username":"user3",
                 "password":"3",
-                "name":"user3"
+                "name":"user3",
+                "idno":"789"
             }
 
         ]

@@ -149,8 +149,9 @@ h1 {
     overflow-y: scroll;
 }
 .createCanvass {
-    background-color: #f14063;
+    background-color: #d26ceb;
     color: white;
+    border-radius: 4px;
 }
 
 
