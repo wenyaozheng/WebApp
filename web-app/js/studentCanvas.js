@@ -15,12 +15,17 @@ function clearBox(){
 }
 function DefinePaths(event){
     var input = localStorage.getItem('classcode');
-    var temp=1;
+    var number=0;
+    var test;
+    var temp=41;
     var asd;
     var zxc;
     var qwe;
-    for (var x = 10, i = 0; i < 5; x += 25, i++) {
-        for (var y = 5, j = 0; j < 5; y += 25, j++) {
+    var count=1;
+
+    for (var y = 5, j = 0; j < 5; y += 25, j++) {
+
+        for (var x = 10, i = 0; i < 5; x += 25, i++) {
             ctx.beginPath();
             ctx.rect(x, y, 20, 20);
             if (event!=null){
@@ -41,6 +46,20 @@ function DefinePaths(event){
                     }
 
                     zxc=0;
+                    // switch(number){
+                    //     case 1:
+                    //         set=temp-4;
+                    //         break;
+                    //     case 2:
+                    //         set=temp-2;
+                    //         break;
+                    //     case 4:
+                    //         set=temp+2;
+                    //         break;
+                    //     case 5:
+                    //         set=temp+4;
+                    //         break;
+                    // }
                 }
                 else {
                     DifStyle();
@@ -56,8 +75,8 @@ function DefinePaths(event){
 
                             // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
                             // console.log( obj.class_9413A[i].SeatNo);
-
                             boxcolor.push(temp);
+                            console.log(boxcolor);
                         }
                     }else{
                         if (obj[input+""][qwe].SeatNo == temp) {
@@ -67,6 +86,7 @@ function DefinePaths(event){
                                  boxcolor.splice(index, 1);
                             }
                              boxcolor.push(temp);
+                            console.log(boxcolor);
                         }
                     }
                 }
@@ -78,20 +98,34 @@ function DefinePaths(event){
                     DifStyle();
                 }
             }
+
             ctx.closePath();
             ctx.fill();
             ctx.strokeText(""+temp,x+6,y+13);
             ctx.stroke();
             temp=temp+1;
-        }
-    }
 
-    for (var x = 167, i = 0; i < 5; x += 25, i++) {
-        for (var y = 5, j = 0; j < 5; y += 25, j++) {
+
+
+
+        }
+        count=count+1;
+        console.log(count);
+        console.log(temp);
+        temp=51-(5*count)-(5*count);
+        console.log(temp);
+    }
+    count=0;
+    temp=46;
+    for (var y = 5, j = 0; j < 5; y += 25, j++) {
+        for (var x = 167, i = 0; i < 5; x += 25, i++) {
+            number=number+1;
             ctx.beginPath();
             ctx.rect(x, y, 20, 20);
+
             if (event!=null){
                 if (IsInPath(event)) {
+
                     set=temp;
                     for(asd in obj[input+""]) {
                         if(obj[input+""][asd].SeatNo==temp){
@@ -119,12 +153,7 @@ function DefinePaths(event){
                     if(obj[input+""][asd].SeatNo == "") {
 
                         if (obj[input+""][asd].SeatNo == temp) {
-
-                            // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-                            // console.log( obj.class_9413A[i].SeatNo);
-
                             boxcolor.push(temp);
-
                         }
                     }else{
                         if (obj[input+""][asd].SeatNo == temp) {
@@ -140,7 +169,6 @@ function DefinePaths(event){
             }
             for (asd in boxcolor) {
                 if (boxcolor[asd] == temp) {
-                    console.log(boxcolor[asd]);
                     SelStyle1();
                 }else{
                     DifStyle();
@@ -152,6 +180,11 @@ function DefinePaths(event){
             ctx.stroke();
             temp=temp+1;
         }
+        count=count+1;
+        console.log(count);
+        console.log(temp);
+        temp=46-(5*count)-(5*count);
+        console.log(temp);
     }
 
 
