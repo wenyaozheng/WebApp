@@ -46,20 +46,6 @@ function DefinePaths(event){
                     }
 
                     zxc=0;
-                    // switch(number){
-                    //     case 1:
-                    //         set=temp-4;
-                    //         break;
-                    //     case 2:
-                    //         set=temp-2;
-                    //         break;
-                    //     case 4:
-                    //         set=temp+2;
-                    //         break;
-                    //     case 5:
-                    //         set=temp+4;
-                    //         break;
-                    // }
                 }
                 else {
                     DifStyle();
@@ -395,6 +381,21 @@ function markLate() {
         }
     }
 
+}
+
+function getData(){
+    var xmlhttp = new XMLHttpRequest();
+    var url = "Classroom.json";
+    xmlhttp.open("GET", url, true);
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var myArr = JSON.parse(this.responseText);
+            console.log(myArr);
+        }
+    };
+
+
+    xmlhttp.send();
 }
 
 
