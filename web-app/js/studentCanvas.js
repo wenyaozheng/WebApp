@@ -367,9 +367,15 @@ function markAbsent() {
     var input = localStorage.getItem('classcode');
     for (i in obj[input + ""]) {
         if (obj[input + ""][i].SeatNo == set) {
-            obj[input + ""][i].Absent.push(document.getElementById("date").value);
-            console.log(obj[input + ""][i].FirstName + "absent");
-
+            if(obj[input + ""][i].Late.indexOf(document.getElementById("date").value)>-1){
+                alert(obj[input + ""][i].LastName+", "+obj[input + ""][i].FirstName+" will be marked absent instead of late");
+                obj[input + ""][i].Late[obj[input + ""][i].Late.indexOf(document.getElementById("date").value)]=null;
+                obj[input + ""][i].Absent.push(document.getElementById("date").value);
+                console.log(obj[input + ""][i].FirstName + "late");
+            }else{
+                alert(obj[input + ""][i].LastName+", "+obj[input + ""][i].FirstName+" will be marked absent");
+                obj[input + ""][i].Absent.push(document.getElementById("date").value);
+            }
             localStorage.removeItem("classListJSON");
             localStorage.setItem("classListJSON", JSON.stringify(obj));
         }
@@ -396,10 +402,18 @@ function markLate() {
     var input = localStorage.getItem('classcode');
     for (i in obj[input + ""]) {
         if (obj[input + ""][i].SeatNo == set) {
-            obj[input + ""][i].Late.push(document.getElementById("date").value);
-            console.log(obj[input + ""][i].FirstName + "late");
+            if(obj[input + ""][i].Absent.indexOf(document.getElementById("date").value)>-1){
+                alert(obj[input + ""][i].LastName+", "+obj[input + ""][i].FirstName+" will be marked late instead of absent");
+                obj[input + ""][i].Absent[obj[input + ""][i].Absent.indexOf(document.getElementById("date").value)]=null;
+                obj[input + ""][i].Late.push(document.getElementById("date").value);
+                console.log(obj[input + ""][i].FirstName + "late");
+            }else{
+                alert(obj[input + ""][i].LastName+", "+obj[input + ""][i].FirstName+" will be marked late");
+                obj[input + ""][i].Late.push(document.getElementById("date").value);
+            }
             localStorage.removeItem("classListJSON");
             localStorage.setItem("classListJSON", JSON.stringify(obj));
+
         }
     }
 }
