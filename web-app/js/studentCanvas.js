@@ -190,14 +190,15 @@ function DefinePaths(event) {
 
 
     // function lab(column, row){
-
+    count=0;
+    temp=14;
     var canvas = document.getElementById('seatPlan');
     canvas.setAttribute('width', '400');
     canvas.setAttribute('height', '500');
+    for (var x = 120, i = 0; i < 4; x += 35, i++) {
+        for (var y = 5, j = 0; j < 14; y += 35, j++) {
 
-    for (var y = 5, j = 0; j < 14; y += 35, j++) {
 
-        for (var x = 120, i = 0; i < 4; x += 35, i++) {
             ctx.beginPath();
             ctx.rect(x, y, 30, 30);
             if (event != null) {
@@ -261,13 +262,12 @@ function DefinePaths(event) {
             ctx.fill();
             ctx.strokeText("" + temp, x + 6, y + 13);
             ctx.stroke();
-            temp = temp + 1;
+            temp = temp - 1;
 
         }
-        count = count + 1;
+        count=count+1;
         console.log(count);
-        console.log(temp);
-        temp = 51 - (5 * count) - (5 * count);
+        temp=14+(14*count);
         console.log(temp);
     }
     // }
