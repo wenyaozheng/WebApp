@@ -11,7 +11,6 @@ function colorScheme(input) {
         document.getElementById("studList-modalHeader").style.backgroundColor = blue;
         document.getElementById("studList-modalFooter").style.backgroundColor = blue;
 
-
     } else if (input == "class_9413B") {
         document.getElementById("subject").innerHTML = "Networks Technology with Administration and Maintenance (Lab)";
         document.getElementById("seatPlan").style.borderColor = purple;

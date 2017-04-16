@@ -51,10 +51,15 @@
 
                 <!--Creating SeatPlan-->
 
-                <canvas id="seatPlan" onmousedown="DefinePaths(event,localStorage.getItem('classcode'))" style="display: none"></canvas>
-                <button class ="createCanvass" id="Lec">Lec</button>
-                <button class ="createCanvass" id="Lab">Lab</button>
+                <div id="canvasContainer" style="display: none">
+                    <canvas id="seatPlan" onmousedown="DefinePaths(event,localStorage.getItem('classcode'))"></canvas>
+                </div>
+
+                <!--<button class ="createCanvass" id="Lec">Lec</button>-->
+                <!--<button class ="createCanvass" id="Lab">Lab</button>-->
+
                 <script src="../js/studentCanvas.js"></script>
+
 
                 <!-- The Modal for each box -->
                 <div id="box" class="modal">
