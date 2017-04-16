@@ -482,13 +482,28 @@ function markLate() {
 }
 
 function getData(){
+    var classcode;
+    var student_Obj=[];
+    var i;
+    var idno=localStorage.getItem("userLoggedIn");
     var xmlhttp = new XMLHttpRequest();
-    var url = "Classroom.json";
+    var url = "http://mysafeinfo.com/api/data?list=englishmonarchs&format=json";
+    xmlhttp.overrideMimeType("application/json");
     xmlhttp.open("GET", url, true);
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            var myArr = JSON.parse(this.responseText);
-            console.log(myArr);
+            var json_obj = JSON.parse(this.responseText);
+            var classroom_Obj = json_obj.Classrooms;
+            for(i in classroom_Obj){
+                classcode = "class_"+classroom_Obj.classcode;
+                student_Obj.push(json_obj[classcode]);
+            }
+            console.log(classroom_Obj);
+            console.log(student_Obj);
+            localStorage.removeItem("classroomListJSON");
+            localStorage.setItem("classroomListJSON",JSON.stringify(classroom_Obj));
+            localStorage.removeItem("classListJSON");
+            localStorage.setItem("classListJSON",JSON.stringify(student_Obj));
         }
     };
 
