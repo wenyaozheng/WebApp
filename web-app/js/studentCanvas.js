@@ -15,12 +15,17 @@ function clearBox(){
 }
 function DefinePaths(event){
     var input = localStorage.getItem('classcode');
-    var temp=1;
+    var number=0;
+    var test;
+    var temp=45;
     var asd;
     var zxc;
     var qwe;
-    for (var x = 10, i = 0; i < 5; x += 25, i++) {
-        for (var y = 5, j = 0; j < 5; y += 25, j++) {
+
+    for (var y = 5, j = 0; j < 5; y += 25, j++) {
+
+        for (var x = 10, i = 0; i < 5; x += 25, i++) {
+            number=number+1;
             ctx.beginPath();
             ctx.rect(x, y, 20, 20);
             if (event!=null){
@@ -78,16 +83,45 @@ function DefinePaths(event){
                     DifStyle();
                 }
             }
+
+
+            test=temp;
+            switch(number){
+                case 1:
+                    test=temp;
+                    temp=temp-4;
+                    break;
+                case 2:
+                    test=temp;
+                    temp=temp-2;
+                    break;
+                case 4:
+                    test=temp;
+                    temp=temp+2;
+                    break;
+                case 5:
+                    test=temp;
+                    temp=temp+4;
+                    break;
+            }
             ctx.closePath();
             ctx.fill();
             ctx.strokeText(""+temp,x+6,y+13);
             ctx.stroke();
-            temp=temp+1;
+            temp=test-1;
+
+
+
+
         }
+        temp=temp-5;
+        number=0;
     }
 
-    for (var x = 167, i = 0; i < 5; x += 25, i++) {
-        for (var y = 5, j = 0; j < 5; y += 25, j++) {
+    temp=50;
+    for (var y = 5, j = 0; j < 5; y += 25, j++) {
+        for (var x = 167, i = 0; i < 5; x += 25, i++) {
+            number=number+1;
             ctx.beginPath();
             ctx.rect(x, y, 20, 20);
             if (event!=null){
@@ -146,12 +180,33 @@ function DefinePaths(event){
                     DifStyle();
                 }
             }
+            test=temp;
+            switch(number){
+                case 1:
+                    test=temp;
+                    temp=temp-4;
+                    break;
+                case 2:
+                    test=temp;
+                    temp=temp-2;
+                    break;
+                case 4:
+                    test=temp;
+                    temp=temp+2;
+                    break;
+                case 5:
+                    test=temp;
+                    temp=temp+4;
+                    break;
+            }
             ctx.closePath();
             ctx.fill();
             ctx.strokeText(temp+"",x+6,y+13);
             ctx.stroke();
-            temp=temp+1;
+            temp=test-1;
         }
+        temp=temp-5;
+        number=0;
     }
 
 }
