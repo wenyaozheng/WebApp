@@ -44,7 +44,24 @@ function DefinePaths(event){
                     if(zxc!=1){
                         SelStyle();
                     }
-
+                    switch(number){
+                        case 1:
+                            set=temp-4;
+                            console.log(set);
+                            break;
+                        case 2:
+                            set=temp-2;
+                            console.log(set);
+                            break;
+                        case 4:
+                            set=temp+2;
+                            console.log(set);
+                            break;
+                        case 5:
+                            set=temp+4;
+                            console.log(set);
+                            break;
+                    }
                     zxc=0;
                 }
                 else {
@@ -125,6 +142,7 @@ function DefinePaths(event){
             ctx.beginPath();
             ctx.rect(x, y, 20, 20);
             if (event!=null){
+
                 if (IsInPath(event)) {
                     set=temp;
                     for(asd in obj[input+""]) {
@@ -139,7 +157,24 @@ function DefinePaths(event){
                     if(zxc!=1){
                         SelStyle();
                     }
-
+                    switch(number){
+                        case 1:
+                            set=temp-4;
+                            console.log(set);
+                            break;
+                        case 2:
+                            set=temp-2;
+                            console.log(set);
+                            break;
+                        case 4:
+                            set=temp+2;
+                            console.log(set);
+                            break;
+                        case 5:
+                            set=temp+4;
+                            console.log(set);
+                            break;
+                    }
                     zxc=0;
                 }
                 else
@@ -174,7 +209,6 @@ function DefinePaths(event){
             }
             for (asd in boxcolor) {
                 if (boxcolor[asd] == temp) {
-                    console.log(boxcolor[asd]);
                     SelStyle1();
                 }else{
                     DifStyle();
