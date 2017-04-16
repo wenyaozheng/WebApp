@@ -154,6 +154,76 @@ function DefinePaths(event){
         }
     }
 
+
+    // function lab(column, row){
+    //     for (var x = 100, i = 0; i < column; x += 25, i++) {
+    //         for (var y = 5, j = 0; j < row; y += 25, j++) {
+    //             ctx.beginPath();
+    //             ctx.rect(x, y, 20, 20);
+    //             if (event!=null){
+    //                 if (IsInPath(event)) {
+    //                     set=temp;
+    //                     for(asd in obj[input+""]) {
+    //                         if(obj[input+""][asd].SeatNo==temp){
+    //                             document.getElementById("studentName").placeholder=obj[input+""][asd].LastName+', '+obj[input+""][asd].FirstName;
+    //                             SelStyle2();
+    //                             zxc=1;
+    //                             // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
+    //                             // console.log( obj.class_9413A[asd].SeatNo);
+    //                         }
+    //                     }
+    //                     if(zxc!=1){
+    //                         SelStyle();
+    //                     }
+    //
+    //                     zxc=0;
+    //                 }
+    //                 else
+    //                     DifStyle();
+    //             }else
+    //                 DifStyle();
+    //             if(event!=null) {
+    //
+    //                 for (asd in obj[input+""]) {
+    //
+    //                     if(obj[input+""][asd].SeatNo == "") {
+    //
+    //                         if (obj[input+""][asd].SeatNo == temp) {
+    //
+    //                             // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+    //                             // console.log( obj.class_9413A[i].SeatNo);
+    //
+    //                             boxcolor.push(temp);
+    //
+    //                         }
+    //                     }else{
+    //                         if (obj[input+""][asd].SeatNo == temp) {
+    //                             var index = boxcolor.indexOf(obj[input+""][asd].SeatNo);
+    //                             if (index > -1) {
+    //
+    //                                 boxcolor.splice(index, 1);
+    //                             }
+    //                             boxcolor.push(temp);
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //             for (asd in boxcolor) {
+    //                 if (boxcolor[asd] == temp) {
+    //                     console.log(boxcolor[asd]);
+    //                     SelStyle1();
+    //                 }else{
+    //                     DifStyle();
+    //                 }
+    //             }
+    //             ctx.closePath();
+    //             ctx.fill();
+    //             ctx.strokeText(temp+"",x+6,y+13);
+    //             ctx.stroke();
+    //             temp=temp+1;
+    //         }
+    //     }
+    // }
 }
 function IsInPath(event) {
     var bb, x, y;
