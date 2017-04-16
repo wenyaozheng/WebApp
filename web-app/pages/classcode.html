@@ -48,7 +48,12 @@
 
             <div class="col-8 col-m-9" id="scroll_seatPlan">
                 <div id="subject_name" style="text-align: center"><h1 id="subject"></h1></div>
-                <canvas id="seatPlan" onmousedown="DefinePaths(event,localStorage.getItem('classcode'))"></canvas>
+
+                <!--Creating SeatPlan-->
+                <button class ="createCanvass" id="Lec" onmousedown="createCanvas()">Lec</button>
+                <button class ="createCanvass" id="Lab" onmousedown="createCanvas()">Lab</button>
+
+                <!--<canvas id="seatPlan" onmousedown="DefinePaths(event,localStorage.getItem('classcode'))"></canvas>-->
 
                 <script src="../js/studentCanvas.js"></script>
 

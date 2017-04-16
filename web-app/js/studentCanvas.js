@@ -1,6 +1,30 @@
 /**
  * Created by Ling on 4/1/2017.
  */
+function createCanvas(){
+    // document.write( '<canvas id="seatPlan" onmousedown="DefinePaths(event,localStorage.getItem('classcode'))"></canvas>');
+
+    var container = document.getElementById("scroll_seatPlan");
+    var canvas = document.createElement("canvas");
+    canvas.setAttribute("id", "seatPlan");
+    var att = document.createAttribute("onmousedown");
+    att.value = "DefinePaths(event,localStorage.getItem('classcode'))";
+    canvas.setAttributeNode(att);
+
+    container.appendChild(canvas);
+
+    var btn = document.getElementById("Lec");
+    btn.onclick = function () {
+        document.getElementById("Lab").remove();
+        this.remove();
+    };
+
+    var btn2 = document.getElementById("Lab");
+    btn2.onclick = function () {
+        document.getElementById("Lec").remove();
+        this.remove();
+    };
+}
 var set;
 text = localStorage.getItem("classlistJSON");
 obj = JSON.parse(text);
@@ -23,268 +47,271 @@ function DefinePaths(event) {
     var qwe;
     var count = 1;
 
-    // var canvas = document.getElementById('seatPlan');
-    // canvas.setAttribute('width', '400');
-    // canvas.setAttribute('height', '200');
-    //
-    // for (var y = 5, j = 0; j < 5; y += 35, j++) {
-    //
-    //     for (var x = 10, i = 0; i < 5; x += 35, i++) {
-    //         ctx.beginPath();
-    //         ctx.rect(x, y, 30, 30);
-    //         if (event!=null){
-    //             if (IsInPath(event)) {
-    //                 set=temp;
-    //
-    //                 for(asd in obj[input+""]) {
-    //                     if(obj[input+""][asd].SeatNo==temp){
-    //                         document.getElementById("studentName").placeholder=obj[input+""][asd].LastName+', '+obj[input+""][asd].FirstName;
-    //                         SelStyle2();
-    //                         zxc=1;
-    //                         // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
-    //                         // console.log( obj.class_9413A[asd].SeatNo);
-    //                     }
-    //                 }
-    //                 if(zxc!=1){
-    //                     SelStyle();
-    //                 }
-    //
-    //                 zxc=0;
-    //                 // switch(number){
-    //                 //     case 1:
-    //                 //         set=temp-4;
-    //                 //         break;
-    //                 //     case 2:
-    //                 //         set=temp-2;
-    //                 //         break;
-    //                 //     case 4:
-    //                 //         set=temp+2;
-    //                 //         break;
-    //                 //     case 5:
-    //                 //         set=temp+4;
-    //                 //         break;
-    //                 // }
-    //             }
-    //             else {
-    //                 DifStyle();
-    //             }
-    //         }else {
-    //             DifStyle();
-    //         }
-    //         if(event!=null) {
-    //
-    //             for (qwe in obj[input+""]) {
-    //                 if(obj[input+""][qwe].SeatNo == "") {
-    //                     if (obj[input+""][qwe].SeatNo == temp) {
-    //
-    //                         // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-    //                         // console.log( obj.class_9413A[i].SeatNo);
-    //                         boxcolor.push(temp);
-    //                         console.log(boxcolor);
-    //                     }
-    //                 }else{
-    //                     if (obj[input+""][qwe].SeatNo == temp) {
-    //                         var index = boxcolor.indexOf(obj[input+""][qwe].SeatNo);
-    //                         if (index > -1) {
-    //
-    //                              boxcolor.splice(index, 1);
-    //                         }
-    //                          boxcolor.push(temp);
-    //                         console.log(boxcolor);
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //         for (asd in boxcolor) {
-    //             if (boxcolor[asd] == temp) {
-    //                 SelStyle1();
-    //             }else{
-    //                 DifStyle();
-    //             }
-    //         }
-    //
-    //         ctx.closePath();
-    //         ctx.fill();
-    //         ctx.strokeText(""+temp,x+6,y+13);
-    //         ctx.stroke();
-    //         temp=temp+1;
-    //
-    //     }
-    //     count=count+1;
-    //     console.log(count);
-    //     console.log(temp);
-    //     temp=51-(5*count)-(5*count);
-    //     console.log(temp);
-    // }
-    // count=0;
-    // temp=46;
-    // for (var y = 5, j = 0; j < 5; y += 35, j++) {
-    //     for (var x = 220, i = 0; i < 5; x += 35, i++) {
-    //         number=number+1;
-    //         ctx.beginPath();
-    //         ctx.rect(x, y, 30, 30);
-    //
-    //         if (event!=null){
-    //             if (IsInPath(event)) {
-    //
-    //                 set=temp;
-    //                 for(asd in obj[input+""]) {
-    //                     if(obj[input+""][asd].SeatNo==temp){
-    //                         document.getElementById("studentName").placeholder=obj[input+""][asd].LastName+', '+obj[input+""][asd].FirstName;
-    //                         SelStyle2();
-    //                         zxc=1;
-    //                         // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
-    //                         // console.log( obj.class_9413A[asd].SeatNo);
-    //                     }
-    //                 }
-    //                 if(zxc!=1){
-    //                     SelStyle();
-    //                 }
-    //
-    //                 zxc=0;
-    //             }
-    //             else
-    //                 DifStyle();
-    //         }else
-    //             DifStyle();
-    //         if(event!=null) {
-    //
-    //             for (asd in obj[input+""]) {
-    //
-    //                 if(obj[input+""][asd].SeatNo == "") {
-    //
-    //                     if (obj[input+""][asd].SeatNo == temp) {
-    //                         boxcolor.push(temp);
-    //                     }
-    //                 }else{
-    //                     if (obj[input+""][asd].SeatNo == temp) {
-    //                         var index = boxcolor.indexOf(obj[input+""][asd].SeatNo);
-    //                         if (index > -1) {
-    //
-    //                             boxcolor.splice(index, 1);
-    //                         }
-    //                         boxcolor.push(temp);
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //         for (asd in boxcolor) {
-    //             if (boxcolor[asd] == temp) {
-    //                 SelStyle1();
-    //             }else{
-    //                 DifStyle();
-    //             }
-    //         }
-    //         ctx.closePath();
-    //         ctx.fill();
-    //         ctx.strokeText(temp+"",x+6,y+13);
-    //         ctx.stroke();
-    //         temp=temp+1;
-    //     }
-    //     count=count+1;
-    //     console.log(count);
-    //     console.log(temp);
-    //     temp=46-(5*count)-(5*count);
-    //     console.log(temp);
-    // }
+    document.getElementById("Lab").onclick = laboratory;
+        function laboratory() {
+        var canvas = document.getElementById('seatPlan');
+        canvas.setAttribute('width', '400');
+        canvas.setAttribute('height', '500');
 
+        for (var y = 5, j = 0; j < 14; y += 35, j++) {
 
-    // function lab(column, row){
+            for (var x = 120, i = 0; i < 4; x += 35, i++) {
+                ctx.beginPath();
+                ctx.rect(x, y, 30, 30);
+                if (event != null) {
+                    if (IsInPath(event)) {
+                        set = temp;
 
-    var canvas = document.getElementById('seatPlan');
-    canvas.setAttribute('width', '400');
-    canvas.setAttribute('height', '500');
-
-    for (var y = 5, j = 0; j < 14; y += 35, j++) {
-
-        for (var x = 120, i = 0; i < 4; x += 35, i++) {
-            ctx.beginPath();
-            ctx.rect(x, y, 30, 30);
-            if (event != null) {
-                if (IsInPath(event)) {
-                    set = temp;
-
-                    for (asd in obj[input + ""]) {
-                        if (obj[input + ""][asd].SeatNo == temp) {
-                            document.getElementById("studentName").placeholder = obj[input + ""][asd].LastName + ', ' + obj[input + ""][asd].FirstName;
-                            SelStyle2();
-                            zxc = 1;
-                            // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
-                            // console.log( obj.class_9413A[asd].SeatNo);
-                        }
-                    }
-                    if (zxc != 1) {
-                        SelStyle();
-                    }
-
-                    zxc = 0;
-                    // switch(number){
-                    //     case 1:
-                    //         set=temp-4;
-                    //         break;
-                    //     case 2:
-                    //         set=temp-2;
-                    //         break;
-                    //     case 4:
-                    //         set=temp+2;
-                    //         break;
-                    //     case 5:
-                    //         set=temp+4;
-                    //         break;
-                    // }
-                }
-                else {
-                    DifStyle();
-                }
-            } else {
-                DifStyle();
-            }
-            if (event != null) {
-
-                for (qwe in obj[input + ""]) {
-                    if (obj[input + ""][qwe].SeatNo == "") {
-                        if (obj[input + ""][qwe].SeatNo == temp) {
-
-                            // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
-                            // console.log( obj.class_9413A[i].SeatNo);
-                            boxcolor.push(temp);
-                            console.log(boxcolor);
-                        }
-                    } else {
-                        if (obj[input + ""][qwe].SeatNo == temp) {
-                            var index = boxcolor.indexOf(obj[input + ""][qwe].SeatNo);
-                            if (index > -1) {
-
-                                boxcolor.splice(index, 1);
+                        for (asd in obj[input + ""]) {
+                            if (obj[input + ""][asd].SeatNo == temp) {
+                                document.getElementById("studentName").placeholder = obj[input + ""][asd].LastName + ', ' + obj[input + ""][asd].FirstName;
+                                SelStyle2();
+                                zxc = 1;
+                                // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
+                                // console.log( obj.class_9413A[asd].SeatNo);
                             }
-                            boxcolor.push(temp);
-                            console.log(boxcolor);
                         }
+                        if (zxc != 1) {
+                            SelStyle();
+                        }
+
+                        zxc = 0;
+                        // switch(number){
+                        //     case 1:
+                        //         set=temp-4;
+                        //         break;
+                        //     case 2:
+                        //         set=temp-2;
+                        //         break;
+                        //     case 4:
+                        //         set=temp+2;
+                        //         break;
+                        //     case 5:
+                        //         set=temp+4;
+                        //         break;
+                        // }
                     }
-                }
-            }
-            for (asd in boxcolor) {
-                if (boxcolor[asd] == temp) {
-                    SelStyle1();
+                    else {
+                        DifStyle();
+                    }
                 } else {
                     DifStyle();
                 }
+                if (event != null) {
+
+                    for (qwe in obj[input + ""]) {
+                        if (obj[input + ""][qwe].SeatNo == "") {
+                            if (obj[input + ""][qwe].SeatNo == temp) {
+
+                                // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                                // console.log( obj.class_9413A[i].SeatNo);
+                                boxcolor.push(temp);
+                                console.log(boxcolor);
+                            }
+                        } else {
+                            if (obj[input + ""][qwe].SeatNo == temp) {
+                                var index = boxcolor.indexOf(obj[input + ""][qwe].SeatNo);
+                                if (index > -1) {
+
+                                    boxcolor.splice(index, 1);
+                                }
+                                boxcolor.push(temp);
+                                console.log(boxcolor);
+                            }
+                        }
+                    }
+                }
+                for (asd in boxcolor) {
+                    if (boxcolor[asd] == temp) {
+                        SelStyle1();
+                    } else {
+                        DifStyle();
+                    }
+                }
+
+                ctx.closePath();
+                ctx.fill();
+                ctx.strokeText("" + temp, x + 6, y + 13);
+                ctx.stroke();
+                temp = temp + 1;
+
             }
-
-            ctx.closePath();
-            ctx.fill();
-            ctx.strokeText("" + temp, x + 6, y + 13);
-            ctx.stroke();
-            temp = temp + 1;
-
+            count = count + 1;
+            console.log(count);
+            console.log(temp);
+            temp = 51 - (5 * count) - (5 * count);
+            console.log(temp);
         }
-        count = count + 1;
-        console.log(count);
-        console.log(temp);
-        temp = 51 - (5 * count) - (5 * count);
-        console.log(temp);
     }
-    // }
+
+    document.getElementById("Lec").onclick = lecture;
+    function lecture() {
+        var canvas = document.getElementById('seatPlan');
+        canvas.setAttribute('width', '400');
+        canvas.setAttribute('height', '200');
+
+        for (var y = 5, j = 0; j < 5; y += 35, j++) {
+
+            for (var x = 10, i = 0; i < 5; x += 35, i++) {
+                ctx.beginPath();
+                ctx.rect(x, y, 30, 30);
+                if (event!=null){
+                    if (IsInPath(event)) {
+                        set=temp;
+
+                        for(asd in obj[input+""]) {
+                            if(obj[input+""][asd].SeatNo==temp){
+                                document.getElementById("studentName").placeholder=obj[input+""][asd].LastName+', '+obj[input+""][asd].FirstName;
+                                SelStyle2();
+                                zxc=1;
+                                // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
+                                // console.log( obj.class_9413A[asd].SeatNo);
+                            }
+                        }
+                        if(zxc!=1){
+                            SelStyle();
+                        }
+
+                        zxc=0;
+                        // switch(number){
+                        //     case 1:
+                        //         set=temp-4;
+                        //         break;
+                        //     case 2:
+                        //         set=temp-2;
+                        //         break;
+                        //     case 4:
+                        //         set=temp+2;
+                        //         break;
+                        //     case 5:
+                        //         set=temp+4;
+                        //         break;
+                        // }
+                    }
+                    else {
+                        DifStyle();
+                    }
+                }else {
+                    DifStyle();
+                }
+                if(event!=null) {
+
+                    for (qwe in obj[input+""]) {
+                        if(obj[input+""][qwe].SeatNo == "") {
+                            if (obj[input+""][qwe].SeatNo == temp) {
+
+                                // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
+                                // console.log( obj.class_9413A[i].SeatNo);
+                                boxcolor.push(temp);
+                                console.log(boxcolor);
+                            }
+                        }else{
+                            if (obj[input+""][qwe].SeatNo == temp) {
+                                var index = boxcolor.indexOf(obj[input+""][qwe].SeatNo);
+                                if (index > -1) {
+
+                                     boxcolor.splice(index, 1);
+                                }
+                                 boxcolor.push(temp);
+                                console.log(boxcolor);
+                            }
+                        }
+                    }
+                }
+                for (asd in boxcolor) {
+                    if (boxcolor[asd] == temp) {
+                        SelStyle1();
+                    }else{
+                        DifStyle();
+                    }
+                }
+
+                ctx.closePath();
+                ctx.fill();
+                ctx.strokeText(""+temp,x+6,y+13);
+                ctx.stroke();
+                temp=temp+1;
+
+            }
+            count=count+1;
+            console.log(count);
+            console.log(temp);
+            temp=51-(5*count)-(5*count);
+            console.log(temp);
+        }
+        count=0;
+        temp=46;
+        for (var y = 5, j = 0; j < 5; y += 35, j++) {
+            for (var x = 220, i = 0; i < 5; x += 35, i++) {
+                number=number+1;
+                ctx.beginPath();
+                ctx.rect(x, y, 30, 30);
+
+                if (event!=null){
+                    if (IsInPath(event)) {
+
+                        set=temp;
+                        for(asd in obj[input+""]) {
+                            if(obj[input+""][asd].SeatNo==temp){
+                                document.getElementById("studentName").placeholder=obj[input+""][asd].LastName+', '+obj[input+""][asd].FirstName;
+                                SelStyle2();
+                                zxc=1;
+                                // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
+                                // console.log( obj.class_9413A[asd].SeatNo);
+                            }
+                        }
+                        if(zxc!=1){
+                            SelStyle();
+                        }
+
+                        zxc=0;
+                    }
+                    else
+                        DifStyle();
+                }else
+                    DifStyle();
+                if(event!=null) {
+
+                    for (asd in obj[input+""]) {
+
+                        if(obj[input+""][asd].SeatNo == "") {
+
+                            if (obj[input+""][asd].SeatNo == temp) {
+                                boxcolor.push(temp);
+                            }
+                        }else{
+                            if (obj[input+""][asd].SeatNo == temp) {
+                                var index = boxcolor.indexOf(obj[input+""][asd].SeatNo);
+                                if (index > -1) {
+
+                                    boxcolor.splice(index, 1);
+                                }
+                                boxcolor.push(temp);
+                            }
+                        }
+                    }
+                }
+                for (asd in boxcolor) {
+                    if (boxcolor[asd] == temp) {
+                        SelStyle1();
+                    }else{
+                        DifStyle();
+                    }
+                }
+                ctx.closePath();
+                ctx.fill();
+                ctx.strokeText(temp+"",x+6,y+13);
+                ctx.stroke();
+                temp=temp+1;
+            }
+            count=count+1;
+            console.log(count);
+            console.log(temp);
+            temp=46-(5*count)-(5*count);
+            console.log(temp);
+        }
+    }
+
 }
 function IsInPath(event) {
     var bb, x, y;
