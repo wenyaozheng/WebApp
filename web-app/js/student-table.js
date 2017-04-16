@@ -1,10 +1,41 @@
 /**
  * Created by Ling on 4/14/2017.
  */
+function dropDownClass() {
+    var i;
+    var myNode, option, select = "";
+    var obj = JSON.parse(localStorage.getItem("classroomListJSON"));
+    console.log(obj.Classrooms);
+    myNode = document.getElementById("selector");
+    if (myNode != null) {
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.firstChild);
+        }
+
+        option = document.createElement("option");
+        option.text = "";
+        option.value = "";
+        select = document.getElementById("selector");
+        select.appendChild(option);
+    } else
+        console.log('ehehehe');
+    // switch(input) {
+    //     case "class_9413A":
+    console.log(obj.Classrooms);
+    for (i in obj.Classrooms) {
+        output = obj.Classrooms[i].classcode;
+        option = document.createElement("option");
+        option.text = output;
+        option.value = "" + obj.Classrooms[i].classcode;
+        select = document.getElementById("selector");
+        select.appendChild(option);
+    }
+}
 
 function CreateTableFromJSON() {
     var studList=[];
-    var list = JSON.parse(localStorage.getItem("classListJSON")).class_9413A;
+    var list = JSON.parse(localStorage.getItem("classListJSON"));
+    list = list["class_"+document.getElementById("selector").value];
     var count=0;
     for(i in list){
         console.log(document.getElementById("date").value);

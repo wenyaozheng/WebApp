@@ -25,48 +25,49 @@ function dropDown(input) {
     select.appendChild(option);
     } else
         console.log('ehehehe');
-    switch(input) {
-        case "class_9413A":
-            for(i in obj.class_9413A) {
-                output = obj.class_9413A[i].LastName + ", " + obj.class_9413A[i].FirstName;
+    // switch(input) {
+    //     case "class_9413A":
+            for(i in obj[input + ""]) {
+                output = obj[input + ""][i].LastName + ", " + obj[input + ""][i].FirstName;
                 option = document.createElement("option");
                 option.text = output;
-                option.value = ""+obj.class_9413A[i].IDNo;
+                option.value = ""+obj[input + ""][i].IDNo;
                 select = document.getElementById("selector");
                 select.appendChild(option);
             }
-            break;
-        case "class_9413B":
-            for(i in obj.class_9413B) {
-                output = obj.class_9413B[i].LastName + ", " + obj.class_9413B[i].FirstName;
-                option = document.createElement("option");
-                option.text = output;
-                option.value = ""+obj.class_9413B[i].IDNo;
-                select = document.getElementById("selector");
-                select.appendChild(option);
-            }
-            break;
-        case "class_9414A":
-            for(i in obj.class_9414A) {
-                output = obj.class_9414A[i].LastName + ", " + obj.class_9414A[i].FirstName;
-               option = document.createElement("option");
-                option.text = output;
-                option.value = ""+obj.class_9414A[i].IDNo;
-                select = document.getElementById("selector");
-                select.appendChild(option);
-            }
-            break;
-        case "class_9414B":
-            for(i in obj.class_9414B) {
-                output = obj.class_9414B[i].LastName + ", " + obj.class_9414B[i].FirstName;
-                option = document.createElement("option");
-                option.text = output;
-                option.value = ""+obj.class_9414B[i].IDNo;
-                select = document.getElementById("selector");
-                select.appendChild(option);
-            }
-            break;
-        default:
-            console.log("error");
-    }
+    //         break;
+    //     case "class_9413B":
+    //         for(i in obj.class_9413B) {
+    //             output = obj.class_9413B[i].LastName + ", " + obj.class_9413B[i].FirstName;
+    //             option = document.createElement("option");
+    //             option.text = output;
+    //             option.value = ""+obj.class_9413B[i].IDNo;
+    //             select = document.getElementById("selector");
+    //             select.appendChild(option);
+    //         }
+    //         break;
+    //     case "class_9414A":
+    //         for(i in obj.class_9414A) {
+    //             output = obj.class_9414A[i].LastName + ", " + obj.class_9414A[i].FirstName;
+    //            option = document.createElement("option");
+    //             option.text = output;
+    //             option.value = ""+obj.class_9414A[i].IDNo;
+    //             select = document.getElementById("selector");
+    //             select.appendChild(option);
+    //         }
+    //         break;
+    //     case "class_9414B":
+    //         for(i in obj.class_9414B) {
+    //             output = obj.class_9414B[i].LastName + ", " + obj.class_9414B[i].FirstName;
+    //             option = document.createElement("option");
+    //             option.text = output;
+    //             option.value = ""+obj.class_9414B[i].IDNo;
+    //             select = document.getElementById("selector");
+    //             select.appendChild(option);
+    //         }
+    //         break;
+    //     default:
+    //         console.log("error");
+    // }
 }
+

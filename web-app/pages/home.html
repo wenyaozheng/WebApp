@@ -11,6 +11,7 @@
 
         <script type="text/javascript" src="../js/navigation.js"></script>
         <script type="text/javascript" src="../js/student-table.js"></script>
+        <script type="text/javascript" src="../js/drop-downModal.js"></script>
     </head>
     <body>
 
@@ -41,6 +42,12 @@
 
         <div class="col-6">
             <div class="row">
+                <label class="dropdown" width="200px">
+                    <select id="selector" oninput="CreateTableFromJSON()">
+                        <option>asdasdasdasdas</option>
+                        <script type="text/javascript">dropDownClass()</script>
+                    </select>
+                </label>
                 <input id="date" title="date" type="date" style="width: 200px" oninput="CreateTableFromJSON()"/>
                 <script type="text/javascript" src="../js/date-today.js"></script>
                 <input type="text" id="myInput" onkeyup="search()" placeholder="Search.." title="Type in a name">
