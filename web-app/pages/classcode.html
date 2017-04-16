@@ -50,12 +50,22 @@
                 <div id="subject_name" style="text-align: center"><h1 id="subject"></h1></div>
 
                 <!--Creating SeatPlan-->
-                <button class ="createCanvass" id="Lec" onmousedown="createCanvas()">Lec</button>
-                <button class ="createCanvass" id="Lab" onmousedown="createCanvas()">Lab</button>
 
-                <!--<canvas id="seatPlan" onmousedown="DefinePaths(event,localStorage.getItem('classcode'))"></canvas>-->
-
+                <canvas id="seatPlan" onmousedown="DefinePaths(event,localStorage.getItem('classcode'))" style="display: none"></canvas>
+                <button class ="createCanvass" id="Lec" >Lec</button>
+                <button class ="createCanvass" id="Lab" >Lab</button>
                 <script src="../js/studentCanvas.js"></script>
+
+                <!--<script>-->
+                    <!--function createCanvas() {-->
+                        <!--var x = document.getElementsByName('seatPlan');-->
+                        <!--if (x.style.display === 'none') {-->
+                            <!--x.style.display = 'block';-->
+                            <!--document.getElementById("Lec").style.display = "none";-->
+                            <!--document.getElementById("Lab").style.display = "none";-->
+                        <!--}-->
+                    <!--}-->
+                <!--</script>-->
 
                 <!-- The Modal for each box -->
                 <div id="box" class="modal">
