@@ -111,14 +111,14 @@
             <div class="col-2 col-m-5">
 
                 <div id="date-container">
-                    <input id="date" title="date" type="date"/><br/>
+                    <input id="date" title="date" type="date" oninput="printAbsent();printLate();"/><br/>
                     <script type="text/javascript" src="../js/date-today.js"></script>
                 </div>
 
                 <!-- Trigger/Open The Modal -->
                 <button id="myBtn" onmousedown="fModal('myBtn');printStudentList(localStorage.getItem('classcode'));">Student List</button><br/>
-                <button id="lateBtn" onmousedown="fModal('lateBtn');">Late</button>
-                <button id="absentBtn" onmousedown="fModal('absentBtn');">Absent</button>
+                <button id="lateBtn" onmousedown="fModal('lateBtn');printLate();">Late</button>
+                <button id="absentBtn" onmousedown="fModal('absentBtn');printAbsent();">Absent</button>
 
                 <!-- The Modal for Student List -->
                 <div id="myModal" class="modal">

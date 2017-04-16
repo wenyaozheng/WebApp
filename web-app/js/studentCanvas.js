@@ -369,16 +369,28 @@ function markAbsent() {
         if (obj[input + ""][i].SeatNo == set) {
             obj[input + ""][i].Absent.push(document.getElementById("date").value);
             console.log(obj[input + ""][i].FirstName + "absent");
-            ul = document.getElementById("absentList");
-            li = document.createElement("li");
-            output = obj[input + ""][i].SeatNo + ' ' + obj[input + ""][i].LastName + ', ' + obj[input + ""][i].FirstName;
-            li.appendChild(document.createTextNode(output));
-            ul.appendChild(li);
+
             localStorage.removeItem("classListJSON");
             localStorage.setItem("classListJSON", JSON.stringify(obj));
         }
     }
 }
+function printAbsent(){
+    var Table = document.getElementById("absentList");
+    Table.innerHTML = "";
+    var i, ul, li;
+    var input = localStorage.getItem('classcode');
+    for (i in obj[input + ""]) {
+        if(obj[input + ""][i].Absent.indexOf(document.getElementById("date").value)>-1){
+            ul = document.getElementById("absentList");
+            li = document.createElement("li");
+            output = obj[input + ""][i].SeatNo + ' ' + obj[input + ""][i].LastName + ', ' + obj[input + ""][i].FirstName;
+            li.appendChild(document.createTextNode(output));
+            ul.appendChild(li);
+        }
+    }
+}
+
 function markLate() {
     var i, ul, li;
     var input = localStorage.getItem('classcode');
@@ -386,16 +398,28 @@ function markLate() {
         if (obj[input + ""][i].SeatNo == set) {
             obj[input + ""][i].Late.push(document.getElementById("date").value);
             console.log(obj[input + ""][i].FirstName + "late");
-            ul = document.getElementById("lateList");
-            li = document.createElement("li");
-            output = obj[input + ""][i].SeatNo + ' ' + obj[input + ""][i].LastName + ', ' + obj[input + ""][i].FirstName;
-            li.appendChild(document.createTextNode(output));
-            ul.appendChild(li);
             localStorage.removeItem("classListJSON");
             localStorage.setItem("classListJSON", JSON.stringify(obj));
         }
     }
 }
+
+function printLate(){
+    var Table = document.getElementById("lateList");
+    Table.innerHTML = "";
+    var i, ul, li;
+    var input = localStorage.getItem('classcode');
+    for (i in obj[input + ""]) {
+        if(obj[input + ""][i].Late.indexOf(document.getElementById("date").value)>-1){
+            ul = document.getElementById("lateList");
+            li = document.createElement("li");
+            output = obj[input + ""][i].SeatNo + ' ' + obj[input + ""][i].LastName + ', ' + obj[input + ""][i].FirstName;
+            li.appendChild(document.createTextNode(output));
+            ul.appendChild(li);
+        }
+    }
+}
+
 function clearStorage() {
     localStorage.removeItem("classroomListJSON");
     localStorage.removeItem("classListJSON");
