@@ -54,7 +54,7 @@ function sortTable(n) {
 }
 
 function search() {
-    var input, filter, table, tr, td, i;
+    var input, filter, table, tr, td, td1, i;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
     table = document.getElementById("studentTable");

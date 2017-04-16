@@ -23,7 +23,7 @@ for(i in obj.Classrooms) {
         li.setAttribute("id", "color"+counter);
         classcode = obj.Classrooms[i].classcode;
         var att = document.createAttribute("onclick");
-        att.value = "temp_classcode('class_" + classcode + "'); " + "clearBox(); " + "DefinePaths(event);" + "printStudentList('class_" +classcode+"'); ";
+        att.value = "temp_classcode('class_" + classcode + "'); " + "clearBox(); " + "DefinePaths(event);";
         li.setAttributeNode(att);
 
         ul.appendChild(li);
