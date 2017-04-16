@@ -511,6 +511,13 @@ function getData(){
     xmlhttp.send();
 }
 
+function clearStorage() {
+    localStorage.removeItem("classroomListJSON");
+    localStorage.removeItem("classListJSON");
+    localStorage.removeItem("userLoggedIn");
+    localStorage.removeItem('classcode');
+}
+
 
 
 
