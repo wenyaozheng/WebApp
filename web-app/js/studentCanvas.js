@@ -1,7 +1,7 @@
 /**
  * Created by Ling on 4/1/2017.
  */
-function createCanvas(){
+function createCanvas() {
     // document.write( '<canvas id="seatPlan" onmousedown="DefinePaths(event,localStorage.getItem('classcode'))"></canvas>');
 
     var container = document.getElementById("scroll_seatPlan");
@@ -12,19 +12,32 @@ function createCanvas(){
     canvas.setAttributeNode(att);
 
     container.appendChild(canvas);
+    var btn = document.getElementById("Lec");
+    btn.onclick = function () {
+        document.getElementById("Lab").remove();
+        this.remove();
+    };
+
+    var btn2 = document.getElementById("Lab");
+    btn2.onclick = function () {
+        document.getElementById("Lec").remove();
+        this.remove();
+    };
+}
 
     var set;
     text = localStorage.getItem("classlistJSON");
     obj = JSON.parse(text);
     var cnv = document.getElementById("seatPlan");
-    var ctx =cnv.getContext("2d");
-    var deg = Math.PI/180;
+    var ctx = cnv.getContext("2d");
+    var deg = Math.PI / 180;
 // console.log(obj);
-    var boxcolor=[];
+    var boxcolor = [];
     DefinePaths(null);
-    function clearBox(){
-        boxcolor=[];
+    function clearBox() {
+        boxcolor = [];
     }
+
     function DefinePaths(event) {
         var input = localStorage.getItem('classcode');
         var number = 0;
@@ -46,24 +59,24 @@ function createCanvas(){
                 for (var x = 10, i = 0; i < 5; x += 35, i++) {
                     ctx.beginPath();
                     ctx.rect(x, y, 30, 30);
-                    if (event!=null){
+                    if (event != null) {
                         if (IsInPath(event)) {
-                            set=temp;
+                            set = temp;
 
-                            for(asd in obj[input+""]) {
-                                if(obj[input+""][asd].SeatNo==temp){
-                                    document.getElementById("studentName").placeholder=obj[input+""][asd].LastName+', '+obj[input+""][asd].FirstName;
+                            for (asd in obj[input + ""]) {
+                                if (obj[input + ""][asd].SeatNo == temp) {
+                                    document.getElementById("studentName").placeholder = obj[input + ""][asd].LastName + ', ' + obj[input + ""][asd].FirstName;
                                     SelStyle2();
-                                    zxc=1;
+                                    zxc = 1;
                                     // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
                                     // console.log( obj.class_9413A[asd].SeatNo);
                                 }
                             }
-                            if(zxc!=1){
+                            if (zxc != 1) {
                                 SelStyle();
                             }
 
-                            zxc=0;
+                            zxc = 0;
                             // switch(number){
                             //     case 1:
                             //         set=temp-4;
@@ -82,28 +95,28 @@ function createCanvas(){
                         else {
                             DifStyle();
                         }
-                    }else {
+                    } else {
                         DifStyle();
                     }
-                    if(event!=null) {
+                    if (event != null) {
 
-                        for (qwe in obj[input+""]) {
-                            if(obj[input+""][qwe].SeatNo == "") {
-                                if (obj[input+""][qwe].SeatNo == temp) {
+                        for (qwe in obj[input + ""]) {
+                            if (obj[input + ""][qwe].SeatNo == "") {
+                                if (obj[input + ""][qwe].SeatNo == temp) {
 
                                     // console.log(obj.class_9413A[i].LastName+ " " + obj.class_9413A[i].FirstName);
                                     // console.log( obj.class_9413A[i].SeatNo);
                                     boxcolor.push(temp);
                                     console.log(boxcolor);
                                 }
-                            }else{
-                                if (obj[input+""][qwe].SeatNo == temp) {
-                                    var index = boxcolor.indexOf(obj[input+""][qwe].SeatNo);
+                            } else {
+                                if (obj[input + ""][qwe].SeatNo == temp) {
+                                    var index = boxcolor.indexOf(obj[input + ""][qwe].SeatNo);
                                     if (index > -1) {
 
-                                         boxcolor.splice(index, 1);
+                                        boxcolor.splice(index, 1);
                                     }
-                                     boxcolor.push(temp);
+                                    boxcolor.push(temp);
                                     console.log(boxcolor);
                                 }
                             }
@@ -112,67 +125,67 @@ function createCanvas(){
                     for (asd in boxcolor) {
                         if (boxcolor[asd] == temp) {
                             SelStyle1();
-                        }else{
+                        } else {
                             DifStyle();
                         }
                     }
 
                     ctx.closePath();
                     ctx.fill();
-                    ctx.strokeText(""+temp,x+6,y+13);
+                    ctx.strokeText("" + temp, x + 6, y + 13);
                     ctx.stroke();
-                    temp=temp+1;
+                    temp = temp + 1;
 
                 }
-                count=count+1;
+                count = count + 1;
                 console.log(count);
                 console.log(temp);
-                temp=51-(5*count)-(5*count);
+                temp = 51 - (5 * count) - (5 * count);
                 console.log(temp);
             }
-            count=0;
-            temp=46;
+            count = 0;
+            temp = 46;
             for (var y = 5, j = 0; j < 5; y += 35, j++) {
                 for (var x = 220, i = 0; i < 5; x += 35, i++) {
-                    number=number+1;
+                    number = number + 1;
                     ctx.beginPath();
                     ctx.rect(x, y, 30, 30);
 
-                    if (event!=null){
+                    if (event != null) {
                         if (IsInPath(event)) {
 
-                            set=temp;
-                            for(asd in obj[input+""]) {
-                                if(obj[input+""][asd].SeatNo==temp){
-                                    document.getElementById("studentName").placeholder=obj[input+""][asd].LastName+', '+obj[input+""][asd].FirstName;
+                            set = temp;
+                            for (asd in obj[input + ""]) {
+                                if (obj[input + ""][asd].SeatNo == temp) {
+                                    document.getElementById("studentName").placeholder = obj[input + ""][asd].LastName + ', ' + obj[input + ""][asd].FirstName;
                                     SelStyle2();
-                                    zxc=1;
+                                    zxc = 1;
                                     // console.log(obj.class_9413A[asd].LastName+ " " + obj.class_9413A[asd].FirstName);
                                     // console.log( obj.class_9413A[asd].SeatNo);
                                 }
                             }
-                            if(zxc!=1){
+                            if (zxc != 1) {
                                 SelStyle();
                             }
 
-                            zxc=0;
+                            zxc = 0;
                         }
                         else
                             DifStyle();
-                    }else
+                    } else
                         DifStyle();
-                    if(event!=null) {
+                    if (event != null) {
 
-                        for (asd in obj[input+""]) {
+                        for (asd in obj[input + ""]) {
 
-                            if(obj[input+""][asd].SeatNo == "") {
+                            if (obj[input + ""][asd].SeatNo == "") {
 
-                                if (obj[input+""][asd].SeatNo == temp) {
+                                if (obj[input + ""][asd].SeatNo == temp) {
                                     boxcolor.push(temp);
                                 }
-                            }else{
-                                if (obj[input+""][asd].SeatNo == temp) {
-                                    var index = boxcolor.indexOf(obj[input+""][asd].SeatNo);
+                            } else {
+                                if (obj[input + ""][asd].SeatNo == temp) {
+                                    var index = boxcolor.indexOf(obj[input + ""][asd].SeatNo);
                                     if (index > -1) {
 
                                         boxcolor.splice(index, 1);
@@ -185,28 +198,28 @@ function createCanvas(){
                     for (asd in boxcolor) {
                         if (boxcolor[asd] == temp) {
                             SelStyle1();
-                        }else{
+                        } else {
                             DifStyle();
                         }
                     }
                     ctx.closePath();
                     ctx.fill();
-                    ctx.strokeText(temp+"",x+6,y+13);
+                    ctx.strokeText(temp + "", x + 6, y + 13);
                     ctx.stroke();
-                    temp=temp+1;
+                    temp = temp + 1;
                 }
-                count=count+1;
+                count = count + 1;
                 console.log(count);
                 console.log(temp);
-                temp=46-(5*count)-(5*count);
+                temp = 46 - (5 * count) - (5 * count);
                 console.log(temp);
             }
         }
 
         document.getElementById("Lab").onclick = laboratory;
-        function laboratory(){
-            count=0;
-            temp=14;
+        function laboratory() {
+            count = 0;
+            temp = 14;
             var canvas = document.getElementById('seatPlan');
             canvas.setAttribute('width', '400');
             canvas.setAttribute('height', '500');
@@ -232,7 +245,7 @@ function createCanvas(){
                             if (zxc != 1) {
                                 SelStyle();
                             }
-                            zxc=0;
+                            zxc = 0;
 
                         }
                         else {
@@ -280,47 +293,55 @@ function createCanvas(){
                     temp = temp - 1;
 
                 }
-                count=count+1;
+                count = count + 1;
                 console.log(count);
-                temp=14+(14*count);
+                temp = 14 + (14 * count);
                 console.log(temp);
             }
         }
     }
-    function IsInPath(event) {
+
+
+
+function IsInPath(event) {
         var bb, x, y;
         bb = cnv.getBoundingClientRect();
-        x = (event.clientX-bb.left) * (cnv.width/bb.width);
-        y = (event.clientY-bb.top) * (cnv.height/bb.height);
+        x = (event.clientX - bb.left) * (cnv.width / bb.width);
+        y = (event.clientY - bb.top) * (cnv.height / bb.height);
 
-        return ctx.isPointInPath(x,y);
+        return ctx.isPointInPath(x, y);
     }
-    function SelStyle(){
-        ctx.lineWidth= 2;
-        ctx.strokeStyle= "brown";
-        ctx.fillStyle= "cyan";
+
+    function SelStyle() {
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "brown";
+        ctx.fillStyle = "cyan";
 
         modal('box');
     }
-    function SelStyle1(){
-        ctx.lineWidth= 2;
-        ctx.strokeStyle= "brown";
-        ctx.fillStyle= "cyan";
+
+    function SelStyle1() {
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "brown";
+        ctx.fillStyle = "cyan";
 
     }
-    function SelStyle2(){
-        ctx.lineWidth= 2;
-        ctx.strokeStyle= "brown";
-        ctx.fillStyle= "cyan";
+
+    function SelStyle2() {
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = "brown";
+        ctx.fillStyle = "cyan";
 
         modal('lateAbsent');
     }
-    function DifStyle(){
-        ctx.lineWidth= 2;
-        ctx.fillStyle= "gray";
-        ctx.strokeStyle= "darkblue";
+
+    function DifStyle() {
+        ctx.lineWidth = 2;
+        ctx.fillStyle = "gray";
+        ctx.strokeStyle = "darkblue";
     }
-    function  modal(input) {
+
+    function modal(input) {
         if (input == "box") {
             var modal = document.getElementById('box');
             var span = document.getElementsByClassName("close")[0];
@@ -342,25 +363,27 @@ function createCanvas(){
             }
         };
     }
-    function closeModal(){
+
+    function closeModal() {
         var modal = document.getElementById('box');
         modal.style.display = "none";
     }
-    function setName(input){
+
+    function setName(input) {
         // var input = localStorage.getItem('classcode');
         var i;
         var e = document.getElementById("selector");
         var strUser = e.options[e.selectedIndex].value;
         // switch(input) {
         //     case "class_9413A":
-        for(i in obj[input+""]) {
-            if(obj[input+""][i].IDNo==strUser){
-                obj[input+""][i].SeatNo=set;
-                console.log(obj[input+""][i].LastName+ " " + obj[input+""][i].FirstName);
-                console.log( obj[input+""][i].SeatNo);
+        for (i in obj[input + ""]) {
+            if (obj[input + ""][i].IDNo == strUser) {
+                obj[input + ""][i].SeatNo = set;
+                console.log(obj[input + ""][i].LastName + " " + obj[input + ""][i].FirstName);
+                console.log(obj[input + ""][i].SeatNo);
                 localStorage.removeItem("classListJSON");
 
-                localStorage.setItem("classListJSON",JSON.stringify(obj));
+                localStorage.setItem("classListJSON", JSON.stringify(obj));
             }
         }
         //         break;
@@ -404,7 +427,7 @@ function createCanvas(){
     }
 
 
-    function printStudentList(input){
+    function printStudentList(input) {
         // console.log(input);
         var i, ul, li, myNode;
         myNode = document.getElementById("generateList");
@@ -415,13 +438,13 @@ function createCanvas(){
         li.text = "";
         var select = document.getElementById("generateList");
         select.appendChild(li);
-        console.log(obj[input+""]);
+        console.log(obj[input + ""]);
         // switch(input) {
         //     case "class_9413A":
-        for (i in obj[input+""]) {
+        for (i in obj[input + ""]) {
             ul = document.getElementById("generateList");
             li = document.createElement("li");
-            output = obj[input+""][i].SeatNo + ' ' + obj[input+""][i].LastName + ', ' + obj[input+""][i].FirstName;
+            output = obj[input + ""][i].SeatNo + ' ' + obj[input + ""][i].LastName + ', ' + obj[input + ""][i].FirstName;
             li.appendChild(document.createTextNode(output));
             ul.appendChild(li);
         }
@@ -459,83 +482,70 @@ function createCanvas(){
     }
 
     function markAbsent() {
-        var i,ul,li;
+        var i, ul, li;
         var input = localStorage.getItem('classcode');
-        for(i in obj[input+""]){
-            if(obj[input+""][i].SeatNo==set) {
-                obj[input+""][i].Absent.push(document.getElementById("date").value);
-                console.log(obj[input+""][i].FirstName+"absent");
+        for (i in obj[input + ""]) {
+            if (obj[input + ""][i].SeatNo == set) {
+                obj[input + ""][i].Absent.push(document.getElementById("date").value);
+                console.log(obj[input + ""][i].FirstName + "absent");
                 ul = document.getElementById("absentList");
                 li = document.createElement("li");
-                output = obj[input+""][i].SeatNo + ' ' + obj[input+""][i].LastName + ', ' + obj[input+""][i].FirstName;
+                output = obj[input + ""][i].SeatNo + ' ' + obj[input + ""][i].LastName + ', ' + obj[input + ""][i].FirstName;
                 li.appendChild(document.createTextNode(output));
                 ul.appendChild(li);
                 localStorage.removeItem("classListJSON");
-                localStorage.setItem("classListJSON",JSON.stringify(obj));
+                localStorage.setItem("classListJSON", JSON.stringify(obj));
             }
         }
 
     }
 
     function markLate() {
-        var i,ul,li;
+        var i, ul, li;
         var input = localStorage.getItem('classcode');
-        for(i in obj[input+""]){
-            if(obj[input+""][i].SeatNo==set) {
-                obj[input+""][i].Late.push(document.getElementById("date").value);
-                console.log(obj[input+""][i].FirstName+"late");
+        for (i in obj[input + ""]) {
+            if (obj[input + ""][i].SeatNo == set) {
+                obj[input + ""][i].Late.push(document.getElementById("date").value);
+                console.log(obj[input + ""][i].FirstName + "late");
                 ul = document.getElementById("lateList");
                 li = document.createElement("li");
-                output = obj[input+""][i].SeatNo + ' ' + obj[input+""][i].LastName + ', ' + obj[input+""][i].FirstName;
+                output = obj[input + ""][i].SeatNo + ' ' + obj[input + ""][i].LastName + ', ' + obj[input + ""][i].FirstName;
                 li.appendChild(document.createTextNode(output));
                 ul.appendChild(li);
                 localStorage.removeItem("classListJSON");
-                localStorage.setItem("classListJSON",JSON.stringify(obj));
+                localStorage.setItem("classListJSON", JSON.stringify(obj));
             }
         }
 
     }
 
-    function getData(){
+    function getData() {
         var classcode;
-        var student_Obj=[];
+        var student_Obj = [];
         var i;
-        var idno=localStorage.getItem("userLoggedIn");
+        var idno = localStorage.getItem("userLoggedIn");
         var xmlhttp = new XMLHttpRequest();
         var url = "http://mysafeinfo.com/api/data?list=englishmonarchs&format=json";
         xmlhttp.overrideMimeType("application/json");
         xmlhttp.open("GET", url, true);
-        xmlhttp.onreadystatechange = function() {
+        xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 var json_obj = JSON.parse(this.responseText);
                 var classroom_Obj = json_obj.Classrooms;
-                for(i in classroom_Obj){
-                    classcode = "class_"+classroom_Obj.classcode;
+                for (i in classroom_Obj) {
+                    classcode = "class_" + classroom_Obj.classcode;
                     student_Obj.push(json_obj[classcode]);
                 }
                 console.log(classroom_Obj);
                 console.log(student_Obj);
                 localStorage.removeItem("classroomListJSON");
-                localStorage.setItem("classroomListJSON",JSON.stringify(classroom_Obj));
+                localStorage.setItem("classroomListJSON", JSON.stringify(classroom_Obj));
                 localStorage.removeItem("classListJSON");
-                localStorage.setItem("classListJSON",JSON.stringify(student_Obj));
+                localStorage.setItem("classListJSON", JSON.stringify(student_Obj));
             }
         };
 
 
         xmlhttp.send();
     }
-
-    var btn = document.getElementById("Lec");
-    btn.onclick = function () {
-        document.getElementById("Lab").remove();
-        this.remove();
-    };
-
-    var btn2 = document.getElementById("Lab");
-    btn2.onclick = function () {
-        document.getElementById("Lec").remove();
-        this.remove();
-    };
-}
 
