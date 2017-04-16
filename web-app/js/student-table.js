@@ -3,26 +3,37 @@
  */
 
 function CreateTableFromJSON() {
-    var studList = [
-        {
-            "Book ID": "1",
-            "Book Name": "Computer Architecture",
-            "Category": "Computers",
-            "Price": "125.60"
-        },
-        {
-            "Book ID": "2",
-            "Book Name": "Asp.Net 4 Blue Book",
-            "Category": "Programming",
-            "Price": "56.00"
-        },
-        {
-            "Book ID": "3",
-            "Book Name": "Popular Science",
-            "Category": "Science",
-            "Price": "210.40"
+    var studList=[];
+    var list = JSON.parse(localStorage.getItem("classListJSON")).class_9413A;
+    var count=0;
+    for(i in list){
+        console.log(document.getElementById("date").value);
+        if(list[i].Late.indexOf(document.getElementById("date").value)>-1||list[i].Absent.indexOf(document.getElementById("date").value)>-1){
+            studList.push(list[count]);
         }
-    ]
+        count=count+1;
+    }
+
+    //     [
+    //     {
+    //         "Book ID": "1",
+    //         "Book Name": "Computer Architecture",
+    //         "Category": "Computers",
+    //         "Price": "125.60"
+    //     },
+    //     {
+    //         "Book ID": "2",
+    //         "Book Name": "Asp.Net 4 Blue Book",
+    //         "Category": "Programming",
+    //         "Price": "56.00"
+    //     },
+    //     {
+    //         "Book ID": "3",
+    //         "Book Name": "Popular Science",
+    //         "Category": "Science",
+    //         "Price": "210.40"
+    //     }
+    // ];
 
     // EXTRACT VALUE FOR HTML HEADER.
     // ('Book ID', 'Book Name', 'Category' and 'Price')
