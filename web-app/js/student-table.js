@@ -6,7 +6,7 @@ function dropDownClass() {
     var myNode, option, select = "";
     var obj = JSON.parse(localStorage.getItem("classroomListJSON"));
     console.log(obj.Classrooms);
-    myNode = document.getElementById("selector");
+    myNode = document.getElementById("selector1");
     if (myNode != null) {
         while (myNode.firstChild) {
             myNode.removeChild(myNode.firstChild);
@@ -15,7 +15,7 @@ function dropDownClass() {
         option = document.createElement("option");
         option.text = "";
         option.value = "";
-        select = document.getElementById("selector");
+        select = document.getElementById("selector1");
         select.appendChild(option);
     } else
         console.log('ehehehe');
@@ -27,7 +27,7 @@ function dropDownClass() {
         option = document.createElement("option");
         option.text = output;
         option.value = "" + obj.Classrooms[i].classcode;
-        select = document.getElementById("selector");
+        select = document.getElementById("selector1");
         select.appendChild(option);
     }
 }
@@ -35,7 +35,7 @@ function dropDownClass() {
 function CreateTableFromJSON() {
     var studList=[];
     var list = JSON.parse(localStorage.getItem("classListJSON"));
-    list = list["class_"+document.getElementById("selector").value];
+    list = list["class_"+document.getElementById("selector1").value];
     var count=0;
     for(i in list){
         console.log(document.getElementById("date").value);
